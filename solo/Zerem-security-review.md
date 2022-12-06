@@ -127,7 +127,7 @@ Fixed by doubling the gas stipend
 
 ## Proof of Concept
 
-This comment `// ***TODO***: send relayer fees here` in the `unlockFor` method and its design show that it is possible that `unlockFor` is usually called by relayers. This opens up a new attack-vector in the contract and it is gas griefing on the ETH transfer
+This comment `// TODO: send relayer fees here` in the `unlockFor` method and its design show that it is possible that `unlockFor` is usually called by relayers. This opens up a new attack-vector in the contract and it is gas griefing on the ETH transfer
 
 ```solidity
 (bool success,) = payable(receiver).call{gas: 3000, value: amount}(hex"");
@@ -195,7 +195,7 @@ if (deltaTime < unlockDelaySec) {
 }
 ```
 
-1. Also in `_getWithdrawableAmount` if `unlockPeriodSec` is too big we will always get 0 because this `uint256 deltaTimeNormalized **=** (deltaTimeDelayed ***** precision) **/** unlockPeriodSec;` will be zero 
+1. Also in `_getWithdrawableAmount` if `unlockPeriodSec` is too big we will always get 0 because this `uint256 deltaTimeNormalized = (deltaTimeDelayed * precision) / unlockPeriodSec;` will be zero 
 
 This means the user will need to wait a huge amount (might be infinite) of time to be able to unlock his funds, and they won’t be unlockable even with the `liquidateFunds` functionality
 
@@ -221,7 +221,7 @@ Let’s look at the following scenario:
 
 1. Alice tries to claim tokens that have a fee-on-transfer mechanism from a protocol that is integrated with Zerem
 2. The integrated protocol calls `Zerem::transferTo` method but the `amount` argument passed does not take the fee into consideration
-3. The `require(transferredAmount **>=** amount, "not enough tokens");` check will always fail, since the `transferredAmount` will be less than `amount` due to the fee
+3. The `require(transferredAmount >= amount, "not enough tokens");` check will always fail, since the `transferredAmount` will be less than `amount` due to the fee
 
 If this happens this means that all of users balances of such tokens won’t be claimable and stuck forever. 
 
@@ -347,7 +347,7 @@ The `!=` operator costs less gas than `>` and for uint types you can use it to c
 
 You can replace all `-=` and `+=` occurrences to save gas
 
-## [G-07] Change `totalUnlockedAmount < withdrawnAmount` to `totalUnlockedAmount <= withdrawnAmount`
+## [G-08] Change `totalUnlockedAmount < withdrawnAmount` to `totalUnlockedAmount <= withdrawnAmount`
 
 If in the `_getWithdrawableAmount` method you change `if (totalUnlockedAmount < withdrawnAmount)` to `if (totalUnlockedAmount <= withdrawnAmount)` you will save gas by skipping a few computations
 
