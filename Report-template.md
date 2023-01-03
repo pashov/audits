@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the {name} protocol was done by pashov, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **{protocol name}** protocol was done by pashov, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
@@ -26,8 +26,8 @@ _explanation what the protocol does, some architectural comments_
 
 The following smart contracts were in scope of the audit:
 
-- `{filenames}`
-- `{filenames}`
+- `{filename}`
+- `{filename}`
 
 The following number of issues were found, categorized by their severity:
 
@@ -40,7 +40,12 @@ The following number of issues were found, categorized by their severity:
 
 # Findings Summary
 
-_a table with findings_
+| ID     | Title                | Severity |
+| ------ | -------------------- | -------- |
+| [H-01] | Any Title Here       | High     |
+| [M-02] | Any Other Title Here | Medium   |
+
+# Detailed Findings
 
 # [S-01] {name}
 
@@ -53,3 +58,8 @@ _a table with findings_
 ## Description
 
 ## Recommendations
+
+## Discussion
+
+### **{protocol name}** [dd/mm/yyyy]
+
