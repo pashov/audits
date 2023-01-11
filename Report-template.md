@@ -4,7 +4,7 @@ A time-boxed security review of the **{protocol name}** protocol was done by pas
 
 # Disclaimer
 
-A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or if even the review will find any problems with your smart contracts.
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts.
 
 # Protocol Overview
 
@@ -58,8 +58,3 @@ The following number of issues were found, categorized by their severity:
 ## Description
 
 ## Recommendations
-
-## Discussion
-
-### **{protocol name}** [dd/mm/yyyy]
-
