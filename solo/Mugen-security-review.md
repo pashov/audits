@@ -44,7 +44,7 @@ The following number of issues were found, categorized by their severity:
 | ------ | ----------------------------------------------------------------------------------------------- | ------------- |
 | [H-01] | Anyone can use or steal `ArbitrumSwaps` native asset balance                                    | High          |
 | [H-02] | Malicious user can easily make the protocol revert on every `USDT` swap on Uniswap              | High          |
-| [M-02] | Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `swap` call  | Medium        |
+| [M-01] | Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `swap` call  | Medium        |
 | [L-01] | Check array arguments have the same length                                                      | Low           |
 | [L-02] | A `require` check can easily be bypassed                                                        | Low           |
 | [L-03] | The `gasLeft()` after gas-limited external call might not be enough to complete the transaction | Low           |
