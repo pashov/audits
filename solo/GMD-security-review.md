@@ -73,7 +73,7 @@ The following number of issues were found, categorized by their severity:
 ## Severity
 
 **Likelihood:**
-Low, because at this point it is not likely to add such token pools
+Medium, because even though at this point no such pools are added, it is possible that they are in the future
 
 **Impact:**
 Medium, because it limits the functionality of the protocol
@@ -85,6 +85,10 @@ The `enter` method implements specific handling for `USDC` and `wBTC` tokens, be
 ## Recommendations
 
 Redesign the approach with the decimals that is hardcoded or implement it in an extensible-friendly way for new non-18 decimal token pools.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [M-02] As protocol relies heavily on admin actions, single-step ownership transfer pattern is dangerous
 
@@ -104,6 +108,10 @@ Inheriting from OpenZeppelin's `Ownable` contract means you are using a single-s
 
 Use OpenZeppelin's `Ownable2Step` instead of `Ownable`
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [M-03] If `addPool` is called too many times it can brick core functionality
 
 ## Severity
@@ -121,6 +129,10 @@ The `addPool` method pushes an entry to the `poolInfo` array. Methods like `swap
 ## Recommendations
 
 Limit the number of pools that can be added, for example to 50.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [M-04] Call to `updatePoolRate` is missing
 
@@ -140,6 +152,10 @@ Every time the `totalStaked` amount of a pool is updated, the `updatePoolRate` m
 
 Call `updatePoolRate` after the `updatePool` call in `pauseReward`
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [M-05] Admin privilege actions can be risky for users
 
 ## Severity
@@ -158,6 +174,10 @@ The methods `updateOracle`, `updateRouter` and `updateRewardRouter` are admin co
 
 Consider using an role-based access control approach instead of a single admin role as well as a timelock for important admin actions.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [M-06] Token approvals & allowances management is flawed
 
 ## Severity
@@ -175,6 +195,10 @@ There are a few problems related to approvals & allowances in the contract. One 
 ## Recommendations
 
 Set allowance to zero after each `swaptoGLP` call for the `poolGLP` address
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [M-07] Inverted slippage protection approach can lead to problems
 
@@ -202,70 +226,142 @@ As you see, the way it works is "expecting" a lower price of $GLP which means th
 
 Think about redesigning the `leave` methods so that you make the user pay the slippage cost instead of the protocol.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [L-01] Inconsistent input validation
 
 `APR` has a maximum value of 1599 when calling `addPool`, but can be 3999 when calling `setAPR`. Also `glpFees` has a maximum value of 700 when adding a pool but when you call the setter method `setGLPFees` it can be 999. Make sure the input validation is consistent throughout the system.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [L-02] Storage variable is only written to but never read from
 
 The `GLPbacking` storage variable is only written to in `updateGLPbackingNeeded` but is never actually read from - this also means that the calls to `updateGLPbackingNeeded` are useless as they have no effect. If an external actor wants to get the “GLPbacking” he can just call the `GLPbackingNeeded` view function. Remove the `updateGLPbackingNeeded` method and the `GLPbacking` storage variable, or if some logic was not implemented - add it
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [L-03] Missing parameter validation in `enter`
 
 `enterETH` has a check if `msg.value > 0` but `enter` does not check if `_amountin > 0`. Add that check.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [L-04] The `IWETH` interface has a method that `WETH` does not have
 
 The `safeTransfer` method is not part of the usual `IWETH` interface and is not actually used in the code, so it should be removed.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [L-05] Code is calling a deprecated method
 
 The `safeApprove` method from the `SafeERC20` library is deprecated so it should not be used.
+
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
 
 # [L-06] Value of slippage protection arguments is not set
 
 The `swaptoGLP` method does a `mintAndStakeGlp` call that has a 0 value for both `_minUsdg` and `_minGlp`. Also, in `recoverTreasuryTokensFromGLP` the `min_receive` parameter of the call to the `swapGLPto` method is 0 as well. This can hardly be exploited by the mechanics/tokenomics of `GLP` but it is still smart to add `minReceive` parameters to be provided by the user from external functions and pass them to the `swapToGLP` calls.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [I-01] Using `SafeMath` when compiler is ^0.8.0
 
 There is no need to use `SafeMath` when compiler is ^0.8.0 because it has built-in under/overflow checks.
+
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
 
 # [I-02] `leaveETH` should not be `payable`
 
 The `leaveETH` method only transfers ETH out, so `payable` keyword should be removed from its signature.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-03] Unused storage variable
 
 Storage variable `gdUSDC` is unused and should be removed.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-04] Misleading comments throughout the code
 
 Almost all comments that contain the words `usdc` or `gdUSDC` in the code are misleading and stale and should be removed or updated.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [I-05] Code is not properly formatted
 
 Run a formatter on the code, for example use the `prettier-solidity` plugin.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-06] NatSpec missing from external functions
 
 Add NatSpec docs for all external functions so their intentions and signatures are clear.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [I-07] Comment has no meaning
 
 This comment - `// Info of each user that stakes LP tokens.` has no meaning and it looks like it was related to a storage variable that is now gone. Remove it.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-08] Mismatch between the filename and the contract name
 
 While the file is named `final_vault.sol` the contract is named `vault` - rename file to `Vault.sol` and contract to `Vault`
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-09] Remove unused import
 
 Remove the `import "@openzeppelin/contracts/token/ERC20/ERC20.sol";` import as it is unused.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-10] Not all `require` statements have an error string
 
 Since the project is using a compiler that is newer than version 0.8.4 it is best to use Solidity Custom Errors for error situations - replace all require statements with such custom errors.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [I-11] External calls can be grouped together
 
 The `RewardRouter` smart contract has the `handleRewards` function, which can be used in the place of `cycleRewardsETHandEsGMX` and `_cycleRewardsETH methods` - [code](https://arbiscan.io/address/0xA906F338CB21815cBc4Bc87ace9e68c87eF8d8F1#code)
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
