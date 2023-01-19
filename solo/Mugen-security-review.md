@@ -40,24 +40,24 @@ The following number of issues were found, categorized by their severity:
 
 # Findings Summary
 
-| ID     | Title                                                                                                           | Severity      |
-| ------ | --------------------------------------------------------------------------------------------------------------- | ------------- |
-| [H-01] | Anyone can use or steal `ArbitrumSwaps` native asset balance                                                    | High          |
-| [H-02] | Malicious user can easily make the protocol revert on every `USDT` swap on Uniswap                              | High          |
-| [M-02] | Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `stargateRouter.swap()` call | Medium        |
-| [L-01] | Check array arguments have the same length                                                                      | Low           |
-| [L-02] | A `require` check can easily be bypassed                                                                        | Low           |
-| [L-03] | The `gasLeft()` after gas-limited external call might not be enough to complete the transaction                 | Low           |
-| [I-01] | Prefer battle-tested code over reimplementing common patterns                                                   | Informational |
-| [I-02] | Use an enum for the "step" types in `ArbitrumSwaps`                                                             | Informational |
-| [I-03] | Move code to bring cohesion up                                                                                  | Informational |
-| [I-04] | Use `x != 0` to get positive-only uint values                                                                   | Informational |
-| [I-05] | Remove not needed custom error                                                                                  | Informational |
-| [I-06] | Solidity safe pragma best practices are not used                                                                | Informational |
-| [I-07] | External method missing a NatSpec                                                                               | Informational |
-| [I-08] | Mismatch between contract and file names                                                                        | Informational |
-| [I-09] | Missing `override` keyword                                                                                      | Informational |
-| [I-10] | Typos in comments                                                                                               | Informational |
+| ID     | Title                                                                                           | Severity      |
+| ------ | ----------------------------------------------------------------------------------------------- | ------------- |
+| [H-01] | Anyone can use or steal `ArbitrumSwaps` native asset balance                                    | High          |
+| [H-02] | Malicious user can easily make the protocol revert on every `USDT` swap on Uniswap              | High          |
+| [M-02] | Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `swap` call  | Medium        |
+| [L-01] | Check array arguments have the same length                                                      | Low           |
+| [L-02] | A `require` check can easily be bypassed                                                        | Low           |
+| [L-03] | The `gasLeft()` after gas-limited external call might not be enough to complete the transaction | Low           |
+| [I-01] | Prefer battle-tested code over reimplementing common patterns                                   | Informational |
+| [I-02] | Use an enum for the "step" types in `ArbitrumSwaps`                                             | Informational |
+| [I-03] | Move code to bring cohesion up                                                                  | Informational |
+| [I-04] | Use `x != 0` to get positive-only uint values                                                   | Informational |
+| [I-05] | Remove not needed custom error                                                                  | Informational |
+| [I-06] | Solidity safe pragma best practices are not used                                                | Informational |
+| [I-07] | External method missing a NatSpec                                                               | Informational |
+| [I-08] | Mismatch between contract and file names                                                        | Informational |
+| [I-09] | Missing `override` keyword                                                                      | Informational |
+| [I-10] | Typos in comments                                                                               | Informational |
 
 # Detailed Findings
 
@@ -110,7 +110,7 @@ Here is how the attack can be done:
 
 Instead of using the `IERC20(multiParams.token1).balanceOf(address(this))` as the approved allowance, use the `amountIn` parameter.
 
-# [M-01] Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `stargateRouter.swap()` call
+# [M-01] Use `quoteLayerZeroFee` instead of sending all native asset balance as gas fee for `swap` call
 
 ## Severity
 
