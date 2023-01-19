@@ -40,10 +40,12 @@ The following number of issues were found, categorized by their severity:
 
 # Findings Summary
 
-| ID     | Title                | Severity |
-| ------ | -------------------- | -------- |
-| [H-01] | Any Title Here       | High     |
-| [M-02] | Any Other Title Here | Medium   |
+| ID     | Title                        | Severity      |
+| ------ | ---------------------------- | ------------- |
+| [H-01] | Any High Title Here          | High          |
+| [M-01] | Any Medium Title Here        | Medium        |
+| [L-01] | Any Low Title Here           | Low           |
+| [I-01] | Any Informational Title Here | Informational |
 
 # Detailed Findings
 
