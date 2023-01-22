@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **{protocol name}** protocol was done by pashov, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **protocol name** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
 
 # Disclaimer
 
@@ -26,8 +26,8 @@ _explanation what the protocol does, some architectural comments_
 
 The following smart contracts were in scope of the audit:
 
-- `{filename}`
-- `{filename}`
+- `smart-contract-name`
+- `smart-contract-name`
 
 The following number of issues were found, categorized by their severity:
 
