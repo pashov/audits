@@ -12,4 +12,8 @@ Some of my personal security audits, reviews and contributions will be shared he
 - [Azuro - decentralized betting](solo/Azuro-security-review.md)
 - [Mugen - cross-chain DEX adapter](solo/Mugen-security-review.md)
 
-I am available for security consulting and auditing work. Reach out to me on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+## Other
+
+- 1st place out of ~200 people in a Code4rena contest - [VTVL](https://code4rena.com/contests/2022-09-vtvl-contest)
+
+I am available for security consulting. Reach out to me on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
