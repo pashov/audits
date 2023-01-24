@@ -146,7 +146,7 @@ Use a low-level assembly `call` since it does not automatically copy return data
 ```solidity
 bool success;
 assembly {
-    success := call(3000, receiver, amount, 0, 0, 0)
+    success := call(3000, receiver, amount, 0, 0, 0, 0)
 }
 ```
 
