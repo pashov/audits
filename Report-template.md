@@ -26,12 +26,12 @@ _explanation what the protocol does, some architectural comments_
 
 The following smart contracts were in scope of the audit:
 
-- `smart-contract-name`
-- `smart-contract-name`
+- `SmartContractName`
+- `SmartContractName`
 
 The following number of issues were found, categorized by their severity:
 
-- High: x issues
+- Critical & High: x issues
 - Medium: x issues
 - Low: x issues
 - Informational: x issues
@@ -53,9 +53,9 @@ The following number of issues were found, categorized by their severity:
 
 ## Severity
 
-**Likelihood:**
-
 **Impact:**
+
+**Likelihood:**
 
 ## Description
 
