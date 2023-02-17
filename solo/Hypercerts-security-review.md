@@ -21,11 +21,11 @@ For the functionality in 3. the following methods for minting a new Hypercert we
 1. `mintClaimFromAllowlist` - the caller can mint to `account` by submitting a `proof` which authorizes him to mint `units` amount of the `claimID` type token
 2. `batchMintClaimsFromAllowlists` - same as `mintClaimFromAllowlist` but for multiple mints in a single transaction
 
-And for the owners of Hypercerts/claims there following functionalities exist:
+And for the owners of Hypercerts/claims the following functionalities exist:
 
 1. `splitValue` - split a claim token into fractions
 2. `mergeValue` - merge fractions into one claim token
-3. `burnValue` - burn claim token that
+3. `burnValue` - burn claim token
 
 # Threat Model
 
@@ -139,6 +139,10 @@ Follow the Checks-Effects-Interactions pattern
 +_mintBatch(_account, toIDs, amounts, "");
 ```
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [H-01] Calling `splitValue` when token index is not the latest will overwrite other claims' storage
 
 ## Severity
@@ -190,6 +194,10 @@ Change the code the following way:
 + toIDs[i] = _typeID + ++maxIndex[typeID];
 ```
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [M-01] Unused function parameters can lead to false assumptions on user side
 
 ## Severity
@@ -207,6 +215,10 @@ The `units` parameter in `mintClaimWithFractions` is used only in the event emis
 ## Recommendations
 
 Remove the `units` parameter from `mintClaimWithFractions` and also use `account` instead of `msg.sender` in the `_mintValue` call in `mintClaim` and `mintClaimWithFractions`.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [M-02] Input & data validation is missing or incomplete
 
@@ -227,6 +239,10 @@ Multiple methods are missing input/data validation or it is incomplete.
 3. The `_createAllowlist` of `AllowlistMinter` should revert when `merkleRoot == ""`
 4. The `_mintClaim` and `_batchMintClaims` methods in `SemiFungible1155` should revert when `_units == 0` or `_units[i] == 0` respectively
 
+## Discussion
+
+**pashov**: Client has partially fixed the issue.
+
 ## Recommendations
 
 Add the checks mentioned for all inputs and logic.
@@ -235,41 +251,81 @@ Add the checks mentioned for all inputs and logic.
 
 The comment in the end of `SemiFungible1155` assumes constant values are saved in the contract storage which is not the case. Both constants and immutable values are not stored in contract storage. Update comment and make sure to understand the workings of smart contracts storage so it does not lead to problems in upgrading the contracts in a later stage.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [L-02] Missing event and incorrect event argument
 
 The `_mergeValue` method in `SemiFungible1155` does not emit an event while `_splitValue` does - consider emitting one for off-chain monitoring. Also the `TransferSingle` event emission in `_createTokenType` has a value of 1 for the `amount` argument but it does not actually transfer or mint a token so the value should be 0.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [L-03] Prefer two-step pattern for role transfers
 
 The `Upgradeable1155` contract inherits from `OwnableUpgradeable` which uses a single-step pattern for ownership transfer. It is a best practice to use two-step ownership transfer pattern, meaning ownership transfer gets to a "pending" state and the new owner should claim his new rights, otherwise the old owner still has control of the contract. Consider using a two-step approach.
 
+## Discussion
+
+**pashov**: Client has acknowledged the issue.
+
 # [L-04] Contracts pausability and upgradeability should be behind multi-sig or governance account
 
 A compromised or a malicious owner can call `pause` and then `renounceOwnership` to execute a DoS attack on the protocol based on pausability. The problem has an even wider attack surface with upgradeability - the owner can upgrade the contracts with arbitrary code at any time. I suggest using a multi-sig or governance as the protocol owner after the contracts have been live for a while or using a Timelock smart contract.
+
+## Discussion
+
+**pashov**: Client is taking measures to move into this direction.
 
 # [I-01] Transfer hook is not needed in current code
 
 The `_beforeTokenTransfer` hook in `SemiFungible1155` is not needed as it only checks if a base type token is getting transferred but the system in its current state does not actually ever mint such a token, so this check is not needed and only wastes gas. Remove the `_beforeTokenTransfer` hook override in `SemiFungible1155`.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-02] Unused import, local variable and custom errors
 
 The `IERC1155ReceiverUpgradeable` import in `SemiFungible1155` is not actually used and should be removed, same for the `_typeID` local variable in `SemiFungible1155::mergeValue`, same for the `ToZeroAddress`, `MaxValue` and `FractionalBurn` custom errors.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-03] Merge logic into one smart contract instead of using inheritance
 
 The `SemiFungible1155` contract inherits from `Upgradeable1155` but it doesn't make sense to separate those two since the logic is very coupled and `Upgradeable1155` won't be inherited from other contracts so it does not need its own abstraction. Merge the two contracts into one and give it a good name as the currently used two names are too close to the `ERC1155` standard.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-04] Incorrect custom error thrown
 
 The code in `AllowlistMinter::_processClaim` throws `DuplicateEntry` when a leaf has been claimed already - throw an `AlreadyClaimed` custom error as well. Also consider renaming the `node` local variable there to `leaf`.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-05] Typos in comments
 
 `AlloslistMinter` -> `AllowlistMinter`
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-06] Missing `override` keyword for interface inherited methods
 
 The `HypercertMinter` contract is inheriting the `IHypercertToken` interface and implements its methods but the `override` keyword is missing on the overriden methods. Add the keyword on those as a best practice and for compiler checks.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-07] Bit-shift operations are unnecessarily complex
 
@@ -284,21 +340,41 @@ I recommend the following change for simplicity:
 +    uint256 internal constant NF_INDEX_MASK = type(uint256).max >> 128;
 ```
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-08] Redundant check in code
 
 The `_beforeValueTransfer` hook in `SemiFungible1155` has the `getBaseType(_to) > 0` check which always evaluates to `true` so it can be removed.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-09] Incomplete or wrong NatSpec docs
 
 The NatSpec docs on the external methods are incomplete - missing `@param`, `@return` and other descriptive documentation about the protocol functionality. Also part of the NatSpec of `IAllowlist` is copy-pasted from `IHypercertToken`, same for `AllowlistMinter`. Make sure to write descriptive docs for each method and contract which will help users, developers and auditors.
 
+## Discussion
+
+**pashov**: Client still hasn't fixed the issue but is setting higher priority to document the code better.
+
 # [I-10] Misleading variable name
 
 In the methods `mintClaim`, `mintClaimWithFractions` and `createAllowlist` the local variable `claimID` has a misleading name as it actually holds `typeID` value - rename it to `typeID` in the three methods.
 
+## Discussion
+
+**pashov**: Client has fixed the issue.
+
 # [I-11] Solidity safe pragma best practices are not used
 
 Always use a stable pragma to be certain that you deterministically compile the Solidity code to the same bytecode every time. The project is currently using a floatable version.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
 
 # [I-12] Magic numbers in the codebase
 
@@ -309,3 +385,7 @@ if (_values.length > 253 || _values.length < 2) revert Errors.ArraySize();
 ```
 
 Extract the `253` value to a well-named constant so the intention of the number in the code is clear.
+
+## Discussion
+
+**pashov**: Client has fixed the issue.
