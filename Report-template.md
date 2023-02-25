@@ -6,9 +6,31 @@ A time-boxed security review of the **protocol name** protocol was done by **pas
 
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts.
 
-# Protocol Overview
+# About **pashov**
 
-_explanation what the protocol does, some architectural comments_
+Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+
+# About **ProtocolName**
+
+_explanation what the protocol does, some architectural comments, technical documentation_
+
+# Threat Model
+
+### Roles & Actors
+
+### Security Interview
+
+**Q:** What in the protocol has value in the market?
+
+**A:**
+
+**Q:** What is the worst thing that can happen to the protocol?
+
+**A:**
+
+**Q:** In what case can the protocol/users lose money?
+
+**A:**
 
 # Severity classification
 
@@ -17,6 +39,12 @@ _explanation what the protocol does, some architectural comments_
 | **Likelihood: High**   | Critical     | High           | Medium      |
 | **Likelihood: Medium** | High         | Medium         | Low         |
 | **Likelihood: Low**    | Medium       | Low            | Low         |
+
+**Impact** - the technical, economic and reputation damage of a successful attack
+
+**Likelihood** - the chance that a particular vulnerability gets discovered and exploited
+
+**Severity** - the overall criticality of the risk
 
 # Security Assessment Summary
 
@@ -42,6 +70,7 @@ The following number of issues were found, categorized by their severity:
 
 | ID     | Title                        | Severity      |
 | ------ | ---------------------------- | ------------- |
+| [C-01] | Any Critical Title Here      | Critical      |
 | [H-01] | Any High Title Here          | High          |
 | [M-01] | Any Medium Title Here        | Medium        |
 | [L-01] | Any Low Title Here           | Low           |
