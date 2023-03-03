@@ -128,7 +128,7 @@ The following number of issues were found, categorized by their severity:
 | [I-08] | `LockedLizardMinted` event emission should happen in the mint method                                          | Informational |
 | [I-09] | Use the `delete` keyword instead of assigning the default value of variables                                  | Informational |
 | [I-10] | Variables can be turned into an `immutable` or a `constant`                                                   | Informational |
-| [I-1]  | Most state-changing methods do not emit events                                                                | Informational |
+| [I-11]  | Most state-changing methods do not emit events                                                                | Informational |
 | [I-12] | Interface is not needed                                                                                       | Informational |
 | [I-13] | Make `isLizardWithdrawable` directly return the result of the check                                           | Informational |
 | [I-14] | Naming problem in `onlyApprovedContracts`                                                                     | Informational |
@@ -273,7 +273,7 @@ Low, as it requires a malicious/compromised owner or a big error on his side
 
 ## Description
 
-The `setResetShareValue` lacks a check that the `_newShareResetValue` argument is not more than 100%. Since it is expected that the value will be in percentages, setting a value that is bigger than 100 will mess with the important calculations in the contract, one of which is the rewards to claim calculation. This can make users receive a smaller reward than what the have earned since a bigger `resetShareValue` equals smaller rewards for users.
+The `setResetShareValue` lacks a check that the `_newShareResetValue` argument is not more than 100%. Since it is expected that the value will be in percentages, setting a value that is bigger than 100 will mess with the important calculations in the contract, one of which is the rewards to claim calculation. This can make users receive a smaller reward than what they have earned since a bigger `resetShareValue` equals smaller rewards for users.
 
 ## Recommendations
 
