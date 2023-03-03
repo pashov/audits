@@ -14,11 +14,13 @@ Krum Pashov, or **pashov**, is an independent smart contract security researcher
 
 _explanation what the protocol does, some architectural comments, technical documentation_
 
+## Unexpected/Interesting Design choices
+
 # Threat Model
 
-### Roles & Actors
+## Roles & Actors
 
-### Security Interview
+## Security Interview
 
 **Q:** What in the protocol has value in the market?
 
@@ -31,6 +33,15 @@ _explanation what the protocol does, some architectural comments, technical docu
 **Q:** In what case can the protocol/users lose money?
 
 **A:**
+
+## Potential attacker's goals
+
+## Potential ways for the attacker to achieve his goals
+
+- value transfer functions
+- incorrect input from `external` methods with no access control
+- incorrect input from external calls to other smart contracts
+- calling contract functions in weird sequences
 
 # Severity classification
 
