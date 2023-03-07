@@ -11,6 +11,8 @@ Some of my personal security audits, reviews and contributions will be shared he
 - [GMD - yield aggregator](solo/GMD-security-review.md)
 - [Azuro - decentralized betting](solo/Azuro-security-review.md)
 - [Mugen - cross-chain DEX adapter](solo/Mugen-security-review.md)
+- [Metalabel - ERC721 collection releasing](solo/Metalabel-security-review.md)
+- [Metalabel - ERC721 collection releasing, second review](solo/Metalabel-second-security-review.md)
 - [Hypercerts - ERC1155 certificates for contribution](solo/Hypercerts-security-review.md)
 - [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
 
