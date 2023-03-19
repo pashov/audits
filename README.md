@@ -15,6 +15,8 @@ Some of my personal security audits, reviews and contributions will be shared he
 - [Metalabel - ERC721 collection releasing, second review](solo/Metalabel-second-security-review.md)
 - [Hypercerts - ERC1155 certificates for contribution](solo/Hypercerts-security-review.md)
 - [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
+- [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
+- [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
 
 ## Other
 
