@@ -70,8 +70,8 @@ The following number of issues were found, categorized by their severity:
 
 - Critical & High: 0 issues
 - Medium: 0 issues
-- Low: x issues
-- Informational: x issues
+- Low: 2 issues
+- Informational: 2 issues
 
 ---
 
