@@ -49,32 +49,32 @@ The following number of issues were found, categorized by their severity:
 
 # Findings Summary
 
-| ID     | Title                                                                                                         | Severity      |
-| ------ | ------------------------------------------------------------------------------------------------------------- | ------------- |
-| [M-01] | `claimTimeout` is not checked for first claim by an account                                                   | Medium        |
-| [M-02] | Protocol can't use smaller decimals tokens as bet tokens                                                      | Medium        |
-| [M-03] | Missing admin input sanitization                                                                              | Medium        |
-| [M-04] | `OwnableUpgradeable` uses single-step ownership transfer                                                      | Medium        |
-| [M-05] | Admin privileges are dangerous                                                                                | Medium        |
-| [L-01] | Prefer using `_safeMint` over `_mint`                                                                         | Low           |
-| [L-02] | Missing event emission`                                                                                       | Low           |
-| [L-03] | Protocol won't work with tokens with a fee-on-transfer or a rebasing mechanism                                | Low           |
-| [L-04] | The `coreAffRewards` mapping is not checked in `claimAffiliateReward`                                         | Low           |
-| [L-05] | Call to `azuroBet.mint()` can reenter                                                                         | Low           |
-| [L-06] | Code is lacking technical documentation                                                                       | Low           |
-| [L-07] | Unused method is not working as intended                                                                      | Low           |
-| [I-01] | Use braces around operators with uncertain precedence                                                         | Informational |
-| [I-02] | The `stopCondition` method can start a condition as well as stopping                                          | Informational |
-| [I-03] | Move not essential logic to off-chain computations                                                            | Informational |
-| [I-04] | Redundant code                                                                                                | Informational |
-| [I-05] | Open `TODO` in code                                                                                           | Informational |
-| [I-06] | Unused imports                                                                                                | Informational |
-| [I-07] | Method inherited from interface is missing the `override` keyword                                             | Informational |
-| [I-08] | Use a safe pragma statement                                                                                   | Informational |
-| [I-09] | Small issues in initializer methods                                                                           | Informational |
-| [I-10] | Typos in NatSpec                                                                                              | Informational |
-| [I-11] | Wrong import                                                                                                  | Informational |
-| [I-12] | Consider using custom errors instead of require statements with string error                                  | Informational |
+| ID     | Title                                                                          | Severity      |
+| ------ | ------------------------------------------------------------------------------ | ------------- |
+| [M-01] | `claimTimeout` is not checked for first claim by an account                    | Medium        |
+| [M-02] | Protocol can't use smaller decimals tokens as bet tokens                       | Medium        |
+| [M-03] | Missing admin input sanitization                                               | Medium        |
+| [M-04] | `OwnableUpgradeable` uses single-step ownership transfer                       | Medium        |
+| [M-05] | Admin privileges are dangerous                                                 | Medium        |
+| [L-01] | Prefer using `_safeMint` over `_mint`                                          | Low           |
+| [L-02] | Missing event emission`                                                        | Low           |
+| [L-03] | Protocol won't work with tokens with a fee-on-transfer or a rebasing mechanism | Low           |
+| [L-04] | The `coreAffRewards` mapping is not checked in `claimAffiliateReward`          | Low           |
+| [L-05] | Call to `azuroBet.mint()` can reenter                                          | Low           |
+| [L-06] | Code is lacking technical documentation                                        | Low           |
+| [L-07] | Unused method is not working as intended                                       | Low           |
+| [I-01] | Use braces around operators with uncertain precedence                          | Informational |
+| [I-02] | The `stopCondition` method can start a condition as well as stopping           | Informational |
+| [I-03] | Move not essential logic to off-chain computations                             | Informational |
+| [I-04] | Redundant code                                                                 | Informational |
+| [I-05] | Open `TODO` in code                                                            | Informational |
+| [I-06] | Unused imports                                                                 | Informational |
+| [I-07] | Method inherited from interface is missing the `override` keyword              | Informational |
+| [I-08] | Use a safe pragma statement                                                    | Informational |
+| [I-09] | Small issues in initializer methods                                            | Informational |
+| [I-10] | Typos in NatSpec                                                               | Informational |
+| [I-11] | Wrong import                                                                   | Informational |
+| [I-12] | Consider using custom errors instead of require statements with string error   | Informational |
 
 # Detailed Findings
 
@@ -218,8 +218,6 @@ return userRoles[account] & roleBit == roleBit;
 ```
 
 In Solidity the `&` operator will be executed before `==` but this might not always be clear and might be different in other languages. I suggest adding braces around `userRoles[account] & roleBit` to clarify operator precedence.
-
-Both `Access::grantRole` and `LP::_addLiquidity` use ERC721's `_mint` method, which is missing the check if the account to mint the NFT to is a smart contract that can handle ERC721 tokens. The `_safeMint` method does exactly this, so prefer using it over `_mint` but always add a `nonReentrant` modifier, since calls to `_safeMint` can reenter.
 
 # [I-02] The `stopCondition` method can start a condition as well as stopping
 
