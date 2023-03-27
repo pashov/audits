@@ -29,7 +29,7 @@ A: The Gnosis Safe allowance of the protocol
 
 Q: What is the worst thing that can happen to the protocol?
 
-1. Malicious user draining a the protocol's allowance of a Gnosis Safe multisig wallet
+1. Malicious user draining the protocol's allowance of a Gnosis Safe multisig wallet
 2. Replay attacks on signatures & approvals
 3. DoS on `executePayroll` related to token/native asset functionality
 4. Tokens left stuck forever in the `PayrollManager` contract
@@ -153,8 +153,6 @@ Which shows us that `address(0)` is used to handle native assets transfers. The 
 ## Recommendations
 
 Check separately for the native asset balance of the contract in the end of `executePayroll` and ignore `address(0)` when calling `ERC20::balanceOf` for the `paymentTokens` array values.
-
-Organizer implements `Pausable` but no method uses the `whenNotPaused` modifier and also the `_pause` and `_unpause` methods are not exposed externally
 
 # [M-01] Using the `transfer` function of `address payable` is discouraged
 

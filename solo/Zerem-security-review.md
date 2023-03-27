@@ -1,10 +1,11 @@
 # Zerem protocol security review by pashov
 
-***review commit hash* - [667a41b577647f0d95591a5f9928a43b976b8e25](https://github.com/hananbeer/zerem/tree/667a41b577647f0d95591a5f9928a43b976b8e25)**
+**_review commit hash_ - [667a41b577647f0d95591a5f9928a43b976b8e25](https://github.com/hananbeer/zerem/tree/667a41b577647f0d95591a5f9928a43b976b8e25)**
 
 **Scope: `Zerem.sol`**
 
 ### The code was reviewed for a total of 10 hours.
+
 ---
 
 # [H-01] The `unlockExponent` does not work as intended when it is ≠ 1
@@ -25,7 +26,7 @@ if (factor > precision) {
 ```
 
 1. If we have `unlockExponent == 0` then `factor` is always equal to 1, which is less than `1e8` so `factor == 1`
-2. Now if we go back to the total amount to unlock math, we will get `uint256 totalUnlockedAmount = (record.totalAmount * factor) / precision;` so `uint256 totalUnlockedAmount = record.totalAmount / precision` 
+2. Now if we go back to the total amount to unlock math, we will get `uint256 totalUnlockedAmount = (record.totalAmount * factor) / precision;` so `uint256 totalUnlockedAmount = record.totalAmount / precision`
 
 The expected unlocked amount was equal to `record.totalAmount` but instead we got `record.totalAmount / precision` which is incorrect. Now every subsequent time the `_getWithdrawableAmount` function is called, the math will be the same and the code will basically think there is no newly unlocked amount. This means that no user that has locked funds in Zerem will be able to withdraw more than `totalLockedAmount / 1e8` ever, all of the other tokens will be stuck.
 
@@ -47,7 +48,7 @@ uint256 totalUnlockedAmount = (record.totalAmount * factor) / precision;
 and let’s look at example scenario:
 
 1. `unlockPeriodSec == 100 000`, `deltaTimeDelayed == 100` and `precision == 1e8` so `deltaTimeNormalized == 1e5`
-2. if `unlockExponent > 1` for example when equal to 2, we will get `factor = 1e5 ** 2`, so `1e10` which is  `> precision` that is `1e8` so now `factor = precision`
+2. if `unlockExponent > 1` for example when equal to 2, we will get `factor = 1e5 ** 2`, so `1e10` which is `> precision` that is `1e8` so now `factor = precision`
 3. Now `totalUnlockedAmount = record.totalAmount * factor / factor` which is `record.totalAmount`
 4. even though only 1/1000th of the unlock period has passed and the `unlockExponent` was just `2`, the user can already claim all of their locked tokens.
 
@@ -78,7 +79,7 @@ The problem is that the `transfer` function from ERC20 returns a bool to indicat
 1. Alice is trying to claim some tokens from a protocol that has integrated with Zerem, so her transaction makes a call to `Zerem::transferTo`
 2. The amount to claim is less than the `lockThreshold` so the code goes to the`_sendFunds` functionality directly
 3. The transfer fails and since the token does not revert but returns `false` this is not accounted for by the Zerem protocol and transaction completes successfully
-4. The tokens are now stuck and are not claimable by Alice anymore 
+4. The tokens are now stuck and are not claimable by Alice anymore
 
 ## Impact
 
@@ -187,7 +188,7 @@ If a protocol integrates with Zerem it needs to deploy different instances of `Z
 Let’s look at the following scenario:
 
 1. Mistake in the deployment script sets the `unlockDelaySec` or the `unlockPeriodSec` to be huge, or to be a concrete timestamp
-2. Now in `_getWithdrawableAmount` if `unlockDelaySec` is too big we will always get 0 withdrawable amount because of 
+2. Now in `_getWithdrawableAmount` if `unlockDelaySec` is too big we will always get 0 withdrawable amount because of
 
 ```
 if (deltaTime < unlockDelaySec) {
@@ -195,7 +196,7 @@ if (deltaTime < unlockDelaySec) {
 }
 ```
 
-1. Also in `_getWithdrawableAmount` if `unlockPeriodSec` is too big we will always get 0 because this `uint256 deltaTimeNormalized = (deltaTimeDelayed * precision) / unlockPeriodSec;` will be zero 
+3. Also in `_getWithdrawableAmount` if `unlockPeriodSec` is too big we will always get 0 because this `uint256 deltaTimeNormalized = (deltaTimeDelayed * precision) / unlockPeriodSec;` will be zero
 
 This means the user will need to wait a huge amount (might be infinite) of time to be able to unlock his funds, and they won’t be unlockable even with the `liquidateFunds` functionality
 
@@ -223,11 +224,11 @@ Let’s look at the following scenario:
 2. The integrated protocol calls `Zerem::transferTo` method but the `amount` argument passed does not take the fee into consideration
 3. The `require(transferredAmount >= amount, "not enough tokens");` check will always fail, since the `transferredAmount` will be less than `amount` due to the fee
 
-If this happens this means that all of users balances of such tokens won’t be claimable and stuck forever. 
+If this happens this means that all of users balances of such tokens won’t be claimable and stuck forever.
 
 ## Impact
 
-If a token with a fee-on-transfer mechanism is used and not properly handled on both the integration protocol and Zerem’s side, it can result to 100% stuck balances of this token of users. Since this happens only with a special type of ERC20 it is Medium severity.
+If a token with a fee-on-transfer mechanism is used and not properly handled on both the integration protocol and Zerem’s side, it can result in 100% stuck balances of this token of users. Since this happens only with a special type of ERC20 it is Medium severity.
 
 ## Recommendation
 
@@ -245,7 +246,7 @@ Some tokens may make arbitrary balance modifications outside of transfers. One e
 
 1. Alice claims some tokens with such a mechanism from a protocol that is integrated with Zerem
 2. The protocol calls `Zerem::transferTo` method, but the amount sent is ≥ `lockThreshold` so the funds are locked
-3. In `_lockFunds` the amount sent is cached in `record.totalAmount`, `record.remainingAmount` and `pendingTotalBalances[user]`. 
+3. In `_lockFunds` the amount sent is cached in `record.totalAmount`, `record.remainingAmount` and `pendingTotalBalances[user]`.
 4. Some time after this, let’s say a rebase of the token balances has happened and now actually Zerem holds less tokens
 5. Now when the `unlockPeriodSec` passes and Alice wants to claim her tokens she is unable to because the cached amount is more than the actual amount that is held in the Zerem protocol, so the transaction always reverts leading to all of the locked funds getting stuck
 
@@ -257,7 +258,7 @@ Funds can be stuck in Zerem, but it requires a special type of ERC20 token, so i
 
 ## Recommendation
 
-Allow partial unlock of funds or document that the protocol does not support such tokens, so integrating protocols do not transfer them through Zerem. Also you can add functionality to rescue excess funds out of the Zerem protocol
+Allow partial unlock of funds or document that the protocol does not support such tokens, so integrating protocols do not transfer them through Zerem. Also you can add functionality to rescue excess funds out of the Zerem protocol.
 
 ## Client response
 
@@ -307,11 +308,11 @@ Reuse code, make `_getRecord` call `_getTransferId` because the `bytes32 transfe
 
 ## [QA-11] Update external dependency to latest version
 
-The OpenZeppelin library dependency is using a stale version - upgrade to latest one to get all security patches, features and gas optimisations 
+The OpenZeppelin library dependency is using a stale version - upgrade to latest one to get all security patches, features and gas optimisations
 
 ## [QA-12] Consider using a differet key in the `pendingTransfers` mapping
 
-Currently the key in the `pendingTransfers` mapping is calculated by this 
+Currently the key in the `pendingTransfers` mapping is calculated by this
 
 `bytes32 transferId = keccak256(abi.encode(user, lockTimestamp));`
 
