@@ -403,7 +403,7 @@ There are multiple problems in the NatSpec docs and comments of the `LizardLoung
   - `Transfer the user the USDC rewards` -> `Transfer the USDC rewards to the user`
   - `If the no pools have been created` -> `If no pools have been created`
   - `after the user is staked` -> `after the user has staked`
-  - `// First time stakers mint their ...` -> `// First time stakers mints their...`
+  - `// First time stakers mints their...` -> `// First time stakers mint their ...`
   - `A lizard is transferrable if it been over 90 days since it was deposited` -> `A lizard is transferrable if more than 90 days have passed since it was deposited`
   - `... user are protected ...` -> `... users are protected ...`
 
