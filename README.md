@@ -17,6 +17,7 @@ Some of my personal security audits, reviews and contributions will be shared he
 - [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
 - [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
 - [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
+- [Rolling Dutch Auction - dutch auction](solo/RollingDutchAuction-security-review.md)
 
 ## Other
 
