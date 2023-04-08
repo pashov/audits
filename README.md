@@ -18,6 +18,7 @@ Some of my personal security audits, reviews and contributions will be shared he
 - [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
 - [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
 - [Rolling Dutch Auction - dutch auction](solo/RollingDutchAuction-security-review.md)
+- [Bear Cave - NFT games](solo/BearCave-security-review.md)
 
 ## Other
 
