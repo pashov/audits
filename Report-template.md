@@ -26,22 +26,13 @@ _explanation what the protocol does, some architectural comments, technical docu
 
 **A:**
 
-**Q:** What is the worst thing that can happen to the protocol?
-
-**A:**
-
 **Q:** In what case can the protocol/users lose money?
 
 **A:**
 
-## Potential attacker's goals
+**Q:** What are some ways that an attacker achieves his goals?
 
-## Potential ways for the attacker to achieve his goals
-
-- value transfer functions
-- incorrect input from `external` methods with no access control
-- incorrect input from external calls to other smart contracts
-- calling contract functions in weird sequences
+**A:**
 
 # Severity classification
 
@@ -73,19 +64,17 @@ The following number of issues were found, categorized by their severity:
 - Critical & High: x issues
 - Medium: x issues
 - Low: x issues
-- Informational: x issues
 
 ---
 
 # Findings Summary
 
-| ID     | Title                        | Severity      |
-| ------ | ---------------------------- | ------------- |
-| [C-01] | Any Critical Title Here      | Critical      |
-| [H-01] | Any High Title Here          | High          |
-| [M-01] | Any Medium Title Here        | Medium        |
-| [L-01] | Any Low Title Here           | Low           |
-| [I-01] | Any Informational Title Here | Informational |
+| ID     | Title                   | Severity |
+| ------ | ----------------------- | -------- |
+| [C-01] | Any Critical Title Here | Critical |
+| [H-01] | Any High Title Here     | High     |
+| [M-01] | Any Medium Title Here   | Medium   |
+| [L-01] | Any Low Title Here      | Low      |
 
 # Detailed Findings
 

@@ -137,7 +137,7 @@ if (hasExpired) {
 }
 ```
 
-Where `windowExpiration` calls `fulfillWindow` with the latest `windowId` in itself. If any user manages to call `fulfilWindow` externally first, then the `window.processed` will be set to `true`, making the following check in `fulfillWindow`
+Where `windowExpiration` calls `fulfillWindow` with the latest `windowId` in itself. If any user manages to call `fulfillWindow` externally first, then the `window.processed` will be set to `true`, making the following check in `fulfillWindow`
 
 ```solidity
 if (window.processed) {
@@ -285,7 +285,7 @@ uint256 y = !isInitialised ? state.price : window.price;
 return y - (y * x) / b_18;
 ```
 
-Here, when you calculate `x` you divide by `t_r` even though later you multiply `x` by `y`. To minimize loss of precision you should always do multiplications before divisions, since solidity just rounds down when there is a remainder in the division operation.
+Here, when you calculate `x` you divide by `t_r` even though later you multiply `x` by `y`. To minimize loss of precision you should always do multiplications before divisions, since Solidity just rounds down when there is a remainder in the division operation.
 
 ## Recommendations
 
@@ -334,10 +334,10 @@ so it basically caches the expected transferred amount. This will not work if th
 
 ## Recommendations
 
-You can either explicitly document that you do not support tokens with a fee-on-transfer or rebasing mechanisms or you can do the following:
+You can either explicitly document that you do not support tokens with a fee-on-transfer or rebasing mechanism or you can do the following:
 
-1. For fee-on-transfer tokens, check the balance before and after the transfer and use the difference as the actual amount received
-2. For rebasing tokens, when they go down in value, you should have a method to update the cached `reserves` accordingly, based on the balance held. This is a complex solution
+1. For fee-on-transfer tokens, check the balance before and after the transfer and use the difference as the actual amount received.
+2. For rebasing tokens, when they go down in value, you should have a method to update the cached `reserves` accordingly, based on the balance held. This is a complex solution.
 3. For rebasing tokens, when they go up in value, you should add a method to actually transfer the excess tokens out of the protocol.
 
 # [L-01] Auction with `price == 0` can be re-created
@@ -390,7 +390,7 @@ Fix all typos in the code:
 
 # [I-03] Missing License identifier
 
-The `RDA.sol` file is missing License Identifier as the first line of the file, which is a compiler warning. Add the `No License` License at least to remove the compiler warning.
+The `RDA.sol` file is missing License Identifier as the first line of the file, which is a compiler warning. Add the `No License` license at least to remove the compiler warning.
 
 # [I-04] Function state mutability can be restricted to view
 
