@@ -104,7 +104,7 @@ The following smart contracts were in scope of the audit:
 The following number of issues were found, categorized by their severity:
 
 - Critical & High: 6 issues
-- Medium: 3 issues
+- Medium: 2 issues
 - Low: 4 issues
 - Informational: 6 issues
 
@@ -121,8 +121,7 @@ The following number of issues were found, categorized by their severity:
 | [H-01] | Mint function `mekHoneyJarWithETH` will revert every time                                                    | High          |
 | [H-02] | Admin account has a lot of power in the protocol and multiple ways to deny/steal users' rewards              | High          |
 | [M-01] | Possible overflow will break the logic in `HoneyBox`                                                         | Medium        |
-| [M-02] | The `mintTokenId` method in `HoneyJar` is missing a `maxTokenId` check                                       | Medium        |
-| [M-03] | Multiple flaws in the gate reset logic in `Gatekeeper`                                                       | Medium        |
+| [M-02] | Multiple flaws in the gate reset logic in `Gatekeeper`                                                       | Medium        |
 | [L-01] | The `BURNER` role and `burn` method are not usable                                                           | Low           |
 | [L-02] | Discrepancy between implementation and docs                                                                  | Low           |
 | [L-03] | The Checks-Effects-Interactions pattern is not followed                                                      | Low           |
@@ -311,25 +310,7 @@ The comment is wrong, as it assumes that the cast is safe and will revert if `sl
 
 Use a `SafeCast` library or revert if `slumberPartyList.length > 255`.
 
-# [M-02] The `mintTokenId` method in `HoneyJar` is missing a `maxTokenId` check
-
-## Severity
-
-**Impact:**
-High, as it can break an important protocol invariant
-
-**Likelihood:**
-Low, as it requires a malicious/compromised `MINTER`
-
-## Description
-
-While the `mintOne` and `batchMint` methods in `HoneyJar` check if the token ID that is about to be minted is over the `maxTokenId`, the `mintTokenId` method does not. If a malicious minter calls `mintTokenId` with ID of 10000000 it will work even though the `maxTokenId` might be 100.
-
-## Recommendations
-
-Add a check that the `tokenId_` argument is not bigger than `maxTokenId`.
-
-# [M-03] Multiple flaws in the gate reset logic in `Gatekeeper`
+# [M-02] Multiple flaws in the gate reset logic in `Gatekeeper`
 
 ## Severity
 
