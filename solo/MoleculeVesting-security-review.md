@@ -105,7 +105,7 @@ Low, as a special type of ERC20 token has to be used as well as the attacker's a
 
 ## Description
 
-Some tokens, for example `USDC` and `USDT` implement an admin controlled address block list. All transfer to a blocked address will revert. Since the `revoke` functionality forcefully transfers the claimable vested tokens to an address with a `vestingSchedule`, all calls to `revoke` will revert if such an address has claimable balance and is in the token's block list.
+Some tokens, for example `USDC` and `USDT` implement an admin controlled address block list. All transfers to a blocked address will revert. Since the `revoke` functionality forcefully transfers the claimable vested tokens to an address with a `vestingSchedule`, all calls to `revoke` will revert if such an address has claimable balance and is in the token's block list.
 
 ## Recommendations
 
@@ -140,7 +140,7 @@ Add sensible lower and upper bounds for all arguments of the `createVestingSched
 
 ## Discussion
 
-**pashov:** Fixed.
+**pashov:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [M-03] Contract can receive ETH but has no withdraw function for it
 
@@ -162,7 +162,7 @@ Remove the `receive` and `fallback` functions since the ETH balance is not used 
 
 ## Discussion
 
-**pashov:** Fixed.
+**pashov:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [M-04] Users won't be able to claim vested tokens when contract is paused
 
@@ -190,7 +190,7 @@ Remove the `whenNotPaused` modifier from `releaseAvailableTokensForHolder`, so u
 
 ## Discussion
 
-**pashov:** Fixed.
+**pashov:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [L-01] Limit the max size of the `vestingSchedulesIds` array and `holdersVestingScheduleCount`
 
@@ -198,7 +198,7 @@ If too many vesting schedules are added for a user it is possible that the `getV
 
 ## Discussion
 
-**pashov:** Fixed.
+**pashov:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
 
 # [L-02] The `onlyIfVestingScheduleNotRevoked` modifier will not revert even if the given `vestingScheduleId` is non-existent
 
@@ -206,4 +206,4 @@ The modifier will pass successfully when the `vestingScheduleId` passed is of a 
 
 ## Discussion
 
-**pashov:** Fixed.
+**pashov:** Fixed in [8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f](https://github.com/moleculeprotocol/token-vesting-contract/commit/8f8f786d95ee8db1e3d3ae96e26a86b7e250de0f).
