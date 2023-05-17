@@ -226,7 +226,7 @@ In `_canMintHoneyJar`, revert if `slumberParties[bundleId_].publicMintTime == 0`
 High, as the VRF service provider has control over who wins the game
 
 **Likelihood:**
-High, as this is there is an incentive for a VRF provider to exploit this and it is not hard to do from his side
+High, as there is an incentive for a VRF provider to exploit this and it is not hard to do from his side
 
 ## Description
 
