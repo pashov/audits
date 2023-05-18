@@ -42,9 +42,9 @@ Some of my public security audits, reviews and contributions will be shared here
 
 ### April 2023
 
-- Undisclosed protocol - Real life assets lending & borrowing
+- [Florence Finance - real life assets lending & borrowing](solo/FlorenceFinance-security-review.md)
 - [Molecule Vesting - token vesting](solo/MoleculeVesting-security-review.md)
-- Undisclosed protocol - Oracle & rewards calculations
+- Undisclosed protocol - oracle & rewards calculations
 
 ### May 2023
 
