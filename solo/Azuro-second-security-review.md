@@ -58,8 +58,6 @@ The following number of issues were found, categorized by their severity:
 
 # Detailed Findings
 
-# [C] If two users bet, one with WETH other with `token`, and they both win but they switch their "claims" `isNative` value, one will lose a lot while other will win a lot
-
 # [C-01] Value of `leaf` argument when calling `addReserve` is hardcoded incorrectly
 
 ## Severity
