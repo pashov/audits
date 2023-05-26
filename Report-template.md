@@ -52,6 +52,8 @@ _explanation what the protocol does, some architectural comments, technical docu
 
 **_review commit hash_ - [fffffffff](url)**
 
+**_fixes review commit hash_ - [fffffffff](url)**
+
 ### Scope
 
 The following smart contracts were in scope of the audit:
