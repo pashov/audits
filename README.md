@@ -27,7 +27,7 @@ Some of my public security audits, reviews and contributions will be shared here
 
 13. [Hypercerts - ERC1155 certificates for contribution](solo/Hypercerts-security-review.md)
 14. [Metalabel - ERC721 collection releasing, second review](solo/Metalabel-second-security-review.md)
-15. Azuro - decentralized betting, second review
+15. [Azuro - decentralized betting, second review](solo/Azuro-second-security-review.md)
 16. [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
 17. Parcell Payroll - Gnosis Safe payroll management, second review (team audit)
 18. [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
@@ -49,10 +49,11 @@ Some of my public security audits, reviews and contributions will be shared here
 ### May 2023
 
 27. Azuro - decentralized betting, third review
+28. Ambire - smart wallet
 
 ## Stats
 
-16 security reviews with Critical/High severity vulnerabilities found.
+17 security reviews with Critical/High severity vulnerabilities found.
 
 ## Other
 
