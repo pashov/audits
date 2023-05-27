@@ -49,7 +49,8 @@ Some of my public security audits, reviews and contributions will be shared here
 ### May 2023
 
 27. Azuro - decentralized betting, third review
-28. Ambire - smart wallet
+28. [Ambire - smart wallet](solo/Ambire-security-review.md)
+29. Undisclosed protocol - on-chain raffles
 
 ## Stats
 
