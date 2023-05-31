@@ -6,12 +6,12 @@ Some of my public security audits, reviews and contributions will be shared here
 
 1. [Ninja Yield - yield aggregator](solo/NinjaYielder-security-review.md)
 2. [Zerem - DeFi Circuit Breaker](solo/Zerem-security-review.md)
-3. PoseidonDAO - ERC20 & ERC1155 hybrid (OakSecurity solo audit)
+3. [PoseidonDAO - ERC20 & ERC1155 hybrid (OakSecurity team audit)](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Poseidon%20DAO%20%5B09.12.2022%5D.pdf)
 
 ### December 2022
 
 4. [Arcana - extension of ERC721A](solo/Arcana-security-review.md)
-5. Undisclosed protocol - Governance & Access control (Sub7 Security solo audit)
+5. Undisclosed protocol - Governance & Access control (Sub7 Security team audit)
 6. [Cadmos Finance - assets management](solo/CadmosFinance-security-review.md)
 7. [GMD - yield aggregator](solo/GMD-security-review.md)
 8. [Azuro - decentralized betting](solo/Azuro-security-review.md)
@@ -19,7 +19,7 @@ Some of my public security audits, reviews and contributions will be shared here
 ### January 2023
 
 9. [Polygon zkEVM - L1-L2 bridge & L2 state management (Spearbit team audit)](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/audits/zkEVM-bridge-Spearbit-27-March.pdf)
-10. Undisclosed protocol - token vesting (Sub7 Security solo audit)
+10. Undisclosed protocol - token vesting (Sub7 Security team audit)
 11. [Mugen - cross-chain DEX adapter](solo/Mugen-security-review.md)
 12. [Metalabel - ERC721 collection releasing](solo/Metalabel-security-review.md)
 
