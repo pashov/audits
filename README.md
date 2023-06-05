@@ -50,11 +50,12 @@ Some of my public security audits, reviews and contributions will be shared here
 
 27. Azuro - decentralized betting, third review
 28. [Ambire - smart wallet](solo/Ambire-security-review.md)
-29. Undisclosed protocol - on-chain raffles
+29. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
+30. Undisclosed protocol - intellectual properties NFTs & fundraises
 
 ## Stats
 
-17 security reviews with Critical/High severity vulnerabilities found.
+18 security reviews with Critical/High severity vulnerabilities found.
 
 ## Other
 
