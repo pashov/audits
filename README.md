@@ -29,7 +29,7 @@ Some of my public security audits, reviews and contributions will be shared here
 14. [Metalabel - ERC721 collection releasing, second review](solo/Metalabel-second-security-review.md)
 15. [Azuro - decentralized betting, second review](solo/Azuro-second-security-review.md)
 16. [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
-17. Parcell Payroll - Gnosis Safe payroll management, second review (team audit)
+17. [Parcell Payroll - Gnosis Safe payroll management, second review](https://cantina.xyz/portfolio/cantina_parcel_feb2023.pdf) (Cantina team audit)
 18. [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
 19. Arcana - extension of ERC721A, second review
 20. [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
@@ -52,10 +52,18 @@ Some of my public security audits, reviews and contributions will be shared here
 28. [Ambire - smart wallet](solo/Ambire-security-review.md)
 29. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
 30. [IPNFT - intellectual properties NFTs & fundraises](solo/IPNFT-security-review.md)
+31. Undisclosed protocol - credit market (team audit)
+32. Bloom - leveraged treasury bills positions
+
+### June 2023
+
+33. Bear Cave/Honey Jar - NFT games, second review
+34. NFT Loots - ERC721 lootboxes
+35. PunksBids - bidding & matching platform for CryptoPunks
 
 ## Stats
 
-18 security reviews with Critical/High severity vulnerabilities found.
+23 security reviews with Critical/High severity vulnerabilities found.
 
 ## Other
 

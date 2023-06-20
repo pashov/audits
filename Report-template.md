@@ -16,23 +16,7 @@ _explanation what the protocol does, some architectural comments, technical docu
 
 ## Observations
 
-# Threat Model
-
 ## Privileged Roles & Actors
-
-## Security Interview
-
-**Q:** What in the protocol has value in the market?
-
-**A:**
-
-**Q:** In what case can the protocol/users lose money?
-
-**A:**
-
-**Q:** What are some ways that an attacker achieves his goals?
-
-**A:**
 
 # Severity classification
 

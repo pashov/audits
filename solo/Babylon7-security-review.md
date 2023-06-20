@@ -83,7 +83,7 @@ The Core Contract Owner can try to exploit the creator's allowances and steal hi
 
 **_review commit hash_ - [b5de7e8384df77ac5f04abe012fd6a22388ef436](https://github.com/babylon-art/babylon7-contracts/tree/b5de7e8384df77ac5f04abe012fd6a22388ef436)**
 
-**_fixes review commit hash_ - [4d80d9fb8b7c4028c96ed814b6dd7619970507af](https://github.com/babylon-art/babylon7-contracts/tree/4d80d9fb8b7c4028c96ed814b6dd7619970507af)**
+**_fixes review commit hash_ - [524e190518e7b10f4f22eb613d293d66160c1a3c](https://github.com/babylon-art/babylon7-contracts/tree/524e190518e7b10f4f22eb613d293d66160c1a3c)**
 
 ### Scope
 
