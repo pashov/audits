@@ -53,17 +53,18 @@ Some of my public security audits, reviews and contributions will be shared here
 29. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
 30. [IPNFT - intellectual properties NFTs & fundraises](solo/IPNFT-security-review.md)
 31. Undisclosed protocol - credit market (team audit)
-32. Bloom - leveraged treasury bills positions
+32. [Bloom - leveraged treasury bills positions](solo/Bloom-security-review.md)
 
 ### June 2023
 
 33. Bear Cave/Honey Jar - NFT games, second review
 34. NFT Loots - ERC721 lootboxes
 35. PunksBids - bidding & matching platform for CryptoPunks
+36. Protectorate - yield aggregation with vesting & staking
 
 ## Stats
 
-23 security reviews with Critical/High severity vulnerabilities found.
+24 security reviews with Critical/High severity vulnerabilities found.
 
 ## Other
 
