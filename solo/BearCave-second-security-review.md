@@ -70,7 +70,7 @@ The following number of issues were found, categorized by their severity:
 
 - Critical & High: 3 issues
 - Medium: 3 issues
-- Low: 2 issues
+- Low: 1 issue
 
 ---
 
@@ -85,7 +85,6 @@ The following number of issues were found, categorized by their severity:
 | [M-02] | Contract `HibernationDen` can receive ETH but it can't be withdrawn | Medium   |
 | [M-03] | Centralization attack vectors are present in the code               | Medium   |
 | [L-01] | Not enforced checkpoints gap size                                   | Low      |
-| [L-02] | Random numbers that are `< numHoneyJars` will be problematic        | Low      |
 
 # Detailed Findings
 
@@ -233,14 +232,3 @@ For the `checkpoints` field in the `SlumberParty` struct we have the following c
 > /// @dev the gap between checkpoints MUST be big enough so that a user can't mint through multiple checkpoints.
 
 This is just an assumption, as the place where the `checkpoints` value is set (`HibernationDen::addBundle`) does not actually enforce this. This couldn't actually lead to a serious problem but it is best that the comment is removed and actual checks & validations are implemented in the code, so the gap between the set checkpoints can't be too small.
-
-# [L-02] Random numbers that are `< numHoneyJars` will be problematic
-
-Chainlink's VRF supplies the `HibernationDen` contract with random values. If any of the random values is `< numHoneyJars`, then this code will revert with index out of bounds error:
-
-```solidity
-fermentedIndex = randomNumbers[i] % numHoneyJars;
-fermentedJars[i] = honeyJarIds[fermentedIndex];
-```
-
-If `randomNumbers[i] < numHoneyJars` then `fermentedIndex` will be `numHoneyJars` which is the max index + 1 of the `honeyJarIds` array. While this is very highly unlikely due to the randomness of VRF and the small chance of it returning such a low value, it is still good to add a validation to protect from this.

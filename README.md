@@ -62,6 +62,7 @@ Some of my public security audits, reviews and contributions will be shared here
 35. PunksBids - bidding & matching platform for CryptoPunks
 36. Protectorate - yield aggregation with vesting & staking
 37. Portals - call aggregator
+38. Topia - lockup staking
 
 ## Stats
 
