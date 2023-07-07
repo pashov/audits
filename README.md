@@ -58,7 +58,7 @@ Some of my public security audits, reviews and contributions will be shared here
 ### June 2023
 
 33. [Bear Cave/Honey Jar - NFT games, second review](solo/BearCave-second-security-review.md)
-34. NFT Loots - ERC721 lootboxes
+34. [NFT Loots - ERC721 lootboxes](solo/NFTLoots-security-review.md)
 35. PunksBids - bidding & matching platform for CryptoPunks
 36. Protectorate - yield aggregation with vesting & staking
 37. Portals - call aggregator
