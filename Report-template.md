@@ -1,6 +1,6 @@
 # Introduction
 
-A time-boxed security review of the **protocol name** protocol was done by **pashov**, with a focus on the security aspects of the application's implementation.
+A time-boxed security review of the **protocol name** protocol was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # Disclaimer
 
@@ -8,7 +8,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # About **pashov**
 
-Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
 
 # About **ProtocolName**
 
@@ -45,22 +45,16 @@ The following smart contracts were in scope of the audit:
 - `SmartContractName`
 - `SmartContractName`
 
-The following number of issues were found, categorized by their severity:
-
-- Critical & High: x issues
-- Medium: x issues
-- Low: x issues
-
 ---
 
 # Findings Summary
 
-| ID     | Title                   | Severity |
-| ------ | ----------------------- | -------- |
-| [C-01] | Any Critical Title Here | Critical |
-| [H-01] | Any High Title Here     | High     |
-| [M-01] | Any Medium Title Here   | Medium   |
-| [L-01] | Any Low Title Here      | Low      |
+| ID     | Title                   | Severity | Status |
+| ------ | ----------------------- | -------- | ------ |
+| [C-01] | Any Critical Title Here | Critical | Fixed  |
+| [H-01] | Any High Title Here     | High     | Fixed  |
+| [M-01] | Any Medium Title Here   | Medium   | Fixed  |
+| [L-01] | Any Low Title Here      | Low      | Fixed  |
 
 # Detailed Findings
 
