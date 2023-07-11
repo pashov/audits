@@ -46,7 +46,7 @@ Bidders should give the `PunksBids` contract allowance to spend their `WETH`.
 
 **_review commit hash_ - [c783b2aa8d4a9e9efd631e921e2c3b21a2c26f18](https://github.com/datschill/PunksBidsSolidity/tree/c783b2aa8d4a9e9efd631e921e2c3b21a2c26f18)**
 
-**_fixes review commit hash_ - [fffffffff](url)**
+**_fixes review commit hash_ - [ba24b1f9e51091341e1775bcd7f5fd6d31892615](https://github.com/HoodLabs/PunksBidsSolidity/tree/ba24b1f9e51091341e1775bcd7f5fd6d31892615)**
 
 ### Scope
 
@@ -60,7 +60,7 @@ The following number of issues were found, categorized by their severity:
 
 - Critical & High: 0 issues
 - Medium: 1 issues
-- Low: 3 issues
+- Low: 2 issues
 
 ---
 
@@ -69,9 +69,8 @@ The following number of issues were found, categorized by their severity:
 | ID     | Title                                                              | Severity |
 | ------ | ------------------------------------------------------------------ | -------- |
 | [M-01] | Malicious owner could arbitrage sales                              | Medium   |
-| [L-01] | The `punkBaseType` is not matched properly                         | Low      |
-| [L-02] | The `chainId` is cached but might change                           | Low      |
-| [L-03] | The `ecrecover` precompile is vulnerable to signature malleability | Low      |
+| [L-01] | The `chainId` is cached but might change                           | Low      |
+| [L-02] | The `ecrecover` precompile is vulnerable to signature malleability | Low      |
 
 # Detailed Findings
 
@@ -97,22 +96,22 @@ Currently, the `setFeeRate` and `setLocalFeeRate` methods do not have an upper b
 
 Set upper bounds (limits) to both `setFeeRate` and `setLocalFeeRate` methods and revert if the value getting set is higher. This way users will know that fees can maximally go up to a particular number.
 
-# [L-01] The `punkBaseType` is not matched properly
+## Discussion
 
-In the `_canMatchBidAndPunk` method, the way the base type of a punk is matched is the following:
+**pashov:** Fixed.
 
-```solidity
-if (!punkBaseType.contains(bid.baseType.toSlice())) {
-    revert InvalidPunkBaseType();
-}
-```
-
-The problem is that `contains` is used instead of `equals`. Now if the `bid.baseType.toSlice()` is a word that is just a part of `punkBaseType` this wouldn't revert. This is highly unlikely though, because case sensitivity matters and can't become an actual problem, but should still be handled.
-
-# [L-02] The `chainId` is cached but might change
+# [L-01] The `chainId` is cached but might change
 
 Caching the `chainId` value is not a good practice as hard forks might change the chainId for a network. The better solution is to always check if the current `block.chainid` is the same as the cached one and if not, to update it. Follow the approach in [OpenZeppelin's EIP712 implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/2271e2c58d007894c5fe23c4f03a95f645ac9175/contracts/utils/cryptography/EIP712.sol#L81-L87).
 
-# [L-03] The `ecrecover` precompile is vulnerable to signature malleability
+## Discussion
+
+**pashov:** Acknowledged.
+
+# [L-02] The `ecrecover` precompile is vulnerable to signature malleability
 
 By flipping `s` and `v` it is possible to create a different signature that will amount to the same hash & signer. This is fixed in OpenZeppelin's ECDSA library like [this](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/dfef6a68ee18dbd2e1f5a099061a3b8a0e404485/contracts/utils/cryptography/ECDSA.sol#L125-L136). While this is not a problem since there is the `canceledOrFilled` mapping, it is still highly recommended that problem is addressed by using ECDSA.
+
+## Discussion
+
+**pashov:** Fixed.
