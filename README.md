@@ -60,7 +60,7 @@ Some of my public security audits, reviews and contributions will be shared here
 33. [Bear Cave/Honey Jar - NFT games, second review](solo/BearCave-second-security-review.md)
 34. [NFT Loots - ERC721 lootboxes](solo/NFTLoots-security-review.md)
 35. [PunksBids - bidding & matching platform for CryptoPunks](solo/PunksBids-security-review.md)
-36. Protectorate - yield aggregation with vesting & staking
+36. [Protectorate - yield aggregation with vesting & staking](solo/Protectorate-security-review.md)
 37. Portals - call aggregator
 38. Topia - lockup staking
 
