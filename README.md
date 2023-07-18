@@ -61,12 +61,18 @@ Some of my public security audits, reviews and contributions will be shared here
 34. [NFT Loots - ERC721 lootboxes](solo/NFTLoots-security-review.md)
 35. [PunksBids - bidding & matching platform for CryptoPunks](solo/PunksBids-security-review.md)
 36. [Protectorate - yield aggregation with vesting & staking](solo/Protectorate-security-review.md)
-37. Portals - call aggregator
+37. [Portals - call aggregator](solo/Portals-security-review.md)
 38. Topia - lockup staking
+
+### July 2023
+
+39.
 
 ## Stats
 
-24 security reviews with Critical/High severity vulnerabilities found.
+- Over 30 Critical/High severity vulnerabilities found
+- More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
+- Over $30,000,000 of TVL is held by the contracts that have been audited by `pashov`
 
 ## Other
 
