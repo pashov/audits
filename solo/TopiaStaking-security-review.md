@@ -71,8 +71,8 @@ The following number of issues were found, categorized by their severity:
 | ------ | -------------------------------------------------------------- | -------- |
 | [C-01] | Rewards calculation error will result in 0 rewards for users   | Critical |
 | [M-01] | Multiple centralization vulnerabilities can break the protocol | Medium   |
-| [M-01] | Rewards can possibly be left stuck in contract                 | Medium   |
-| [M-01] | Staking won't work correctly with non-standard ERC20 tokens    | Medium   |
+| [M-02] | Rewards can possibly be left stuck in contract                 | Medium   |
+| [M-03] | Staking won't work correctly with non-standard ERC20 tokens    | Medium   |
 | [L-01] | Precision loss due to division before multiplication           | Low      |
 
 # Detailed Findings
