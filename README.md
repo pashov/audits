@@ -62,7 +62,7 @@ Some of my public security audits, reviews and contributions will be shared here
 35. [PunksBids - bidding & matching platform for CryptoPunks](solo/PunksBids-security-review.md)
 36. [Protectorate - yield aggregation with vesting & staking](solo/Protectorate-security-review.md)
 37. [Portals - call aggregator](solo/Portals-security-review.md)
-38. Topia - lockup staking
+38. [Topia Staking - lockup staking](solo/TopiaStaking-security-review.md)
 
 ### July 2023
 
