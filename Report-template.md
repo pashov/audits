@@ -51,14 +51,14 @@ The following smart contracts were in scope of the audit:
 
 | ID     | Title                   | Severity | Status |
 | ------ | ----------------------- | -------- | ------ |
-| [C-01] | Any Critical Title Here | Critical | Fixed  |
-| [H-01] | Any High Title Here     | High     | Fixed  |
-| [M-01] | Any Medium Title Here   | Medium   | Fixed  |
-| [L-01] | Any Low Title Here      | Low      | Fixed  |
+| [C-01] | Any Critical Title Here | Critical | TBD    |
+| [H-01] | Any High Title Here     | High     | TBD    |
+| [M-01] | Any Medium Title Here   | Medium   | TBD    |
+| [L-01] | Any Low Title Here      | Low      | TBD    |
 
 # Detailed Findings
 
-# [S-01] {name}
+# [S-01] VulnerabilityHeadline
 
 ## Severity
 
