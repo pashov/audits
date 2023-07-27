@@ -66,11 +66,12 @@ Some of my public security audits, reviews and contributions will be shared here
 
 ### July 2023
 
-39.
+39. Undisclosed protocol - ERC721A Launchpad
+40. Undisclosed protocol - Uniswap V3 fork
 
 ## Stats
 
-- Over 30 Critical/High severity vulnerabilities found
+- Over 40 Critical/High severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
 - Over $30,000,000 of TVL is held by the contracts that have been audited by `pashov`
 
