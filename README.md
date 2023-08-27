@@ -66,12 +66,18 @@ Some of my public security audits, reviews and contributions will be shared here
 
 ### July 2023
 
-39. Undisclosed protocol - ERC721A Launchpad
+39. [Baton Launchpad - ERC721A Launchpad](solo/BatonLaunchpad-security-review.md)
 40. Undisclosed protocol - Uniswap V3 fork
+
+### August 2023
+
+41. WERC721 - ERC721 wrapper
+42. Smoothly - MEV rewards pooling
+43. Undisclosed protocol - treasury management (team audit)
 
 ## Stats
 
-- Over 40 Critical/High severity vulnerabilities found
+- Over 50 Critical/High severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
 - Over $30,000,000 of TVL is held by the contracts that have been audited by `pashov`
 
