@@ -71,15 +71,18 @@ Some of my public security audits, reviews and contributions will be shared here
 
 ### August 2023
 
-41. WERC721 - ERC721 wrapper
+41. [WERC721 - ERC721 wrapper](solo/WERC721-security-review.md)
 42. Smoothly - MEV rewards pooling
 43. Undisclosed protocol - treasury management (team audit)
+44. Undisclosed protocol - voting escrow & vesting
+45. Undisclosed protocol - ERC20 plugins
+46. Undisclosed protocol - staking & vesting
 
 ## Stats
 
 - Over 50 Critical/High severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
-- Over $30,000,000 of TVL is held by the contracts that have been audited by `pashov`
+- Over $30,000,000 of TVL is held by the contracts that have been audited by **pashov**
 
 ## Other
 
