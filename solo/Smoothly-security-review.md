@@ -63,7 +63,7 @@ The following smart contracts were in scope of the audit:
 | ID     | Title                                                                                 | Severity | Status       |
 | ------ | ------------------------------------------------------------------------------------- | -------- | ------------ |
 | [C-01] | Operators can cast an extra vote to get voting majority                               | Critical | Fixed        |
-| [C-02] | Operator can still claim rewards after being removed from governance                  | High     | Fixed        |
+| [C-02] | Operator can still claim rewards after being removed from governance                  | Critical | Fixed        |
 | [H-01] | Large centralization attack surface                                                   | High     | Acknowledged |
 | [M-01] | Operator might be unable to withdraw rewards due to gas limit                         | Medium   | Fixed        |
 | [M-02] | The stake fees are not tracked on chain                                               | Medium   | Acknowledged |
