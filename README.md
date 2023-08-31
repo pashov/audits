@@ -72,11 +72,11 @@ Some of my public security audits, reviews and contributions will be shared here
 ### August 2023
 
 41. [WERC721 - ERC721 wrapper](solo/WERC721-security-review.md)
-42. Smoothly - MEV rewards pooling
+42. [Smoothly - MEV rewards pooling](solo/Smoothly-security-review.md)
 43. Undisclosed protocol - treasury management (team audit)
-44. Undisclosed protocol - voting escrow & vesting
-45. Undisclosed protocol - ERC20 plugins
-46. Undisclosed protocol - staking & vesting
+44. veTenet - voting escrow & vesting
+45. 1inch Plugins - ERC20 plugins
+46. gTrade - GNS staking & vesting
 
 ## Stats
 
