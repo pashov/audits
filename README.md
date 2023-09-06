@@ -76,7 +76,8 @@ Some of my public security audits, reviews and contributions will be shared here
 43. Undisclosed protocol - treasury management (team audit)
 44. veTenet - voting escrow & vesting
 45. 1inch Plugins - ERC20 plugins
-46. gTrade - GNS staking & vesting
+46. [gTrade - GNS staking & vesting](solo/gTrade-security-review.md)
+47. Ambire - smart wallet, second review
 
 ## Stats
 
