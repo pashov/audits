@@ -67,7 +67,7 @@ Some of my public security audits, reviews and contributions will be shared here
 ### July 2023
 
 39. [Baton Launchpad - ERC721A Launchpad](solo/BatonLaunchpad-security-review.md)
-40. Undisclosed protocol - Uniswap V3 fork
+40. [Solidly V3 AMM - Uniswap V3 fork](solo/SolidlyV3AMM-security-review.md)
 
 ### August 2023
 
