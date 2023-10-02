@@ -1,6 +1,4 @@
-# Pashov's security audits, reviews, contributions
-
-Some of my public security audits, reviews and contributions will be shared here
+# Pashov's smart contract security audits
 
 ### November 2022
 
@@ -31,69 +29,66 @@ Some of my public security audits, reviews and contributions will be shared here
 16. [Parcell Payroll - Gnosis Safe payroll management](solo/ParcelPayroll-security-review.md)
 17. [Parcell Payroll - Gnosis Safe payroll management, second review](https://cantina.xyz/portfolio/cantina_parcel_feb2023.pdf) (Cantina team audit)
 18. [Punk Bid - on-chain order book for CryptoPunks](solo/PunkBid-security-review.md)
-19. Arcana - extension of ERC721A, second review
-20. [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
+19. [LizardStaking - ERC721 staking](solo/LizardStarking-security-review.md)
 
 ### March 2023
 
-21. [Rolling Dutch Auction - dutch auction](solo/RollingDutchAuction-security-review.md)
-22. Lizard NFT - redeployment of ERC721 collection
-23. [Bear Cave - NFT games](solo/BearCave-security-review.md)
+20. [Rolling Dutch Auction - dutch auction](solo/RollingDutchAuction-security-review.md)
+21. [Bear Cave - NFT games](solo/BearCave-security-review.md)
 
 ### April 2023
 
-24. [Florence Finance - real life assets lending & borrowing](solo/FlorenceFinance-security-review.md)
-25. [Molecule Vesting - token vesting](solo/MoleculeVesting-security-review.md)
-26. Undisclosed protocol - oracle & rewards calculations
+22. [Florence Finance - real life assets lending & borrowing](solo/FlorenceFinance-security-review.md)
+23. [Molecule Vesting - token vesting](solo/MoleculeVesting-security-review.md)
+24. Undisclosed protocol - oracle & rewards calculations
 
 ### May 2023
 
-27. Azuro - decentralized betting, third review
-28. [Ambire - smart wallet](solo/Ambire-security-review.md)
-29. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
-30. [IPNFT - intellectual properties NFTs & fundraises](solo/IPNFT-security-review.md)
-31. Undisclosed protocol - credit market (team audit)
-32. [Bloom - leveraged treasury bills positions](solo/Bloom-security-review.md)
+25. Azuro - decentralized betting, third review
+26. [Ambire - smart wallet](solo/Ambire-security-review.md)
+27. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
+28. [IPNFT - intellectual properties NFTs & fundraises](solo/IPNFT-security-review.md)
+29. Undisclosed protocol - credit market (team audit)
+30. [Bloom - leveraged treasury bills positions](solo/Bloom-security-review.md)
 
 ### June 2023
 
-33. [Bear Cave/Honey Jar - NFT games, second review](solo/BearCave-second-security-review.md)
-34. [NFT Loots - ERC721 lootboxes](solo/NFTLoots-security-review.md)
-35. [PunksBids - bidding & matching platform for CryptoPunks](solo/PunksBids-security-review.md)
-36. [Protectorate - yield aggregation with vesting & staking](solo/Protectorate-security-review.md)
-37. [Portals - call aggregator](solo/Portals-security-review.md)
-38. [Topia Staking - lockup staking](solo/TopiaStaking-security-review.md)
+31. [Bear Cave/Honey Jar - NFT games, second review](solo/BearCave-second-security-review.md)
+32. [NFT Loots - ERC721 lootboxes](solo/NFTLoots-security-review.md)
+33. [PunksBids - bidding & matching platform for CryptoPunks](solo/PunksBids-security-review.md)
+34. [Protectorate - yield aggregation with vesting & staking](solo/Protectorate-security-review.md)
+35. [Portals - call aggregator](solo/Portals-security-review.md)
+36. [Topia Staking - lockup staking](solo/TopiaStaking-security-review.md)
 
 ### July 2023
 
-39. [Baton Launchpad - ERC721A Launchpad](solo/BatonLaunchpad-security-review.md)
-40. [Solidly V3 AMM - Uniswap V3 fork](solo/SolidlyV3AMM-security-review.md)
+37. [Baton Launchpad - ERC721A Launchpad](solo/BatonLaunchpad-security-review.md)
+38. [Solidly V3 AMM - Uniswap V3 fork](solo/SolidlyV3AMM-security-review.md)
 
 ### August 2023
 
-41. [WERC721 - ERC721 wrapper](solo/WERC721-security-review.md)
-42. [Smoothly - MEV rewards pooling](solo/Smoothly-security-review.md)
-43. Undisclosed protocol - treasury management (team audit)
-44. veTenet - voting escrow & vesting
-45. [1inch Plugins - ERC20 plugins](solo/1inchTokenPlugins-security-review.md)
-46. [gTrade - GNS staking & vesting](solo/gTrade-security-review.md)
-47. Radiant - cross-chain lending & borrowing (upgrade review)
-48. [Ambire - smart wallet, second review](solo/Ambire-second-security-review.md)
+39. [WERC721 - ERC721 wrapper](solo/WERC721-security-review.md)
+40. [Smoothly - MEV rewards pooling](solo/Smoothly-security-review.md)
+41. Undisclosed protocol - treasury management (team audit)
+42. veTenet - voting escrow & vesting
+43. [1inch Plugins - ERC20 plugins](solo/1inchTokenPlugins-security-review.md)
+44. [gTrade - GNS staking & vesting](solo/gTrade-security-review.md)
+45. [Ambire - smart wallet, second review](solo/Ambire-second-security-review.md)
 
 ### September 2023
 
-49. [Museum of Mahomes - ERC721 collection](solo/MuseumOfMahomes-security-review.md)
-50. Undisclosed protocol - fixed-rate peer-to-peer lending
-51. Undisclosed protocol - proxy interactions with DeFi protocols
+46. [Museum of Mahomes - ERC721 collection](solo/MuseumOfMahomes-security-review.md)
+47. Undisclosed protocol - fixed-rate peer-to-peer lending
+48. Pino - proxy interactions with DeFi protocols
 
 ## Stats
 
-- Over 50 Critical/High severity vulnerabilities found
+- Over 60 Critical/High severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
-- Over $30,000,000 of TVL is held by the contracts that have been audited by **pashov**
+- Hundreds of millions of TVL is held by smart contracts that have been audited by **pashov**
 
 ## Other
 
 - 1st place out of ~200 people in a Code4rena contest - [VTVL](https://code4rena.com/contests/2022-09-vtvl-contest)
 
-I am available for security consulting. Reach out to me on Twitter [@pashovkrum](https://twitter.com/pashovkrum)
+I am available for security consulting. Reach out to me on Twitter [@pashovkrum](https://twitter.com/pashovkrum) or directly on Telegram [@pashovkrum](https://t.me/pashovkrum)
