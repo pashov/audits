@@ -79,7 +79,7 @@
 
 46. [Museum of Mahomes - ERC721 collection](solo/MuseumOfMahomes-security-review.md)
 47. Undisclosed protocol - fixed-rate peer-to-peer lending
-48. Pino - proxy interactions with DeFi protocols
+48. [Pino - proxy interactions with DeFi protocols](solo/Pino-security-review.md)
 
 ## Stats
 
