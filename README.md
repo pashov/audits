@@ -81,11 +81,17 @@
 47. Undisclosed protocol - fixed-rate peer-to-peer lending
 48. [Pino - proxy interactions with DeFi protocols](solo/Pino-security-review.md)
 
+### October 2023
+
+49. [Florence Finance - real life assets lending & borrowing, second review](solo/FlorenceFinance-second-security-review.md)
+50. Ethena Labs USDe - yield-bearing synthetic dollar
+
 ## Stats
 
 - Over 60 Critical/High severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
 - Hundreds of millions of TVL is held by smart contracts that have been audited by **pashov**
+- Trusted by clients like 1inch, Radiant, Ambire, Gains Network, Topia and NFT collections with >10K ETH volume ([Gitcoin Presents](https://opensea.io/collection/gitcoin-presents))
 
 ## Other
 
