@@ -84,7 +84,7 @@
 ### October 2023
 
 49. [Florence Finance - real life assets lending & borrowing, second review](solo/FlorenceFinance-second-security-review.md)
-50. Ethena Labs USDe - yield-bearing synthetic dollar
+50. [Ethena Labs USDe - yield-bearing synthetic dollar](solo/Ethena-security-review.md)
 51. [Beam - ERC20 token migration](solo/Beam-security-review.md)
 
 ## Stats
