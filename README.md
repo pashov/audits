@@ -44,7 +44,7 @@
 
 ### May 2023
 
-25. Azuro - decentralized betting, third review
+25. [Azuro - decentralized betting, third review](solo/Azuro-third-security-review.md)
 26. [Ambire - smart wallet](solo/Ambire-security-review.md)
 27. [Babylon7 - on-chain raffles](solo/Babylon7-security-review.md)
 28. [IPNFT - intellectual properties NFTs & fundraises](solo/IPNFT-security-review.md)
@@ -78,7 +78,7 @@
 ### September 2023
 
 46. [Museum of Mahomes - ERC721 collection](solo/MuseumOfMahomes-security-review.md)
-47. Undisclosed protocol - fixed-rate peer-to-peer lending
+47. [Lumin - fixed-rate peer-to-peer lending](solo/Lumin-security-review.md)
 48. [Pino - proxy interactions with DeFi protocols](solo/Pino-security-review.md)
 
 ### October 2023
@@ -86,6 +86,8 @@
 49. [Florence Finance - real life assets lending & borrowing, second review](solo/FlorenceFinance-second-security-review.md)
 50. [Ethena Labs USDe - yield-bearing synthetic dollar](solo/Ethena-security-review.md)
 51. [Beam - ERC20 token migration](solo/Beam-security-review.md)
+52. Ambire - smart wallet, third review
+53. Undisclosed protocol - Ethereum staking rewards pooling
 
 ## Stats
 
