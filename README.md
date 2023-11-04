@@ -69,7 +69,7 @@
 
 39. [WERC721 - ERC721 wrapper](solo/WERC721-security-review.md)
 40. [Smoothly - MEV rewards pooling](solo/Smoothly-security-review.md)
-41. Undisclosed protocol - treasury management (team audit)
+41. [Aera - treasury management](https://878631352-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAXweUiymNuYupkbgnMkB%2Fuploads%2F2ITFsOQUi0TISRkodvTF%2FAera-Spearbit-Security-Review-Aug2023.pdf?alt=media&token=196c1e13-7494-4246-8d8c-15ffa4f50d10) (team audit)
 42. veTenet - voting escrow & vesting
 43. [1inch Plugins - ERC20 plugins](solo/1inchTokenPlugins-security-review.md)
 44. [gTrade - GNS staking & vesting](solo/gTrade-security-review.md)
