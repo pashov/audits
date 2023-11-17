@@ -1,6 +1,6 @@
-# Pashov's smart contract security audits
+# Pashov Audit Group Smart Contract Security Audits
 
-I am available for security consulting. Reach out to me on Twitter [@pashovkrum](https://twitter.com/pashovkrum) or directly on Telegram [@pashovkrum](https://t.me/pashovkrum)
+Pashov Audit Group has availability for smart contract security audits. Reach out to me on [Twitter](https://twitter.com/pashovkrum) or [Telegram](https://t.me/pashovkrum), both @pashovkrum
 
 ### November 2022
 
@@ -95,9 +95,5 @@ I am available for security consulting. Reach out to me on Twitter [@pashovkrum]
 
 - Over 300 Critical/High/Medium severity vulnerabilities found
 - More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
-- Hundreds of millions of TVL is held in smart contracts that have been audited by **pashov**
-- Trusted by clients like Radiant, Gains Network, 1inch, Ambire, Topia and NFT collections with >10K ETH volume ([Gitcoin Presents](https://opensea.io/collection/gitcoin-presents), [Ethlizards](https://opensea.io/collection/ethlizards/activity))
-
-## Other
-
-- 1st place out of ~200 people in a Code4rena contest - [VTVL](https://code4rena.com/contests/2022-09-vtvl-contest)
+- Hundreds of millions of TVL is held in smart contracts that have been audited by **Pashov Audit Group**
+- Trusted by clients like Radiant, Gains Network, 1inch, Ambire, Solidly and NFT collections with >10K ETH volume ([Gitcoin Presents](https://opensea.io/collection/gitcoin-presents), [Ethlizards](https://opensea.io/collection/ethlizards/activity))
