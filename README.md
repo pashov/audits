@@ -88,12 +88,6 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 
 ### November 2023
 
-49. Undisclosed protocol - Ethereum staking rewards pooling
+49. Pirex - Ethereum staking rewards pooling
 50. [Pump - ERC20 launch platform](solo/pdf/Pump-security-review.pdf)
-
-## Stats
-
-- Over 300 Critical/High/Medium severity vulnerabilities found
-- More than 50% of audits end up with a Critical/High severity vulnerability reported & fixed
-- Hundreds of millions of TVL is held in smart contracts that have been audited by **Pashov Audit Group**
-- Trusted by clients like Radiant, Gains Network, 1inch, Ambire, Solidly and NFT collections with >10K ETH volume ([Gitcoin Presents](https://opensea.io/collection/gitcoin-presents), [Ethlizards](https://opensea.io/collection/ethlizards/activity))
+51. Undisclosed protocol - NFT yield earning
