@@ -68,7 +68,7 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 35. [WERC721 - ERC721 wrapper](solo/pdf/WERC721-security-review.pdf)
 36. [Smoothly - MEV rewards pooling](solo/pdf/Smoothly-security-review.pdf)
 37. [Aera - treasury management](https://878631352-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAXweUiymNuYupkbgnMkB%2Fuploads%2F2ITFsOQUi0TISRkodvTF%2FAera-Spearbit-Security-Review-Aug2023.pdf?alt=media&token=196c1e13-7494-4246-8d8c-15ffa4f50d10) (team audit)
-38. veTenet - voting escrow & vesting
+38. [veTenet - voting escrow & vesting](solo/pdf/veTenet-security-review.pdf)
 39. [1inch Plugins - ERC20 plugins](solo/pdf/1inchTokenPlugins-security-review.pdf)
 40. [gTrade - GNS staking & vesting](solo/pdf/gTrade-security-review.pdf)
 41. [Ambire - smart wallet, second review](solo/pdf/Ambire-second-security-review.pdf)
