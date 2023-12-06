@@ -90,5 +90,5 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 
 49. Pirex - Ethereum staking rewards pooling
 50. [Pump - ERC20 launch platform](solo/pdf/Pump-security-review.pdf)
-51. NFTCapsule - NFT yield earning
+51. [NFTCapsule - NFT yield earning](solo/pdf/NFTCapsule-security-review.pdf)
 52. Undisclosed protocol - token vesting
