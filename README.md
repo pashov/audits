@@ -84,10 +84,11 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 45. [Florence Finance - real life assets lending & borrowing, second review](solo/pdf/FlorenceFinance-second-security-review.pdf)
 46. [Ethena Labs USDe - yield-bearing synthetic dollar](solo/pdf/Ethena-security-review.pdf)
 47. [Beam - ERC20 token migration](solo/pdf/Beam-security-review.pdf)
-48. Ambire - smart wallet, third review
+48. [Ambire - smart wallet, third review](solo/pdf/Ambire-third-security-review.pdf)
 
 ### November 2023
 
 49. Pirex - Ethereum staking rewards pooling
 50. [Pump - ERC20 launch platform](solo/pdf/Pump-security-review.pdf)
-51. Undisclosed protocol - NFT yield earning
+51. NFTCapsule - NFT yield earning
+52. Undisclosed protocol - token vesting
