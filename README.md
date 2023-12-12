@@ -91,4 +91,8 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 49. [Pirex - Ethereum staking rewards pooling](solo/pdf/Pirex-security-review.pdf)
 50. [Pump - ERC20 launch platform](solo/pdf/Pump-security-review.pdf)
 51. [NFTCapsule - NFT yield earning](solo/pdf/NFTCapsule-security-review.pdf)
-52. Undisclosed protocol - token vesting
+
+### December 2023
+
+52. [Wrapped Elon - low decimals token wrapper](solo/pdf/WrappedElon-security-review.pdf)
+53. Undisclosed protocol - token vesting
