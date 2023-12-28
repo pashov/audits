@@ -95,4 +95,5 @@ Pashov Audit Group has availability for smart contract security audits. Reach ou
 ### December 2023
 
 52. [Wrapped Elon - low decimals token wrapper](solo/pdf/WrappedElon-security-review.pdf)
-53. Undisclosed protocol - token vesting
+53. yHairDAO Vesting - token vesting
+54. [TokenDistributor - ERC20 tokens distribution](solo/pdf/TokenDistributor-security-review.pdf)
