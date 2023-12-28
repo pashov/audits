@@ -1,13 +1,21 @@
 # About
- Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+Krum Pashov, or **pashov**, is an independent smart contract security researcher. Having found numerous security vulnerabilities in various protocols, he does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research & reviews. Check his previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
 # Introduction
- A time-boxed security review of the **Wrapped Elon** was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **Wrapped Elon** was done by **pashov**, with a focus on the security aspects of the application's smart contracts implementation.
+
 # About Wrapped Elon
- The protocols allows holders of Dogelon Mars ERC20 token to wrap them so that they are transformed to a wrapped version of the token that works better with bridging to other chains, because for example Solana doesn't work well with high decimals tokens. Bridging the wrapped version with smaller decimals resolves the integration problem.
+
+The protocols allows holders of Dogelon Mars ERC20 token to wrap them so that they are transformed to a wrapped version of the token that works better with bridging to other chains, because for example Solana doesn't work well with high decimals tokens. Bridging the wrapped version with smaller decimals resolves the integration problem.
+
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -15,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -23,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -31,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -41,11 +49,14 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [c4fff0af9d6a2eec5258ec870f5314001c48c026](https://github.com/DogelonMars/wrapped-elon/tree/c4fff0af9d6a2eec5258ec870f5314001c48c026)**
+
+**_review commit hash_ - [c4fff0af9d6a2eec5258ec870f5314001c48c026](https://github.com/DogelonMars/wrapped-elon/tree/c4fff0af9d6a2eec5258ec870f5314001c48c026)**
 
 **_fixes review commit hash_ - [a04916b3cbf1719438857701dcace126c67bb9bd](https://github.com/DogelonMars/wrapped-elon/tree/a04916b3cbf1719438857701dcace126c67bb9bd)**
+
 # Findings
- # [M-01] Centralization attack vector is present in `setEnabledState`
+
+# [M-01] Centralization attack vector is present in `setEnabledState`
 
 ## Severity
 
