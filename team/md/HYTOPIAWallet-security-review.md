@@ -1,17 +1,21 @@
 # About
- **Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **wallet** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **wallet** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About wallet
- The HYTOPIA wallet manages user accounts on the blockchain. It has functionalities such as multi-signer authority model, gasless transactions and session authorization. The wallet conforms to several standards including EIP-1271 for smart contract signatures, EIP-4337 for account abstraction, and EIP-1967 for beacon proxies. This allows HYTOPIA to create, transact, and manage users' accounts without holding total custody over their assets.
+
+The HYTOPIA wallet manages user accounts on the blockchain. It has functionalities such as multi-signer authority model, gasless transactions and session authorization. The wallet conforms to several standards including EIP-1271 for smart contract signatures, EIP-4337 for account abstraction, and EIP-1967 for beacon proxies. This allows HYTOPIA to create, transact, and manage users' accounts without holding total custody over their assets.
 
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -19,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -27,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -35,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -45,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [0d38699f148577f137e709ada64bc47fdd65924f](https://github.com/hytopiagg/wallet/tree/0d38699f148577f137e709ada64bc47fdd65924f)**
+
+**_review commit hash_ - [0d38699f148577f137e709ada64bc47fdd65924f](https://github.com/hytopiagg/wallet/tree/0d38699f148577f137e709ada64bc47fdd65924f)**
 
 **_fixes review commit hash_ - [533d5fdb12385aa50f7ce7c60f0d17d33ea7d953](https://github.com/hytopiagg/wallet/tree/533d5fdb12385aa50f7ce7c60f0d17d33ea7d953)**
 
@@ -74,7 +79,8 @@ The following smart contracts were in scope of the audit:
 - `interfaces/**`
 
 # Findings
- # [H-01] Missing `payable` function
+
+# [H-01] Missing `payable` function
 
 ## Severity
 
@@ -97,8 +103,6 @@ File: contracts\modules\Calls\Calls.sol
 
 - Add payable modifier to the related functions
 - Add `receive()` function
-
-
 
 # [H-02] Threshold conflicts with removing controllers
 
@@ -155,8 +159,6 @@ Imagine `totalWeight` of 100 should be decreased by 20, when the current thresho
 
 Also, it must be noted that the same thing is relevant to `updateControllerWeight()` as it can be used to decrease weight for a given controller, and `totalWeight` is decreased there as well.
 
-
-
 # [H-03] Wallet initialize frontrun
 
 ## Severity
@@ -191,8 +193,6 @@ One of the ideas:
 ## Recommendations
 
 Ensure the `initialize()` is called in the same transaction as the wallet deployment.
-
-
 
 # [M-01] `RestrictedFunction` could miss come cases
 
@@ -242,8 +242,6 @@ File: contracts\modules\SessionCalls\SessionCalls.sol
 
 - just remove `MAGIC_CONTRACT_ALL_FUNCTION_SELECTORS` option, or restrict it to privileged roles
 
-
-
 # [M-02] Working with signatures - nonce and expiry
 
 ## Severity
@@ -283,15 +281,11 @@ There are two problems why it is possible:
    `meetsControllersThreshold()` is a perfect place for this logic.
 2. Add some `expiredAt` arguments in inputs, add it to hash
 
-
-
 # [L-01] CallRequestPreauthorization additional checks
 
 `PreauthorizedCalls.preauthorizeCall()` accepts `CallRequestPreauthorization` as input.
 Now only .maxCalls checked
 Consider additionally checking that `lastCallTimestamp != 0` because it is an expected condition for further usage of `preauthorizedCall()`.
-
-
 
 # [L-02] addControllers() does not check existing controllers
 
@@ -305,5 +299,3 @@ In this case `totalWeights` will be increased, but `weights[_controller]` will b
 As a result, `totalWeights` will exceed the sum of weights[] for all controllers.
 
 `_addController()` should check that the current weight of the new controller is zero before the new weight is written.
-
-
