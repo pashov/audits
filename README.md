@@ -17,7 +17,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Twitt
 ### Q1 2024
 
 8. Arcadia - decentralized margin protocol
-9. Brrito - yield-bearing ETH derivative
+9. [Brrito - yield-bearing ETH derivative](team/pdf/Brrito-security-review.pdf)
 10. [Kekotron - multi-chain, multi-factory router](team/pdf/Kekotron-security-review.pdf)
 11. Ebisu - ERC4626 vault
 
