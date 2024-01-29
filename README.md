@@ -20,6 +20,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Twitt
 9. [Brrito - yield-bearing ETH derivative](team/pdf/Brrito-security-review.pdf)
 10. [Kekotron - multi-chain, multi-factory router](team/pdf/Kekotron-security-review.pdf)
 11. Ebisu - ERC4626 vault
+12. Rest - Liquid Restaking Token
+13. Saffron - Fixed Income Vaults
+14. AstrolabDAO - yield strategies
 
 ## All Pashov Audit Group solo audits by pashov
 
