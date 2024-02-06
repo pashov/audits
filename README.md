@@ -1,6 +1,8 @@
 # Pashov Audit Group Smart Contract Security Audits
 
-Reach out for a Pashov Audit Group smart contract security audit to me on [Twitter](https://twitter.com/pashovkrum) or [Telegram](https://t.me/pashovkrum), both @pashovkrum
+[www.pashov.net](https://www.pashov.net/)
+
+Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
 
 ## All Pashov Audit Group team audits
 
@@ -23,7 +25,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Twitt
 12. Rest - Liquid Restaking Token
 13. [Saffron - Fixed Income Vaults](team/pdf/Saffron-security-review.pdf)
 14. AstrolabDAO - yield strategies
-
-## All Pashov Audit Group solo audits by pashov
-
-[50 Smart Contract Security Solo Audits by pashov](solo/README.md)
+15. Subsquid - distributed query engine
