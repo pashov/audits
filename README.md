@@ -25,4 +25,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 12. Rest - Liquid Restaking Token
 13. [Saffron - Fixed Income Vaults](team/pdf/Saffron-security-review.pdf)
 14. AstrolabDAO - yield strategies
-15. Subsquid - distributed query engine
+15. [Subsquid - distributed query engine](team/pdf/Subsquid-security-review.pdf)
