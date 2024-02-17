@@ -21,7 +21,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 8. [Arcadia - decentralized margin protocol](team/pdf/Arcadia-security-review.pdf)
 9. [Brrito - yield-bearing ETH derivative](team/pdf/Brrito-security-review.pdf)
 10. [Kekotron - multi-chain, multi-factory router](team/pdf/Kekotron-security-review.pdf)
-11. Ebisu - ERC4626 vault
+11. [Ebisu - ERC4626 vault](team/pdf/Ebisu-security-review.pdf)
 12. Rest - Liquid Restaking Token
 13. [Saffron - Fixed Income Vaults](team/pdf/Saffron-security-review.pdf)
 14. [Astrolab - yield strategies](team/pdf/Astrolab-security-review.pdf)
