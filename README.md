@@ -26,3 +26,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 13. [Saffron - Fixed Income Vaults](team/pdf/Saffron-security-review.pdf)
 14. [Astrolab - yield strategies](team/pdf/Astrolab-security-review.pdf)
 15. [Subsquid - distributed query engine](team/pdf/Subsquid-security-review.pdf)
+16. TapiocaDAO - periphery contracts
+17. Increment - Perpetuals AMM
+18. [Pupniks - NFT sale](team/pdf/Pupniks-security-review.pdf)
