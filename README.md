@@ -29,3 +29,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 16. TapiocaDAO - periphery contracts
 17. Increment - Perpetuals AMM
 18. [Pupniks - NFT sale](team/pdf/Pupniks-security-review.pdf)
+19. [Hytopia - Ethereum L2 Rollup](team/pdf/Hytopia-security-review.pdf)
+20. Ethena -
