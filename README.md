@@ -27,7 +27,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 14. [Astrolab - yield strategies](team/pdf/Astrolab-security-review.pdf)
 15. [Subsquid - distributed query engine](team/pdf/Subsquid-security-review.pdf)
 16. TapiocaDAO - periphery contracts
-17. Increment - perpetuals AMM
+17. [Increment - perpetuals AMM](team/pdf/Increment-security-review.pdf)
 18. [Pupniks - NFT sale](team/pdf/Pupniks-security-review.pdf)
 19. [Hytopia - Ethereum L2 Rollup](team/pdf/Hytopia-security-review.pdf)
 20. [Ethena - rewards distribution](team/pdf/Ethena-security-review-february.pdf)
+21. Azuro - betting engine
+22. Gains Network - leveraged trading protocol
