@@ -33,5 +33,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 20. [Ethena - rewards distribution](team/pdf/Ethena-security-review-february.pdf)
 21. [Azuro - betting engine](team/pdf/Azuro_security_review.pdf)
 22. Gains Network - leveraged trading protocol
-23. Undisclosed
-24. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
+23. [Spectra - interest rate derivatives](team/pdf/Spectra-security-review.pdf)
+24. Undisclosed
+25. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
+26. Undisclosed
