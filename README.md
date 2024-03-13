@@ -36,4 +36,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 23. [Spectra - interest rate derivatives](team/pdf/Spectra-security-review.pdf)
 24. Undisclosed
 25. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
-26. Undisclosed
+26. [Frontrun Market - OTC trading](team/pdf/FrontrunMarket-security-review.pdf)
