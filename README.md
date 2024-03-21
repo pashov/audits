@@ -14,7 +14,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 4. [Gains Network - leveraged trading protocol](team/pdf/GainsNetwork-security-review.pdf)
 5. [HYTOPIA wallet - smart contract wallet](team/pdf/HYTOPIAWallet-security-review.pdf)
 6. [Catalyst - ERC1155 bonding curve market](team/pdf/Catalyst-security-review.pdf)
-7. Ethena - synthetic dollar
+7. [Ethena - synthetic dollar](team/pdf/Ethena-security-review.pdf)
 
 ### Q1 2024
 
@@ -37,3 +37,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 24. Undisclosed
 25. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
 26. [Frontrun Market - OTC trading](team/pdf/FrontrunMarket-security-review.pdf)
+27. Undisclosed
+28. Fyde - strategies
