@@ -38,4 +38,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 25. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
 26. [Frontrun Market - OTC trading](team/pdf/FrontrunMarket-security-review.pdf)
 27. Undisclosed
-28. Fyde - strategies
+28. [Fyde - strategies](team/pdf/Fyde-security-review.pdf)
