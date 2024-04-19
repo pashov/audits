@@ -37,7 +37,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 24. [Sofamon - bonding curve NFT sale](team/pdf/Sofamon-security-review.pdf)
 25. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
 26. [Frontrun Market - OTC trading](team/pdf/FrontrunMarket-security-review.pdf)
-27. Undisclosed - ERC20 market factory
+27. Pump - ERC20 market factory
 28. [Fyde - strategies](team/pdf/Fyde-security-review.pdf)
 29. [Mass - account abstraction](team/pdf/Mass-security-review.pdf)
 30. [Forgotten Playland ToyBox - NFT sale](team/pdf/ForgottenPlayland-security-review.pdf)
@@ -46,7 +46,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 ### Q2 2024
 
-32. Undisclosed
-33. Undisclosed
+32. Wagmi
+33. [Catalyst - ERC1155 bonding curve market](team/pdf/Catalyst-security-review-april.pdf)
 34. Undisclosed
 35. Undisclosed
+36. Undisclosed
+37. Undisclosed
+38. Undisclosed
+39. Undisclosed
+40. Undisclosed
