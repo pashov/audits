@@ -46,7 +46,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 ### Q2 2024
 
-32. Wagmi
+32. [Wagmi - leverage protocol](team/pdf/Wagmi-security-review.pdf)
 33. [Catalyst - ERC1155 bonding curve market](team/pdf/Catalyst-security-review-april.pdf)
 34. Undisclosed
 35. Undisclosed
