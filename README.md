@@ -49,7 +49,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 32. [Wagmi - leverage protocol](team/pdf/Wagmi-security-review.pdf)
 33. [Catalyst - ERC1155 bonding curve market](team/pdf/Catalyst-security-review-april.pdf)
 34. Undisclosed
-35. Undisclosed
+35. [Karak - restaking protocol](team/pdf/Karak-security-review.pdf)
 36. Undisclosed
 37. Undisclosed
 38. [Open Dollar - overcollateralized stablecoin](team/pdf/OpenDollar-security-review.pdf)
