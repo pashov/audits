@@ -52,6 +52,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 35. Undisclosed
 36. Undisclosed
 37. Undisclosed
-38. Undisclosed
+38. [Open Dollar - overcollateralized stablecoin](team/pdf/OpenDollar-security-review.pdf)
 39. Undisclosed
 40. Undisclosed
