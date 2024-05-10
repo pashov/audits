@@ -40,7 +40,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 27. [Fyde - strategies](team/pdf/Fyde-security-review.pdf)
 28. [Mass - account abstraction](team/pdf/Mass-security-review.pdf)
 29. [Forgotten Playland ToyBox - NFT sale](team/pdf/ForgottenPlayland-security-review.pdf)
-30. 1inch
+30. [1inch - limit order protocol](team/pdf/1inch-security-review.pdf)
 31. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review.pdf)
 
 ### Q2 2024
