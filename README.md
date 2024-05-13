@@ -58,3 +58,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 42. Undisclosed
 43. Undisclosed
 44. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
+45. [Overload - yield farming](team/pdf/Overload-security-review.pdf)
