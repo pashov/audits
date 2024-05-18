@@ -53,7 +53,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 37. Undisclosed
 38. [Open Dollar - overcollateralized stablecoin](team/pdf/OpenDollar-security-review.pdf)
 39. [EV Terminal - DEX and token standard](team/pdf/EVTerminal-security-review.pdf)
-40. Undisclosed
+40. [BOB - Hybrid Layer 2, bridge](team/pdf/BOB-USDCBridge-security-review.pdf) & [BOB - Hybrid Layer 2, onramp](team/pdf/BOB-Onramp-security-review.pdf)
 41. Undisclosed
 42. Undisclosed
 43. Undisclosed
