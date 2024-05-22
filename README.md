@@ -50,12 +50,11 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 34. Undisclosed
 35. [Karak - restaking protocol](team/pdf/Karak-security-review.pdf)
 36. Undisclosed
-37. Undisclosed
+37. [Curio - crypto games](team/pdf/Curio-security-review.pdf)
 38. [Open Dollar - overcollateralized stablecoin](team/pdf/OpenDollar-security-review.pdf)
 39. [EV Terminal - DEX and token standard](team/pdf/EVTerminal-security-review.pdf)
 40. [BOB - Hybrid Layer 2, bridge](team/pdf/BOB-USDCBridge-security-review.pdf) & [BOB - Hybrid Layer 2, onramp](team/pdf/BOB-Onramp-security-review.pdf)
 41. Undisclosed
 42. Undisclosed
-43. Undisclosed
-44. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
-45. [Overload - yield farming](team/pdf/Overload-security-review.pdf)
+43. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
+44. [Overload - yield farming](team/pdf/Overload-security-review.pdf)
