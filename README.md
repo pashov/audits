@@ -65,3 +65,11 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 49. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-May.pdf)
 50. Undisclosed
 51. [Serious - bonding curve token sale](team/pdf/Serious-security-review.pdf)
+52. Pump - ERC20 market factory
+53. Gains Network - leveraged trading protocol
+54. Undisclosed
+55. Reya Network - trading-optimised modular L2
+56. Undisclosed
+57. Undisclosed
+58. Undisclosed
+59. [Klaster - chain abstraction protocol](team/pdf/Klaster-security-review.pdf)
