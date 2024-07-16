@@ -73,3 +73,10 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 57. Undisclosed
 58. Undisclosed
 59. [Klaster - chain abstraction protocol](team/pdf/Klaster-security-review.pdf)
+60. Undisclosed
+61. [Sharwa Finance - margin trading protocol](team/pdf/SharwaFinance-security-review.pdf)
+62. Undisclosed
+63. BOB Ordinals
+64. Lucidly - multi-asset AMM
+65. MoarCandy - bonding curve token sale
+66. Undisclosed
