@@ -76,7 +76,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 60. Undisclosed
 61. [Sharwa Finance - margin trading protocol](team/pdf/SharwaFinance-security-review.pdf)
 62. Undisclosed
-63. BOB Ordinals
+63. [BOB Ordinals - hybrid layer 2](team/pdf/BOB-security-review-June.pdf)
 64. Lucidly - multi-asset AMM
 65. MoarCandy - bonding curve token sale
 66. Undisclosed
+67. Reya Network - trading-optimised modular L2
+68. Undisclosed
+69. Radiant - omnichain money market
+
+### Q3 2024
+
+70. Gains Network - leveraged trading protocol
