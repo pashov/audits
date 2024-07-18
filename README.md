@@ -82,7 +82,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 66. Undisclosed
 67. Reya Network - trading-optimised modular L2
 68. Undisclosed
-69. Radiant - omnichain money market
+69. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
 
 ### Q3 2024
 
