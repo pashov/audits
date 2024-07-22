@@ -67,7 +67,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 51. [Serious - bonding curve token sale](team/pdf/Serious-security-review.pdf)
 52. Pump - ERC20 market factory
 53. Gains Network - leveraged trading protocol
-54. Undisclosed
+54. [Fyde - yield management](team/pdf/Fyde-security-review-May.pdf)
 55. Reya Network - trading-optimised modular L2
 56. Undisclosed
 57. Undisclosed
@@ -87,3 +87,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 ### Q3 2024
 
 70. Gains Network - leveraged trading protocol
+71. Undisclosed
+72.
