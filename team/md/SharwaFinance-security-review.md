@@ -52,7 +52,7 @@ Sharwa is a margin trading protocol where users can trade on Uniswap v3 with up 
 
 _review commit hash_ - [ec6beb584386f9d72f4a236e3df7cfae90678e41](https://github.com/SharwaFinance/MarginTrading/tree/ec6beb584386f9d72f4a236e3df7cfae90678e41)
 
-_fixes review commit hash_ - [e4d512a422bf5f8ce745d94cf200bbcab6871cee](https://github.com/SharwaFinance/MarginTrading/tree/e4d512a422bf5f8ce745d94cf200bbcab6871cee)
+_fixes review commit hash_ - [74e84ef79dec39318a170221dcb7f91eaa804030](https://github.com/SharwaFinance/MarginTrading/tree/74e84ef79dec39318a170221dcb7f91eaa804030)
 
 ### Scope
 
