@@ -70,7 +70,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 54. [Fyde - yield management](team/pdf/Fyde-security-review-May.pdf)
 55. Reya Network - trading-optimised modular L2
 56. Undisclosed
-57. Undisclosed
+57. [HoneyJar - NFT cross-chain game](team/pdf/HoneyJar-security-review.pdf)
 58. Undisclosed
 59. [Klaster - chain abstraction](team/pdf/Klaster-security-review.pdf)
 60. Undisclosed
@@ -88,4 +88,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 70. Gains Network - leveraged trading
 71. Undisclosed
-72.
+72. Undisclosed
+73. Ion - lending
