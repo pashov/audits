@@ -92,4 +92,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 73. [Ion - lending](team/pdf/IonProtocol-security-review-July.pdf)
 74. Undisclosed
 75. Undisclosed
-76. Nabla
+76. [Nabla - DEX](team/pdf/Nabla-security-review.pdf)
