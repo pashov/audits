@@ -89,4 +89,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 70. Gains Network - leveraged trading
 71. Undisclosed
 72. Undisclosed
-73. Ion - lending
+73. [Ion - lending](team/pdf/IonProtocol-security-review-July.pdf)
+74. Undisclosed
+75. Undisclosed
+76. Nabla
