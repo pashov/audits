@@ -71,9 +71,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 55. Reya Network - trading-optimised modular L2
 56. Undisclosed
 57. [HoneyJar - NFT cross-chain game](team/pdf/HoneyJar-security-review.pdf)
-58. Undisclosed
-59. [Klaster - chain abstraction](team/pdf/Klaster-security-review.pdf)
-60. Undisclosed
+58. [Klaster - chain abstraction](team/pdf/Klaster-security-review.pdf)
+59. Undisclosed
+60. [ZROClaim - token claim](team/pdf/LayerZeroZROClaim-security-review.pdf)
 61. [Sharwa Finance - margin trading](team/pdf/SharwaFinance-security-review.pdf)
 62. Undisclosed
 63. [BOB Ordinals - hybrid layer 2](team/pdf/BOB-security-review-June.pdf)
