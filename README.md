@@ -49,7 +49,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 33. [Catalyst - ERC1155 bonding curve market](team/pdf/Catalyst-security-review-april.pdf)
 34. [SFT - token standard](team/pdf/SFT-security-review.pdf)
 35. [Karak - restaking](team/pdf/Karak-security-review.pdf)
-36. Undisclosed
+36. Solidly
 37. [Curio - crypto games](team/pdf/Curio-security-review.pdf)
 38. [Open Dollar - overcollateralized stablecoin](team/pdf/OpenDollar-security-review.pdf)
 39. [EV Terminal - DEX and token standard](team/pdf/EVTerminal-security-review.pdf)
@@ -58,12 +58,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 42. [Ion - lending](team/pdf/IonProtocol-security-review.pdf)
 43. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
 44. [Overload - yield farming](team/pdf/Overload-security-review.pdf)
-45. Undisclosed
+45. Crate
 46. [Adapter - yield strategies](team/pdf/AdapterFinance-security-review.pdf)
 47. [Rivus - liquid staking derivatives](team/pdf/Rivus-security-review.pdf)
 48. [LayerZero - messaging](team/pdf/LayerZero-security-review.pdf)
 49. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-May.pdf)
-50. Undisclosed
+50. Aburra
 51. [Serious - bonding curve token sale](team/pdf/Serious-security-review.pdf)
 52. Pump - ERC20 market factory
 53. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-review-May.pdf)
@@ -72,16 +72,16 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 56. Undisclosed
 57. [HoneyJar - NFT cross-chain game](team/pdf/HoneyJar-security-review.pdf)
 58. [Klaster - chain abstraction](team/pdf/Klaster-security-review.pdf)
-59. Undisclosed
+59. [Bio - token sale vesting](team/pdf/Bio-security-review.pdf)
 60. [ZROClaim - token claim](team/pdf/LayerZeroZROClaim-security-review.pdf)
 61. [Sharwa Finance - margin trading](team/pdf/SharwaFinance-security-review.pdf)
 62. Undisclosed
 63. [BOB Ordinals - hybrid layer 2](team/pdf/BOB-security-review-June.pdf)
 64. [Lucidly - multi-asset AMM](team/pdf/Lucidly-security-review-June.pdf)
 65. [MoarCandy - bonding curve token sale](team/pdf/MoarCandy-security-review.pdf)
-66. Undisclosed
+66. Ion
 67. Reya Network - trading-optimised modular L2
-68. Undisclosed
+68. Karak
 69. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
 
 ### Q3 2024
