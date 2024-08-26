@@ -93,3 +93,13 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 74. Undisclosed
 75. Undisclosed
 76. [Nabla - DEX](team/pdf/Nabla-security-review.pdf)
+77. Gains Network - leveraged trading
+78. Undisclosed
+79. Undisclosed
+80. Undisclosed
+81. Undisclosed
+82. Reya Network
+83. BOB
+84. Undisclosed
+85. Undisclosed
+86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
