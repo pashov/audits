@@ -96,7 +96,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 77. Gains Network - leveraged trading
 78. Undisclosed
 79. Undisclosed
-80. Undisclosed
+80. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review.pdf)
 81. Undisclosed
 82. Reya Network
 83. BOB
