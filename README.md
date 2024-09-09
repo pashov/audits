@@ -31,7 +31,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 18. [Hytopia - Ethereum L2 Rollup](team/pdf/Hytopia-security-review.pdf)
 19. [Ethena - rewards distribution](team/pdf/Ethena-security-review-february.pdf)
 20. [Azuro - betting engine](team/pdf/Azuro_security_review.pdf)
-21. Gains Network - leveraged trading
+21. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-review-February.pdf)
 22. [Spectra - interest rate derivatives](team/pdf/Spectra-security-review.pdf)
 23. [Sofamon - bonding curve NFT sale](team/pdf/Sofamon-security-review.pdf)
 24. [Radiant - omnichain money market](team/pdf/Radiant-security-review.pdf)
