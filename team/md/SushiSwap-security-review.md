@@ -52,7 +52,7 @@ SushiSwap on Tron is an automated market maker (AMM) and decentralized exchange 
 
 _review commit hash_ - [f4863c95490b87229579bdc5354b0c558eb13fbc](https://github.com/sushi-labs/tron-contracts/tree/f4863c95490b87229579bdc5354b0c558eb13fbc)
 
-_fixes review commit hash_ - [581dffe033cb7bbc4460b0f10d5d93805913baf2](https://github.com/sushi-labs/tron-contracts/tree/581dffe033cb7bbc4460b0f10d5d93805913baf2)
+_fixes review commit hash_ - [86530e9592c1605e5c51e4c18291d1d68473a197](https://github.com/sushi-labs/tron-contracts/tree/86530e9592c1605e5c51e4c18291d1d68473a197)
 
 ### Scope
 
@@ -70,47 +70,7 @@ The following smart contracts were in scope of the audit:
 
 # Findings
 
-# [M-01] Redundant USDT handling in `safeTransfer()`
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
-`TransferHelper.safeTransfer()` handles `USDT` token that do not return any value. However, the check is incorrect as:
-
-- the `USDTAddr` is not for TRON network
-- USDT token on TRON does return a `bool`
-
-[USDT on Tron](https://tronscan.org/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t/code)
-
-It is also redundant as the subsequent `require` will handle cases where the token does not return any value on success.
-
-## Recommendations
-
-Modify the `safeTransfer` function to treat USDT transfers the same as other token transfers, the same as Uniswap safeTransfer function.
-
-```diff
-    function safeTransfer(address token, address to, uint value) internal {
-        // bytes4(keccak256(bytes('transfer(address,uint256)')));
-        (bool success, bytes memory data) = token.call(
-            abi.encodeWithSelector(0xa9059cbb, to, value)
-        );
--        if (address(token) == USDTAddr && success) {
--            return;
-        }
-        require(
-            success && (data.length == 0 || abi.decode(data, (bool))),
-            "TransferHelper: TRANSFER_FAILED"
-        );
-    }
-
-```
-
-# [M-02] Incorrect `chainId` used for permit EIP712 domain separator
+# [M-01] Incorrect `chainId` used for permit EIP712 domain separator
 
 ## Severity
 
@@ -161,7 +121,7 @@ Based on [EIP-712](https://eips.ethereum.org/EIPS/eip-712), when the chainId doe
         }
 ```
 
-# [M-03] Abuse of permit functionality to block legitimate transactions
+# [M-02] Abuse of permit functionality to block legitimate transactions
 
 ## Severity
 
