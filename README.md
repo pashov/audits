@@ -63,7 +63,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 47. [Rivus - liquid staking derivatives](team/pdf/Rivus-security-review.pdf)
 48. [LayerZero - messaging](team/pdf/LayerZero-security-review.pdf)
 49. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-May.pdf)
-50. Aburra
+50. [Aburra - bonding curve token sale](team/pdf/Aburra-security-review.pdf)
 51. [Serious - bonding curve token sale](team/pdf/Serious-security-review.pdf)
 52. Pump - ERC20 market factory
 53. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-review-May.pdf)
