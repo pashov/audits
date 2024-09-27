@@ -94,7 +94,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 75. Undisclosed
 76. [Nabla - DEX](team/pdf/Nabla-security-review.pdf)
 77. Gains Network - leveraged trading
-78. Undisclosed
+78. [Curio - crypto games](team/pdf/Curio-security-review-July.pdf)
 79. Undisclosed
 80. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review.pdf)
 81. Undisclosed
