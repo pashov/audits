@@ -81,7 +81,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 65. [MoarCandy - bonding curve token sale](team/pdf/MoarCandy-security-review.pdf)
 66. Ion
 67. Reya Network - trading-optimised modular L2
-68. Karak
+68. [Karak - restaking](team/pdf/Karak-security-review-June.pdf)
 69. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
 
 ### Q3 2024
