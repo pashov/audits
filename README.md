@@ -103,3 +103,15 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 84. Undisclosed
 85. Undisclosed
 86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
+87. Undisclosed
+88. Undisclosed
+89. Resolv - stablecoin protocol
+90. Ethena - synthetic dollar
+91. Undisclosed
+92. BOB - hybrid layer 2
+93. [Aave - lending](team/pdf/Aave-security-review.pdf)
+94. Undisclosed
+95. Undisclosed
+96. Undisclosed
+97. Undisclosed
+98. Undisclosed
