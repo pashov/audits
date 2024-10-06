@@ -41,7 +41,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 28. [Mass - account abstraction](team/pdf/Mass-security-review.pdf)
 29. [Forgotten Playland ToyBox - NFT sale](team/pdf/ForgottenPlayland-security-review.pdf)
 30. [1inch - limit orders](team/pdf/1inch-security-review.pdf)
-31. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review.pdf)
+31. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review.pdf)
 
 ### Q2 2024
 
@@ -56,7 +56,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 40. [BOB - hybrid L2, bridge](team/pdf/BOB-USDCBridge-security-review.pdf) & [BOB - Hybrid Layer 2, onramp](team/pdf/BOB-Onramp-security-review.pdf)
 41. [Lucidly - multi-asset AMM](team/pdf/Lucidly-security-review.pdf)
 42. [Ion - lending](team/pdf/IonProtocol-security-review.pdf)
-43. [Reya Network - trading-optimised modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
+43. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-April.pdf)
 44. [Overload - yield farming](team/pdf/Overload-security-review.pdf)
 45. Crate
 46. [Adapter - yield strategies](team/pdf/AdapterFinance-security-review.pdf)
@@ -68,7 +68,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 52. Pump - ERC20 market factory
 53. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-review-May.pdf)
 54. [Fyde - yield management](team/pdf/Fyde-security-review-May.pdf)
-55. Reya Network - trading-optimised modular L2
+55. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-June.pdf)
 56. Undisclosed
 57. [HoneyJar - NFT cross-chain game](team/pdf/HoneyJar-security-review.pdf)
 58. [Klaster - chain abstraction](team/pdf/Klaster-security-review.pdf)
@@ -80,7 +80,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 64. [Lucidly - multi-asset AMM](team/pdf/Lucidly-security-review-June.pdf)
 65. [MoarCandy - bonding curve token sale](team/pdf/MoarCandy-security-review.pdf)
 66. Ion
-67. Reya Network - trading-optimised modular L2
+67. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-June2.pdf)
 68. [Karak - restaking](team/pdf/Karak-security-review-June.pdf)
 69. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
 
