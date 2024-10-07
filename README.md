@@ -91,14 +91,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 72. [Dumont - card game](team/pdf/Dumont-security-review.pdf)
 73. [Ion - lending](team/pdf/IonProtocol-security-review-July.pdf)
 74. g8keep
-75. Undisclosed
+75. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-July.pdf)
 76. [Nabla - DEX](team/pdf/Nabla-security-review.pdf)
 77. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-July2.pdf)
 78. [Curio - crypto games](team/pdf/Curio-security-review-July.pdf)
 79. [Radiant - omnichain money market](team/pdf/Radiant-security-review-July.pdf)
 80. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review.pdf)
 81. Undisclosed
-82. Reya Network
+82. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-August.pdf)
 83. BOB
 84. Undisclosed
 85. Undisclosed
