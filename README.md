@@ -87,7 +87,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 ### Q3 2024
 
 70. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-review-July.pdf)
-71. Undisclosed
+71. [Groupcoin - bonding curve token sale](team/pdf/Groupcoin-security-review.pdf)
 72. [Dumont - card game](team/pdf/Dumont-security-review.pdf)
 73. [Ion - lending](team/pdf/IonProtocol-security-review-July.pdf)
 74. g8keep
