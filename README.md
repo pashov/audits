@@ -75,14 +75,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 59. [Bio - token sale vesting](team/pdf/Bio-security-review.pdf)
 60. [ZROClaim - token claim](team/pdf/LayerZeroZROClaim-security-review.pdf)
 61. [Sharwa Finance - margin trading](team/pdf/SharwaFinance-security-review.pdf)
-62. Undisclosed
-63. [BOB Ordinals - hybrid layer 2](team/pdf/BOB-security-review-June.pdf)
-64. [Lucidly - multi-asset AMM](team/pdf/Lucidly-security-review-June.pdf)
-65. [MoarCandy - bonding curve token sale](team/pdf/MoarCandy-security-review.pdf)
-66. Ion
-67. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-June2.pdf)
-68. [Karak - restaking](team/pdf/Karak-security-review-June.pdf)
-69. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
+62. [BOB Ordinals - hybrid layer 2](team/pdf/BOB-security-review-June.pdf)
+63. [Lucidly - multi-asset AMM](team/pdf/Lucidly-security-review-June.pdf)
+64. [MoarCandy - bonding curve token sale](team/pdf/MoarCandy-security-review.pdf)
+65. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-June2.pdf)
+66. [Karak - restaking](team/pdf/Karak-security-review-June.pdf)
+67. [Radiant - omnichain money market](team/pdf/Radiant-security-review-June.pdf)
 
 ### Q3 2024
 
@@ -100,7 +98,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 81. Undisclosed
 82. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-August.pdf)
 83. BOB
-84. Undisclosed
+84. [Sofamon - NFT mint system](team/pdf/Sofamon-security-review-August.pdf)
 85. Undisclosed
 86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
 87. Undisclosed
