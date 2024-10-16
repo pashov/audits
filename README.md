@@ -97,7 +97,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 80. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review.pdf)
 81. Undisclosed
 82. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-August.pdf)
-83. BOB
+83. [BOB - hybrid layer 2](team/pdf/BOB-security-review-August.pdf)
 84. [Sofamon - NFT mint system](team/pdf/Sofamon-security-review-August.pdf)
 85. [Aegis - liquidity management](team/pdf/AegisVault-security-review.pdf)
 86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
