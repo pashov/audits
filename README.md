@@ -113,3 +113,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 96. Undisclosed
 97. Undisclosed
 98. [Aegis - liquidity management](team/pdf/Aegis-security-review-September.pdf)
+99. Undisclosed
+100.  [Cryptex - synthetic asset](team/pdf/Cryptex-security-review.pdf)
