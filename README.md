@@ -106,7 +106,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 89. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review-August.pdf)
 90. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-August.pdf)
 91. Undisclosed
-92. BOB - hybrid layer 2
+92. [BOB - hybrid layer 2](team/pdf/BOB-security-review-September.pdf)
 93. [Aave - lending](team/pdf/Aave-security-review.pdf)
 94. Undisclosed
 95. [DYAD - stablecoin](team/pdf/Dyad-security-review.pdf)
