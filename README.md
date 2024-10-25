@@ -95,7 +95,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 78. [Curio - crypto games](team/pdf/Curio-security-review-July.pdf)
 79. [Radiant - omnichain money market](team/pdf/Radiant-security-review-July.pdf)
 80. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review.pdf)
-81. Undisclosed
+81. [Endless Clouds - claim contract](team/pdf/EndlessClouds-security-review.pdf)
 82. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-August.pdf)
 83. [BOB - hybrid layer 2](team/pdf/BOB-security-review-August.pdf)
 84. [Sofamon - NFT mint system](team/pdf/Sofamon-security-review-August.pdf)
