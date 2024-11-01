@@ -108,7 +108,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 91. Undisclosed
 92. [BOB - hybrid layer 2](team/pdf/BOB-security-review-September.pdf)
 93. [Aave - lending](team/pdf/Aave-security-review.pdf)
-94. Undisclosed
+94. [LayerZero - messaging](team/pdf/LayerZero-security-review-September.pdf)
 95. [DYAD - stablecoin](team/pdf/Dyad-security-review.pdf)
 96. Undisclosed
 97. Undisclosed
