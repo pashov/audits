@@ -110,8 +110,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 93. [Aave - lending](team/pdf/Aave-security-review.pdf)
 94. [LayerZero - messaging](team/pdf/LayerZero-security-review-September.pdf)
 95. [DYAD - stablecoin](team/pdf/Dyad-security-review.pdf)
-96. Undisclosed
-97. [Layer Zero Orbit - messaging](team/pdf/LZOrbit-security-review.pdf)
+96. [LayerZero RateLimiter - operations flow control](team/pdf/LZRateLimiter-security-review.pdf)
+97. [LayerZero Orbit - messaging](team/pdf/LZOrbit-security-review.pdf)
 98. [Aegis - liquidity management](team/pdf/Aegis-security-review-September.pdf)
 99. [TitanX - rewards farming](team/pdf/TitanX-security-review.pdf)
 100.  [Cryptex - synthetic asset](team/pdf/Cryptex-security-review.pdf)
