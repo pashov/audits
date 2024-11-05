@@ -101,7 +101,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 84. [Sofamon - NFT mint system](team/pdf/Sofamon-security-review-August.pdf)
 85. [Aegis - liquidity management](team/pdf/AegisVault-security-review.pdf)
 86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
-87. Bunni
+87. [Bunni - DEX](team/pdf/Bunni-security-review-August.pdf)
 88. Undisclosed
 89. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review-August.pdf)
 90. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-August.pdf)
