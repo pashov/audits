@@ -88,7 +88,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 71. [Groupcoin - bonding curve token sale](team/pdf/Groupcoin-security-review.pdf)
 72. [Dumont - card game](team/pdf/Dumont-security-review.pdf)
 73. [Ion - lending](team/pdf/IonProtocol-security-review-July.pdf)
-74. g8keep
+74. [g8keep - token factory](team/pdf/g8keep-security-review.pdf)
 75. [Reya Network - trading-optimized modular L2](team/pdf/ReyaNetwork-security-review-July.pdf)
 76. [Nabla - DEX](team/pdf/Nabla-security-review.pdf)
 77. [Gains Network - leveraged trading](team/pdf/GainsNetwork-security-July2.pdf)
