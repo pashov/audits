@@ -115,3 +115,18 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 98. [Aegis - liquidity management](team/pdf/Aegis-security-review-September.pdf)
 99. [TitanX - rewards farming](team/pdf/TitanX-security-review.pdf)
 100.  [Cryptex - synthetic asset](team/pdf/Cryptex-security-review.pdf)
+
+### Q4 2024
+
+101. Undisclosed
+102. StationX
+103. Resolv
+104. Uniswap
+105. Undisclosed
+106. Ethena
+107. Hydration
+108. Bunni
+109. Undisclosed
+110. Undisclosed
+111. Reya
+112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
