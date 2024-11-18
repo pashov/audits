@@ -128,5 +128,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 108. Bunni
 109. Undisclosed
 110. Undisclosed
-111. Reya
+111. [Reya - perpetuals trading L2](team/pdf/Reya-security-review-October.pdf)
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
