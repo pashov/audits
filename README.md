@@ -124,7 +124,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 104. Uniswap
 105. Undisclosed
 106. Ethena
-107. Hydration
+107. [Hydration - liquidity provision](team/pdf/Hydration-security-review-October.pdf)
 108. Bunni
 109. Undisclosed
 110. Undisclosed
