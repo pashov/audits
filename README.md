@@ -125,8 +125,13 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 105. Undisclosed
 106. Ethena
 107. [Hydration - liquidity provision](team/pdf/Hydration-security-review-October.pdf)
-108. Bunni
+108. [Bunni - DEX](team/pdf/Bunni-security-review-October.pdf)
 109. Undisclosed
 110. Undisclosed
 111. [Reya - perpetuals trading L2](team/pdf/Reya-security-review-October.pdf)
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
+113. Undisclosed
+114. Undisclosed
+115. Undisclosed
+116. Undisclosed
+117. Undisclosed
