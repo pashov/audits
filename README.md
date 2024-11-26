@@ -123,7 +123,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 103. [Resolv - stablecoin](team/pdf/Resolv-security-review-October.pdf)
 104. [Uniswap - DEX](team/pdf/Uniswap-security-review-October.pdf)
 105. Undisclosed
-106. Ethena
+106. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-October.pdf)
 107. [Hydration - liquidity provision](team/pdf/Hydration-security-review-October.pdf)
 108. [Bunni - DEX](team/pdf/Bunni-security-review-October.pdf)
 109. Undisclosed
