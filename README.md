@@ -127,7 +127,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 107. [Hydration - liquidity provision](team/pdf/Hydration-security-review-October.pdf)
 108. [Bunni - DEX](team/pdf/Bunni-security-review-October.pdf)
 109. [LaPoste - cross-chain messaging](team/pdf/LaPoste-security-review-October.pdf)
-110. Undisclosed
+110. [Arcadia - asset management](team/pdf/Arcadia-security-review-October.pdf)
 111. [Reya - perpetuals trading L2](team/pdf/Reya-security-review-October.pdf)
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
 113. Undisclosed
