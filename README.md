@@ -132,6 +132,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
 113. Undisclosed
 114. Undisclosed
-115. Undisclosed
+115. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
 116. Undisclosed
 117. Undisclosed
