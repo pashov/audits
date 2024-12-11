@@ -133,5 +133,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 113. Undisclosed
 114. Undisclosed
 115. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
-116. Undisclosed
+116. [ULTI - yield farming](team/pdf/ULTI-security-review-November.pdf)
 117. Undisclosed
+118. Undisclosed
+119. Undisclosed
