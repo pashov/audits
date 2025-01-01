@@ -102,7 +102,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 85. [Aegis - liquidity management](team/pdf/AegisVault-security-review.pdf)
 86. [Sushi - DEX](team/pdf/SushiSwap-security-review.pdf)
 87. [Bunni - DEX](team/pdf/Bunni-security-review-August.pdf)
-88. Undisclosed
+88. Pump
 89. [Resolv - stablecoin protocol](team/pdf/Resolv-security-review-August.pdf)
 90. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-August.pdf)
 91. [Interpol - LP locking](team/pdf/Interpol-security-review.pdf)
@@ -119,7 +119,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 ### Q4 2024
 
 101. Undisclosed
-102. StationX
+102. [apDAO - DAO](team/pdf/apDAO-security-review_2024-10-03.pdf)
 103. [Resolv - stablecoin](team/pdf/Resolv-security-review-October.pdf)
 104. [Uniswap - DEX](team/pdf/Uniswap-security-review-October.pdf)
 105. Undisclosed
