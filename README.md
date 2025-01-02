@@ -142,3 +142,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 122. Undisclosed
 123. Undisclosed
 124. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
+125. g8keep
+126. [Buyburner - token supply management](team/pdf/BuyBurner-security-review_2024-12-14.pdf)
+127. Ion
