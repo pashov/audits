@@ -122,7 +122,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 102. [apDAO - DAO](team/pdf/apDAO-security-review_2024-10-03.pdf)
 103. [Resolv - stablecoin](team/pdf/Resolv-security-review-October.pdf)
 104. [Uniswap - DEX](team/pdf/Uniswap-security-review-October.pdf)
-105. Undisclosed
+105. Pump
 106. [Ethena - synthetic dollar](team/pdf/Ethena-security-review-October.pdf)
 107. [Hydration - liquidity provision](team/pdf/Hydration-security-review-October.pdf)
 108. [Bunni - DEX](team/pdf/Bunni-security-review-October.pdf)
@@ -137,3 +137,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 117. Peapods
 118. [ULTI - yield farming](team/pdf/ULTI-security-review-November2.pdf)
 119. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
+120. Undisclosed
+121. Fundraiser
+122. Undisclosed
+123. Undisclosed
+124. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
