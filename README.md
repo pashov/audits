@@ -137,7 +137,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 117. Peapods
 118. [ULTI - yield farming](team/pdf/ULTI-security-review-November2.pdf)
 119. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
-120. Undisclosed
+120. [Nexus - yield aggregator](team/pdf/Nexus-security-review_2024-11-29.pdf)
 121. Fundraiser
 122. Undisclosed
 123. Undisclosed
