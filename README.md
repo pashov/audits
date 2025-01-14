@@ -118,7 +118,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 ### Q4 2024
 
-101. Undisclosed
+101. [Primodium - game](team/pdf/Primodium-security-review_2024-10-02.pdf)
 102. [apDAO - DAO](team/pdf/apDAO-security-review_2024-10-03.pdf)
 103. [Resolv - stablecoin](team/pdf/Resolv-security-review-October.pdf)
 104. [Uniswap - DEX](team/pdf/Uniswap-security-review-October.pdf)
