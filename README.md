@@ -148,5 +148,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 128. Undisclosed
 129. Stardusts
 130. Undisclosed
-131. Pump Science
+131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
 132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
