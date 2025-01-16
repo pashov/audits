@@ -205,7 +205,7 @@ If that's not desirable, add a SOL sweep mechanism during curve creation that tr
 - If found, sweep it to the creator/admin using a signed CPI
 - Then continue with regular curve creation
 
-# [H-03] Unused freeze authority revocation creates token cock risk
+# [H-03] Unused freeze authority revocation creates token lock risk
 
 ## Severity
 
