@@ -142,7 +142,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 122. Undisclosed
 123. Undisclosed
 124. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
-125. g8keep
+125. [g8keep - bonding curve token sale](team/pdf/g8keep-security-review_2024-12-12.pdf)
 126. [Buyburner - token supply management](team/pdf/BuyBurner-security-review_2024-12-14.pdf)
 127. Ion
 128. Undisclosed
@@ -150,3 +150,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 130. Undisclosed
 131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
 132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
+133. Ion
+134. Undisclosed
+135. Undisclosed
+136. Undisclosed
