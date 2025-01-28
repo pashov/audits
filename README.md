@@ -139,14 +139,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 119. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
 120. [Nexus - yield aggregator](team/pdf/Nexus-security-review_2024-11-29.pdf)
 121. [Fundraiser - fundraising](team/pdf/Fundraiser-security-review_2024-11-30.pdf)
-122. Undisclosed
-123. Undisclosed
+122. Ouroboros
+123. Dinari
 124. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
 125. [g8keep - bonding curve token sale](team/pdf/g8keep-security-review_2024-12-12.pdf)
 126. [Buyburner - token supply management](team/pdf/BuyBurner-security-review_2024-12-14.pdf)
 127. Ion
 128. Undisclosed
-129. Stardusts
+129. [Stardusts - bonding curve token sale](team/pdf/Stardusts-security-review_2024-12-19.pdf)
 130. Undisclosed
 131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
 132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
