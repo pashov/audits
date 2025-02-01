@@ -151,6 +151,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
 132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
 133. Ion
-134. Undisclosed
+134. [GammaSwap - delta-neutral liquidity management](team/pdf/GammaSwap-security-review_2024-12-30.pdf)
 135. Undisclosed
 136. Undisclosed
