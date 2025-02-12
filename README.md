@@ -134,7 +134,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 114. Undisclosed
 115. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
 116. [ULTI - yield farming](team/pdf/ULTI-security-review-November.pdf)
-117. Peapods
+117. [Peapods - volatility farming](team/pdf/Peapods-security-review_2024-11-16.pdf)
 118. [ULTI - yield farming](team/pdf/ULTI-security-review-November2.pdf)
 119. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
 120. [Nexus - yield aggregator](team/pdf/Nexus-security-review_2024-11-29.pdf)
