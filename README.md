@@ -153,7 +153,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 133. Ion
 134. [GammaSwap - delta-neutral liquidity management](team/pdf/GammaSwap-security-review_2024-12-30.pdf)
 135. Cove
-136. Undisclosed
+136. [NFTMirror - NFT cross-chain messaging](team/pdf/NFTMirror-security-review_2024-12-30.pdf)
 
 ### Q1 2025
 
