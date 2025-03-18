@@ -130,7 +130,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 110. [Arcadia - asset management](team/pdf/Arcadia-security-review-October.pdf)
 111. [Reya - perpetuals trading L2](team/pdf/Reya-security-review-October.pdf)
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
-113. Clave
+113. [Clave - account abstraction wallet](team/pdf/Clave-security-review_2024-11-02.pdf)
 114. Undisclosed
 115. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
 116. [ULTI - yield farming](team/pdf/ULTI-security-review-November.pdf)
@@ -147,7 +147,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 127. Ion
 128. Vite
 129. [Stardusts - bonding curve token sale](team/pdf/Stardusts-security-review_2024-12-19.pdf)
-130. Clave
+130. [Clave - account abstraction wallet](team/pdf/Clave-security-review_2024-12-23.pdf)
 131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
 132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
 133. Ion
