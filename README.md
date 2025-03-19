@@ -131,29 +131,27 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 111. [Reya - perpetuals trading L2](team/pdf/Reya-security-review-October.pdf)
 112. [Rivus - liquid staking](team/pdf/Rivus-security-review-October.pdf)
 113. [Clave - account abstraction wallet](team/pdf/Clave-security-review_2024-11-02.pdf)
-114. Undisclosed
-115. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
-116. [ULTI - yield farming](team/pdf/ULTI-security-review-November.pdf)
-117. [Peapods - volatility farming](team/pdf/Peapods-security-review_2024-11-16.pdf)
-118. [ULTI - yield farming](team/pdf/ULTI-security-review-November2.pdf)
-119. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
-120. [Nexus - yield aggregator](team/pdf/Nexus-security-review_2024-11-29.pdf)
-121. [Fundraiser - fundraising](team/pdf/Fundraiser-security-review_2024-11-30.pdf)
-122. [Ouroboros - CDP stablecoin](team/pdf/Ouroboros-security-review_2024-12-06.pdf)
-123. [Dinari - stablecoin](team/pdf/Dinari-security-review_2024-12-07.pdf)
-124. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
-125. [g8keep - bonding curve token sale](team/pdf/g8keep-security-review_2024-12-12.pdf)
-126. [Buyburner - token supply management](team/pdf/BuyBurner-security-review_2024-12-14.pdf)
-127. Ion
-128. Vite
-129. [Stardusts - bonding curve token sale](team/pdf/Stardusts-security-review_2024-12-19.pdf)
-130. [Clave - account abstraction wallet](team/pdf/Clave-security-review_2024-12-23.pdf)
-131. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
-132. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
-133. Ion
-134. [GammaSwap - delta-neutral liquidity management](team/pdf/GammaSwap-security-review_2024-12-30.pdf)
-135. Cove
-136. [NFTMirror - NFT cross-chain messaging](team/pdf/NFTMirror-security-review_2024-12-30.pdf)
+114. [Pepe Unchained - layer 2](team/pdf/PepeUnchained-security-review-November.pdf)
+115. [ULTI - yield farming](team/pdf/ULTI-security-review-November.pdf)
+116. [Peapods - volatility farming](team/pdf/Peapods-security-review_2024-11-16.pdf)
+117. [ULTI - yield farming](team/pdf/ULTI-security-review-November2.pdf)
+118. [SuperSale - token sale](team/pdf/SuperSale-security-review-November.pdf)
+119. [Nexus - yield aggregator](team/pdf/Nexus-security-review_2024-11-29.pdf)
+120. [Fundraiser - fundraising](team/pdf/Fundraiser-security-review_2024-11-30.pdf)
+121. [Ouroboros - CDP stablecoin](team/pdf/Ouroboros-security-review_2024-12-06.pdf)
+122. [Dinari - stablecoin](team/pdf/Dinari-security-review_2024-12-07.pdf)
+123. [Resolv - stablecoin](team/pdf/Resolv-security-review_2024-12-09.pdf)
+124. [g8keep - bonding curve token sale](team/pdf/g8keep-security-review_2024-12-12.pdf)
+125. [Buyburner - token supply management](team/pdf/BuyBurner-security-review_2024-12-14.pdf)
+126. Ion
+127. [Stardusts - bonding curve token sale](team/pdf/Stardusts-security-review_2024-12-19.pdf)
+128. [Clave - account abstraction wallet](team/pdf/Clave-security-review_2024-12-23.pdf)
+129. [Pump Science - bonding curve fundraising](team/pdf/PumpScience-security-review_2024-12-24.pdf)
+130. [Interpol - protocol-owned liquidity management](team/pdf/Interpol-security-review_2024-12-24.pdf)
+131. Ion
+132. [GammaSwap - delta-neutral liquidity management](team/pdf/GammaSwap-security-review_2024-12-30.pdf)
+133. Cove
+134. [NFTMirror - NFT cross-chain messaging](team/pdf/NFTMirror-security-review_2024-12-30.pdf)
 
 ### Q1 2025
 
@@ -161,7 +159,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 138. Undisclosed
 139. Undisclosed
 140. [DeFi App - token sale and vesting management](team/pdf/DefiApp-security-review_2025-01-08.pdf)
-141. Undisclosed
+141. [Hyperlend - lending](team/pdf/Hyperlend-security-review_2025-01-11.pdf)
 142. Undisclosed
 143. Undisclosed
 144. Undisclosed
