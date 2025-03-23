@@ -163,7 +163,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 142. Undisclosed
 143. Undisclosed
 144. Undisclosed
-145. Undisclosed
+145. [Gigaverse - game](team/pdf/Gigaverse-security-review_2025-01-18.pdf)
 146. Undisclosed
 147. Undisclosed
 148. Undisclosed
