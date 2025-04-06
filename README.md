@@ -170,7 +170,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 149. [Omo - asset management](team/pdf/Omo-security-review_2025-01-25.pdf)
 150. [Gatcha - game](team/pdf/Gacha-security-review_2025-01-27.pdf)
 151. Undisclosed
-152. Undisclosed
+152. [Burve - AMM](team/pdf/Burve-security-review_2025-01-29.pdf)
 153. Undisclosed
 154. Pump
 155. Undisclosed
