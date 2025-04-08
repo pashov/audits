@@ -164,7 +164,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 143. Undisclosed
 144. Undisclosed
 145. [Gigaverse - game](team/pdf/Gigaverse-security-review_2025-01-18.pdf)
-146. Cardex
+146. [Cardex - game](team/pdf/Cardex-security-review_2025-01-21.pdf)
 147. Sushi
 148. Ostium
 149. [Omo - asset management](team/pdf/Omo-security-review_2025-01-25.pdf)
