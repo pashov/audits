@@ -169,7 +169,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 148. Ostium
 149. [Omo - asset management](team/pdf/Omo-security-review_2025-01-25.pdf)
 150. [Gatcha - game](team/pdf/Gacha-security-review_2025-01-27.pdf)
-151. Undisclosed
+151. [Beam Nodes - cross-chain NFT minting](team/pdf/BeamNodes-security-review_2025-01-28.pdf)
 152. [Burve - AMM](team/pdf/Burve-security-review_2025-01-29.pdf)
 153. Undisclosed
 154. Pump
