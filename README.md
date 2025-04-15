@@ -161,7 +161,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 140. [DeFi App - token sale and vesting management](team/pdf/DefiApp-security-review_2025-01-08.pdf)
 141. [Hyperlend - lending](team/pdf/Hyperlend-security-review_2025-01-11.pdf)
 142. Undisclosed
-143. Undisclosed
+143. [Onchain Heroes - game](team/pdf/OnchainHeroes-security-review_2025-01-13.pdf)
 144. Undisclosed
 145. [Gigaverse - game](team/pdf/Gigaverse-security-review_2025-01-18.pdf)
 146. [Cardex - game](team/pdf/Cardex-security-review_2025-01-21.pdf)
