@@ -175,7 +175,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 154. Pump
 155. Undisclosed
 156. Undisclosed
-157. Undisclosed
+157. [Desci - launchpad](team/pdf/DesciLaunchpad-security-review_2025-02-07.pdf)
 158. Undisclosed
 159. Pump
 160. [Roots - CDP stablecoin](team/pdf/Roots-security-review_2025-02-09.pdf)
