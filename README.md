@@ -180,6 +180,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 159. Pump
 160. [Roots - CDP stablecoin](team/pdf/Roots-security-review_2025-02-09.pdf)
 161. Undisclosed
-162. Undisclosed
+162. [HypurrFi - lending](team/pdf/HypurrFi-security-review_2025-02-12.pdf)
 163. Undisclosed
 164. [Falcon - stablecoin](team/pdf/Falcon-security-review_2025-02-17.pdf)
