@@ -173,7 +173,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 152. [Burve - AMM](team/pdf/Burve-security-review_2025-01-29.pdf)
 153. Undisclosed
 154. Pump
-155. Undisclosed
+155. [Coinflip - game](team/pdf/Coinflip-security-review_2025-02-05.pdf)
 156. Undisclosed
 157. [Desci - launchpad](team/pdf/DesciLaunchpad-security-review_2025-02-07.pdf)
 158. Undisclosed
@@ -183,3 +183,4 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 162. [HypurrFi - lending](team/pdf/HypurrFi-security-review_2025-02-12.pdf)
 163. Undisclosed
 164. [Falcon - stablecoin](team/pdf/Falcon-security-review_2025-02-17.pdf)
+165. [Coinflip - game](team/pdf/Coinflip-security-review_2025-02-19.pdf)
