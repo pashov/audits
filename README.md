@@ -133,5 +133,3 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | StationX – community ownership        | [2024-06-05](team/pdf/StationX-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Mass - Account Abstraction            | [2024-03-18](team/pdf/Mass-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Subsquid - distributed query engine   | [2024-01-29](team/pdf/Subsquid-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-
-
