@@ -1,22 +1,16 @@
 # About
-
-Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
-
+ Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 # Disclaimer
-
-A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
-
+ A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 # Introduction
-
-A time-boxed security review of the **Kittenswap/contracts** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
-
+ A time-boxed security review of the **Kittenswap/contracts** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 # About KittenSwap
-
-KittenSwap is a Velodrome V1 fork with custom gauge and factory modifications, deployed on HyperEVM with support for LayerZero and hyperlane-wrapped bridged tokens.
+ 
+KittenSwap is a DEX with custom gauge and factory modifications, deployed on HyperEVM with support for LayerZero and hyperlane-wrapped bridged tokens.
 The audit focused on the voting escrow token locking system, voter-controlled gauge weight distribution, external bribe reward mechanisms, and concentrated liquidity pool factory management.
 
 # Risk Classification
-
+ 
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -24,7 +18,7 @@ The audit focused on the voting escrow token locking system, voter-controlled ga
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
-
+ 
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -32,7 +26,7 @@ The audit focused on the voting escrow token locking system, voter-controlled ga
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
-
+ 
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -40,7 +34,7 @@ The audit focused on the voting escrow token locking system, voter-controlled ga
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
-
+ 
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -50,8 +44,7 @@ The audit focused on the voting escrow token locking system, voter-controlled ga
 - Low - Could fix
 
 # Security Assessment Summary
-
-_review commit hash_ - [b191141c1efa9eda997c75460dab383db878e2b1](https://github.com/Kittenswap/contracts/commit/b191141c1efa9eda997c75460dab383db878e2b1)
+ _review commit hash_ - [b191141c1efa9eda997c75460dab383db878e2b1](https://github.com/Kittenswap/contracts/commit/b191141c1efa9eda997c75460dab383db878e2b1)
 
 _fixes review commit hash_ - [bb528db2ab79290f64788cb5a65f1e58cd3aa182](https://github.com/Kittenswap/contracts/commit/bb528db2ab79290f64788cb5a65f1e58cd3aa182)
 
@@ -59,18 +52,17 @@ _fixes review commit hash_ - [bb528db2ab79290f64788cb5a65f1e58cd3aa182](https://
 
 The following smart contracts were in scope of the audit:
 
-- `Voter`
-- `VotingEscrow`
-- `Gauge`
-- `CLFactory`
-- `FactoryRegistry`
-- `CLGauge`
-- `CLGaugeFactory`
-- `ExternalBribe`
+- `Voter` 
+- `VotingEscrow` 
+- `Gauge` 
+- `CLFactory` 
+- `FactoryRegistry` 
+- `CLGauge` 
+- `CLGaugeFactory` 
+- `ExternalBribe` 
 
 # Findings
-
-# [C-01] `split` can be abused to create `locked` data with an arbitrary `amount`
+ # [C-01] `split` can be abused to create `locked` data with an arbitrary `amount`
 
 ## Severity
 
@@ -126,7 +118,7 @@ Due to the lack of a check on the split amount inside `split`, a user can provid
 
 This can be abused by initially depositing a small amount of tokens, then calling `split` with an arbitrary amount to create a large `locked` data. Then can be withdrawn at the end of the lock period, and also grants an arbitrary amount of voting power and balance, which can be used to claim rewards from gauges and bribes.
 
-PoC :
+PoC : 
 
 ```solidity
     function testSplitVeKittenUnderflow() public {
@@ -148,9 +140,9 @@ PoC :
 
         vm.stopPrank();
     }
-```
+````
 
-Log output :
+Log output : 
 
 ```shell
 Logs:
@@ -163,6 +155,8 @@ Logs:
 ## Recommendations
 
 Validate that the provided `_amount` does not exceed the locked amount of the split token.
+
+
 
 # [C-02] CLGauge sends KITTEN rewards to itself instead of to stakers
 
@@ -220,6 +214,8 @@ Modify the `_getReward` function to accept the actual staker's address as a para
     }
 ```
 
+
+
 # [H-01] Incorrect next epoch supply usage affects reward calculation
 
 ## Severity
@@ -230,7 +226,7 @@ Modify the `_getReward` function to accept the actual staker's address as a para
 
 ## Description
 
-Context: This is an issue of the forked repo that is not being fixed. (https://github.com/spearbit/portfolio/blob/master/pdfs/Velodrome-Spearbit-Security-Review.pdf 5.1.1 Reward calculates earned incorrectly on each epoch boundary).
+Context: This is an issue of the forked repo that is not being fixed. (https://github.com/spearbit/portfolio/blob/master/pdfs/Velodrome-Spearbit-Security-Review.pdf 5.1.1 Reward calculates earned incorrectly on each epoch boundary). 
 
 In the `ExternalBribe` contract, the following line is used to retrieve the previous epoch's supply:
 
@@ -244,7 +240,9 @@ Here, `_nextEpochStart + DURATION` is used to determine the index for retrieving
 
 Use `_nextEpochStart + DURATION-1`.
 
-# [H-02] Loss of claimable rewards upon gauge deactivation
+
+
+# [H-02]  Loss of claimable rewards upon gauge deactivation
 
 ## Severity
 
@@ -295,7 +293,9 @@ Also, at the same time, the other gauge's reward is still based on `totalWeight`
 
 ## Recommendations
 
-To address this issue, it is recommended to implement a mechanism that allows for the recovery of `claimable` rewards when a gauge is revived.
+To address this issue, it is recommended to implement a mechanism that allows for the recovery of `claimable` rewards when a gauge is revived. 
+
+
 
 # [H-03] `ExternalBribe.earned` skips rewards before the last `tokenId` checkpoint
 
@@ -380,13 +380,13 @@ However, the logic should include `_endIndex`, as the checkpoint before it must 
 
 Add the following test file to the repo: https://gist.github.com/said017/b96daba163bf2e1eb101589bc541ce06.
 
-Run the test :
+Run the test : 
 
 ```shell
 forge test --match-test testEpochCalculationIssue -vvv
 ```
 
-Log output :
+Log output : 
 
 ```shell
 Logs:
@@ -397,6 +397,7 @@ Logs:
 
   Earned at end of third epoch: 100000000000000000000
 ```
+
 
 ## Recommendations
 
@@ -439,6 +440,8 @@ Change the calculation logic to include `_endIndex`.
 / ...
 }
 ```
+
+
 
 # [H-04] Duplicate `tokenId` in delegate list may inflate votes
 
@@ -511,7 +514,7 @@ Inside `_moveAllDelegates` and `_moveTokenDelegates`, the delegated `tokenIds` w
     }
 ```
 
-`_findWhatCheckpointToWrite` will be used to determine which checkpoint the list will be added / removed.
+`_findWhatCheckpointToWrite` will be used to determine which checkpoint the list will be added / removed. 
 
 ```solidity
     function _findWhatCheckpointToWrite(
@@ -535,7 +538,7 @@ Notice that if the operation is called within the same block, the same checkpoin
 
 This could cause an issue, consider this scenario (all operation is done on the same block).
 
-**Alice**
+**Alice** 
 Num checkpoint = 1
 TokenIds (checkpoint 0) = 1 , 2
 
@@ -573,7 +576,9 @@ There are several issues here: the number of checkpoints keeps increasing even w
 
 Consider adjusting `_moveAllDelegates` and `_moveTokenDelegates` to account for scenarios where the operation is performed within the same block.
 
-# [H-05] Incorrect `last_point.blk` calculation due to shared memory in `_checkpoint()`
+
+
+# [H-05]  Incorrect `last_point.blk` calculation due to shared memory in `_checkpoint()`
 
 ## Severity
 
@@ -647,7 +652,6 @@ In the `_checkpoint` function of the VotingEscrow contract, there's an issue wit
 When `last_point.ts` is updated to `t_i` in the loop, `initial_last_point.ts` is also updated to the same value because they reference the same memory location. This results in `(t_i - initial_last_point.ts)` evaluating to zero, causing `last_point.blk` to remain unchanged throughout the loop iterations.
 
 This issue directly impacts:
-
 - The accuracy of historical voting power calculations: Total voting power and Per-NFT voting power.
 - Governance functionality that depends on accurate vote weight.
 
@@ -672,6 +676,8 @@ Create a copy of the `last_point`:
 });
 
 ```
+
+
 
 # [H-06] Lack of access control in `CLGauge` creation allows unauthorized `Pools`
 
@@ -788,6 +794,8 @@ Add access control to restrict the `createGauge` function to only be callable by
     }
 ```
 
+
+
 # [H-07] Inconsistent rounding of lock time causes voting power errors
 
 ## Severity
@@ -851,6 +859,8 @@ Modify the split function to align lock end times with weekly boundaries, consis
     }
 ```
 
+
+
 # [M-01] Inconsistent `VotingEscrow` implementation in `balanceOfNFT()` methods
 
 ## Severity
@@ -861,14 +871,16 @@ Modify the split function to align lock end times with weekly boundaries, consis
 
 ## Description
 
-This is an unfixed issue in the forked repo (https://github.com/spearbit/portfolio/blob/master/pdfs/Velodrome-Spearbit-Security-Review.pdf 5.3.9 Inconsistent between balanceOfNFT, balanceOfNFTAt and \_balanceOfNFT functions).
+This is an unfixed issue in the forked repo ([link](https://github.com/spearbit/portfolio/blob/master/pdfs/Velodrome-Spearbit-Security-Review.pdf), 5.3.9 Inconsistent between balanceOfNFT, balanceOfNFTAt and _balanceOfNFT functions).
 
 > The `balanceOfNFT` function implements a flash-loan protection that returns zero voting balance if
-> `ownershipChange[_tokenId] == block.number`. However, this was not consistently applied to the `balanceOfNFTAt` and `_balanceOfNFT` functions.
+`ownershipChange[_tokenId] == block.number`. However, this was not consistently applied to the `balanceOfNFTAt` and `_balanceOfNFT` functions.
 
 ## Recommendations
 
 Keep the consistency. It seems like the check is no longer in use, if so, remove it from the codebase.
+
+
 
 # [M-02] Ambiguous condition in fee handling for bribe rewards
 
@@ -895,8 +907,7 @@ if (
 }
 ```
 
-The condition \_fees0 > IBribe(internal_bribe).left(\_token0) is problematic because:
-
+The condition _fees0 > IBribe(internal_bribe).left(_token0) is problematic because:
 - Ambiguity: The `_fees0` variable represents new rewards that are being processed and will be passed to `notifyRewardAmount`, while `left` indicates the amount of rewards that have not yet been distributed. There is no inherent connection between these two values, making the condition unclear.
 - Logical Disconnect: The requirement implies that the new fees must exceed the remaining rewards, which does not logically correlate with the process of notifying the bribe contract about new rewards.
 
@@ -911,7 +922,7 @@ Also, the check `_claimable/DURAITON` is a bit too strict compared with what was
             IGauge(_gauge).notifyRewardAmount(base, _claimable);
             emit DistributeReward(msg.sender, _gauge, _claimable);
         }
-```
+``` 
 
 ```solidity
         if (block.timestamp >= periodFinish) {
@@ -930,11 +941,13 @@ Also, the check `_claimable/DURAITON` is a bit too strict compared with what was
                 periodFinish: nextPeriodFinish
             });
         }
-```
+```                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 ## Recommendations
 
-To improve clarity and ensure correct functionality, it is recommended to revise the condition to better reflect the intended logic.
+To improve clarity and ensure correct functionality, it is recommended to revise the condition to better reflect the intended logic. 
+
+
 
 # [M-03] Weight loss possible due to invalid pool votes in `_vote()`
 
@@ -976,22 +989,22 @@ This issue can lead to significant inefficiencies in the voting process. If user
 Consider the following scenario:
 
 User Input: The user provides the following inputs:
-
 - `_poolVote`: An array of pools the user wants to vote on: `["PoolA", "PoolB", "PoolC"]`.
 - `_weights`: The corresponding weights for each pool: `[50, 50, 50]`.
 - Gauge Status: `gauges["PoolA"]` is a valid gauge, `gauges["PoolB"]` is a valid gauge, `gauges["PoolC"]` is not a valid gauge.
 - NFT Weight: The user's NFT weight is retrieved as:
-  `_weight = IVotingEscrow(_ve).balanceOfNFT(_tokenId);` (let's say this returns `150`).
+`_weight = IVotingEscrow(_ve).balanceOfNFT(_tokenId);` (let's say this returns `150`).
 
 As a result:
-
 - Total Weight Used: The user intended to vote with NFT weight which is 150.
 - Actual Weight Utilized: Only 100 (from `PoolA` and `PoolB`) is effectively utilized:
 - Weight Waste: The weight associated with `PoolC` (the invalid gauge) is wasted.
 
 ## Recommendations
 
-To mitigate this issue, it is recommended to implement a validation check for the `_poolVote` array before proceeding with the weight calculations. If any pools are found to be invalid, the function should revert or adjust the calculations accordingly.
+To mitigate this issue, it is recommended to implement a validation check for the `_poolVote` array before proceeding with the weight calculations. If any pools are found to be invalid, the function should revert or adjust the calculations accordingly. 
+
+
 
 # [M-04] `checkpoint.timestamp` inside `VotingEscrow` never used
 
@@ -1057,11 +1070,13 @@ The design of `checkpoint` in `VotingEscrow` is to record the delegatee's inform
     }
 ```
 
-However, `checkpoints.timestamp` is never used and initialized, causing all operations that depend on this information will not work properly.
+However, `checkpoints.timestamp` is never used and initialized, causing all operations that depend on this information will not work properly. 
 
 ## Recommendations
 
 When delegate information is moved, initialize and set `checkpoints.timestamp`.
+
+
 
 # [M-05] Missing rescue reward function in `Gauge`, `CLGauge`, `Bribes`
 
@@ -1111,6 +1126,8 @@ However, those contracts lack functionality to rescue the rewards, causing the d
 ## Recommendations
 
 Add functionality to rescue the rewards.
+
+
 
 # [M-06] `VotingEscrow._burn` prevents approved spender from using `withdraw()`
 
@@ -1192,6 +1209,8 @@ This will prevent `tokenId`'s spender and operator to perform those actions on b
 
 Provide `owner` instead of `msg.sender` to `_removeTokenFrom` operation inside `_burn`.
 
+
+
 # [M-07] `VotingEscrow.withdraw` cannot be called by an approved `tokenId` spender
 
 ## Severity
@@ -1268,6 +1287,8 @@ However, inside `_burn`, when `approve` is called to reset `tokenId` approval, t
 
 Consider resetting `idToApprovals` directly inside the `_burn` function instead of calling `approve`.
 
+
+
 # [M-08] Wrong supply accounting in merge function
 
 ## Severity
@@ -1327,6 +1348,8 @@ Decrease the `supply` in the `merge` function before calling `_deposit_for`:
     }
 ```
 
+
+
 # [M-09] Desync lets bribes be received without emissions
 
 ## Severity
@@ -1337,14 +1360,16 @@ Decrease the `supply` in the `merge` function before calling `_deposit_for`:
 
 ## Description
 
-Because of the fact that BribeVotingRewardwill award bribes based on the voting power at EPOCH\_-
+Because of the fact that BribeVotingRewardwill award bribes based on the voting power at EPOCH_-
 END - 1, but Minter.update_period() and Voter.distribute() can be called at a time after, some voters may
 switch their vote before their weight influences emissions, causing the voters to receive bribes, but the bribing
 protocols to not have their gauge receive the emissions.
 
 ## Recommendations
 
-Allowing 1 hour post-voting window for protocols to trigger distribution.
+ Allowing 1 hour post-voting window for protocols to trigger distribution.
+
+
 
 # [M-10] split() mints NFTs to msg.sender not the original owner
 
@@ -1356,7 +1381,7 @@ Allowing 1 hour post-voting window for protocols to trigger distribution.
 
 ## Description
 
-VotingEscrow implementation, the split() function mints new NFTs to the msg.sender, regardless of whether msg.sender is the original owner or just an approved operator. This is inconsistent with the behavior of other functions, such as merge(), increase_amount(), and increase_unlock_time(), which preserve ownership and rely on \_isApprovedOrOwner() to allow operations but does not alter the ownership.
+ VotingEscrow implementation, the split() function mints new NFTs to the msg.sender, regardless of whether msg.sender is the original owner or just an approved operator. This is inconsistent with the behavior of other functions, such as merge(), increase_amount(), and increase_unlock_time(), which preserve ownership and rely on _isApprovedOrOwner() to allow operations but does not alter the ownership.
 
 ```solidity
     function split(
@@ -1379,6 +1404,8 @@ VotingEscrow implementation, the split() function mints new NFTs to the msg.send
 
 Modify the split() function and use the original owner of the NFT when minting new veNFTs.
 
+
+
 # [M-11] User can prevent poke() from updating voting power
 
 ## Severity
@@ -1391,6 +1418,7 @@ Modify the split() function and use the original owner of the NFT when minting n
 
 The poke() function is designed to allow anyone to update a user’s voting allocation based on their current voting power. This is important because users who do not re-cast their votes (via vote()) can otherwise continue to receive rewards as if their balance never decreased.
 However, the system can be abused to prevent successful pokes by introducing dust-level weights in the original vote.
+
 
 ```solidity
     function _vote(
@@ -1410,22 +1438,18 @@ However, the system can be abused to prevent successful pokes by introducing dus
                 uint256 _poolWeight = (_weights[i] * _weight) / _totalVoteWeight;
                 require(_poolWeight != 0);
 ```
-
 A malicious user can:
-
 - Cast an initial vote with one pool receiving a very small weight (e.g., 1 unit) and the rest going to others.
-- Over time, as the user's voting power decays (e.g., due to the lock approaching expiration), the resulting \_poolWeight for the small-weight pool rounds down to 0.
+- Over time, as the user's voting power decays (e.g., due to the lock approaching expiration), the resulting _poolWeight for the small-weight pool rounds down to 0.
 - When poke() is later called, it attempts to reapply the same voting configuration. Due to the zero-weight condition, it reverts at this check:
 
 ```solidity
 uint256 _poolWeight = (_weights[i] * _weight) / _totalVoteWeight;
 require(_poolWeight != 0,);
 ```
-
 - As a result, poke() fails, and the user's used voting weight remains outdated, allowing them to earn excess bribe rewards relative to their actual, decayed voting power.
 
 POC:
-
 ```solidity
     function testPokeFail()
         public
@@ -1466,10 +1490,12 @@ POC:
 
 ## Recommendations
 
-Instead of reverting on zero \_poolWeight, skip such pools:
+Instead of reverting on zero _poolWeight, skip such pools:
 
 `if (_poolWeight == 0) continue;
 `
+
+
 
 # [M-12] Merging or withdrawing VotingEscrow burns tokens without rewards
 
@@ -1484,22 +1510,23 @@ Instead of reverting on zero \_poolWeight, skip such pools:
 VotingEscrow merge(), split(), and withdraw() functions burn the user's NFT without claiming pending rewards from the bribe system (via getReward). Since claiming bribe rewards requires ownership of the NFT (isApprovedOrOwner check), burning the NFT makes it impossible to access unclaimed rewards afterward.
 
 In the merge() function:
-
 ```
 locked[_from] = LockedBalance(0, 0);
 _checkpoint(_from, _locked0, LockedBalance(0, 0));
 _burn(_from);
 ```
-
 The getReward() function that users must call to claim bribe rewards checks ownership:
 
 `require(IVotingEscrow(_ve).isApprovedOrOwner(msg.sender, tokenId));
 `
 Burning the NFT removes this ownership, making it impossible to later call getReward.
 
+
 ## Recommendations
 
 Reset token amounts instead of directly burning nft.
+
+
 
 # [M-13] Potential revert in earned() when checkpoint supply is zero
 
@@ -1582,7 +1609,7 @@ However, it is not considered the case where `supplyCheckpoints` at the calculat
 
 Add the following test file to the codebase: https://gist.github.com/said017/f6b0674c8f992c07c69ec1c4cffa3630.
 
-Run the test:
+Run the test: 
 
 ```shell
 forge test --match-test testEpochDivZero -vvv
@@ -1591,6 +1618,8 @@ forge test --match-test testEpochDivZero -vvv
 ## Recommendations
 
 Set the `_prev._prevSupply` to 1 if it 0.
+
+
 
 # [M-14] Incorrect check inside `CLGauge.claimFees`
 
@@ -1679,7 +1708,7 @@ Adjust the following line inside `CLPool`.
             // ensure that the slot is not cleared, for gas savings
             gaugeFees.token0 = 1;
             TransferHelper.safeTransfer(token0, msg.sender, --amount0);
--        }
+-        } 
 +        } else {
 +           --amount0;
 +      }
@@ -1687,7 +1716,7 @@ Adjust the following line inside `CLPool`.
             // ensure that the slot is not cleared, for gas savings
             gaugeFees.token1 = 1;
             TransferHelper.safeTransfer(token1, msg.sender, --amount1);
--        }
+-        } 
 +        } else {
 +           --amount1;
 +      }
@@ -1695,6 +1724,8 @@ Adjust the following line inside `CLPool`.
         emit CollectFees(msg.sender, amount0, amount1);
     }
 ```
+
+
 
 # [M-15] DOS attack by delegating tokens at MAX_DELEGATES = 1024
 
@@ -1722,6 +1753,8 @@ victim. By the time the attacker hits the gas limit, the victim can not withdraw
 
 Reduce the MAX_DELEGATES value from 1024 to prevent bloated delegation arrays from exceeding even fast block limits.
 
+
+
 # [M-16] Double reward claim in `ExternalBribe`
 
 ## Severity
@@ -1737,12 +1770,11 @@ In the `ExternalBribe` contract, a malicious user can claim rewards twice for th
 The problem lies in the update of the `prevRewards.timestamp` field inside the loop. The contract updates `prevRewards.timestamp` **unconditionally**, even when `_nextEpochStart <= prevRewards.timestamp`. This causes reward accumulation logic to break, allowing rewards from a previously claimed epoch to be included again.
 
 `ExternalBribe::earned()` function:
-
 ```solidity
 function earned(address token, uint tokenId) public view returns (uint) {
     ...
     uint _startIndex = getPriorBalanceIndex(tokenId, _startTimestamp);
-    uint _endIndex = numCheckpoints[tokenId] - 1;
+    uint _endIndex = numCheckpoints[tokenId] - 1; 
 
     uint reward = 0;
     // you only earn once per epoch (after it's over)
@@ -1751,7 +1783,7 @@ function earned(address token, uint tokenId) public view returns (uint) {
 
     PrevData memory _prev;
     _prev._prevSupply = 1;
-
+    
     if (_endIndex > 0) {
         for (uint i = _startIndex; i <= _endIndex - 1; i++) {
             _prev._prevTs = checkpoints[tokenId][i].timestamp;
@@ -1781,41 +1813,43 @@ We'll refer to the `tokenId` as "User A".
 
 1. **Epoch 1**:
 
-   - User A deposits → Checkpoint 1 is created.
+   * User A deposits → Checkpoint 1 is created.
 
 2. **Epoch 2**:
 
-   - User A claims rewards → Earns Epoch 1 reward → `lastEarn` updated (green point).
+   * User A claims rewards → Earns Epoch 1 reward → `lastEarn` updated (green point).
 
 3. **Epoch 2**:
 
-   - User A makes two more deposits → Checkpoints 2 and 3 are created.
+   * User A makes two more deposits → Checkpoints 2 and 3 are created.
 
-4. User A claims again:
+4.  User A claims again:
 
-   - `_startIndex`: Checkpoint 1.
-   - `_endIndex`: Checkpoint 3.
-   - `prevRewards.timestamp`: Start of Epoch 2.
+    * `_startIndex`: Checkpoint 1.
+    * `_endIndex`: Checkpoint 3.
+    * `prevRewards.timestamp`: Start of Epoch 2.
 
-- **Iteration 1** (Checkpoint 1):
+   * **Iteration 1** (Checkpoint 1):
 
-  - `_nextEpochStart = Start of Epoch 1`.
-  - `prevRewards.timestamp = Start of Epoch 1`.
-  - `prevRewards.balance` updated (Epoch 1 reward).
+     * `_nextEpochStart = Start of Epoch 1`.
+     * `prevRewards.timestamp = Start of Epoch 1`.
+     * `prevRewards.balance` updated (Epoch 1 reward).
 
-- **Iteration 2** (Checkpoint 2):
+   * **Iteration 2** (Checkpoint 2):
 
-  - `_nextEpochStart = Start of Epoch 2`.
-  - Since `_nextEpochStart > prevRewards.timestamp`, `reward += Epoch 1 reward`.
-  - `prevRewards.timestamp = Start of Epoch 2`.
+     * `_nextEpochStart = Start of Epoch 2`.
+     * Since `_nextEpochStart > prevRewards.timestamp`, `reward += Epoch 1 reward`.
+     * `prevRewards.timestamp = Start of Epoch 2`.
 
-- **Checkpoint 3** is skipped or only used depending on current timestamp.
+   * **Checkpoint 3** is skipped or only used depending on current timestamp.
 
 5. Result: User A successfully reclaimed already claimed rewards.
 
 ## Recommendations
 
 Update the logic inside `ExternalBribe::earned()` so that `prevRewards.timestamp` is only updated when `_nextEpochStart > prevRewards.timestamp`.
+
+
 
 # [L-01] Redundant logic in `getEpochStart()` of `ExternalBribe`
 
@@ -1830,8 +1864,9 @@ function getEpochStart(uint timestamp) public pure returns (uint) {
     return timestamp < bribeEnd ? bribeStart : bribeStart + 7 days;
 }
 ```
-
 The issue arises because the calculation of `bribeStart + 7` days will always be greater than `timestamp` if timestamp is within the current epoch. This means that the condition checking and the alternative return value are redundant.
+
+
 
 # [L-02] No revert in `ownerOf()` for non-existent token IDs
 
@@ -1854,9 +1889,12 @@ This is inconsistent with EIP-721:
     function ownerOf(uint256 _tokenId) external view returns (address);
 ```
 
+
+
 # [L-03] Inadequate reward validation in `ClGauge` contract
 
-The reward rate validation in the `CLGauge` contract does not adequately account for the total balance of the kitten token, **which includes both distributable rewards and unclaimed rewards**.
+The reward rate validation in the `CLGauge` contract does not adequately account for the total balance of the kitten token, **which includes both distributable rewards and unclaimed rewards**. 
+
 
 ```solidity
 require(rewardRate > 0);
@@ -1867,7 +1905,9 @@ require(
 );
 ```
 
-While this check ensures that the `rewardRate` does not exceed the available balance divided by the remaining epoch duration, it fails to consider that the balance includes both rewards that are yet to be distributed and rewards that have not been claimed.
+While this check ensures that the `rewardRate` does not exceed the available balance divided by the remaining epoch duration, it fails to consider that the balance includes both rewards that are yet to be distributed and rewards that have not been claimed. 
+
+
 
 # [L-04] `CLGauge` should use `ERC721HolderUpgradeable` instead of `ERC721Holder`
 
@@ -1883,6 +1923,8 @@ contract CLGauge is
 ```
 
 Since `CLGauge` is intended to be an upgradeable contract, it is crucial to use the upgradeable version of the `ERC721Holder`, which is `ERC721HolderUpgradeable`.
+
+
 
 # [L-05] Irreversible whitelisting of tokens
 
@@ -1900,9 +1942,11 @@ Once a token is added to the whitelist, there is no mechanism provided in the co
 
 To enhance the flexibility and security of the contract, it is recommended to implement a mechanism to allow for the removal of tokens from the whitelist.
 
+
+
 # [L-06] Redundant check for `_votes` in `_reset()` function
 
-The `_reset` function in the `Voter` contract contains a redundant check for the variable `_votes`, which is of type `uint256`.
+The `_reset` function in the `Voter` contract contains a redundant check for the variable `_votes`, which is of type `uint256`. 
 
 ```solidity
 uint256 _votes = votes[_tokenId][_pool];
@@ -1933,7 +1977,9 @@ if (_votes != 0) {
 
 It is recommended to remove the redundant check for `_votes > 0` and simplify the code.
 
-# [L-07] Hardcoded gas in `ClFactory`'s `getSwapFee` and `getUnstakedFee` can cause issues
+
+
+# [L-07] Hardcoded gas in `ClFactory`'s  `getSwapFee` and `getUnstakedFee` can cause issues
 
 In `getSwapFee` and `getUnstakedFee`, the gas provided to perform static calls to `unstakedFeeModule` and `swapFeeModule` is hardcoded.
 
@@ -1985,6 +2031,8 @@ In `getSwapFee` and `getUnstakedFee`, the gas provided to perform static calls t
 
 Consider making it configurable to avoid potential issues in the future, in case the required gas needs to be adjusted.
 
+
+
 # [L-08] `Voter.updateForRange` could revert if `end` value is invalid
 
 Inside `updateForRange`, the provided `end` value is used to loop over the `pools` without checking whether it exceeds the valid `pools` range`.
@@ -1999,6 +2047,7 @@ Inside `updateForRange`, the provided `end` value is used to loop over the `pool
 
 This could result in a revert. Consider checking the `end` value, and if it exceeds the length of pools, use the pools length instead.
 
+
 ```diff
     function updateForRange(uint start, uint end) public {
 +         end = Math.min(end, pools.length);
@@ -2007,6 +2056,8 @@ This could result in a revert. Consider checking the `end` value, and if it exce
         }
     }
 ```
+
+
 
 # [L-09] Potential liquidity overflow
 
@@ -2034,6 +2085,8 @@ In the CLGauge contract, both the `deposit` and `withdraw` functions perform uns
 ```
 
 It's recommended to use SafeCast library to cast liquidity to int128.
+
+
 
 # [L-10] Fee-on-transfer token incompatibility
 
@@ -2084,7 +2137,7 @@ Gauge.notifyRewardAmount:
             uint _remaining = periodFinish[token] - block.timestamp;
             uint _left = _remaining * rewardRate[token];
             require(amount > _left);
-            _safeTransferFrom(token, msg.sender, address(this), amount);
+            _safeTransferFrom(token, msg.sender, address(this), amount); 
             rewardRate[token] = (amount + _left) / DURATION; // @audit uses pre-fee amount
         }
         ...
@@ -2092,6 +2145,8 @@ Gauge.notifyRewardAmount:
 ```
 
 Recommendation: To properly handle fee-on-transfer tokens, the protocol should track the actual received amount by comparing token balances before and after transfers.
+
+
 
 # [L-11] Reward calculation reverts due to potential arithmetic overflow
 
@@ -2102,6 +2157,7 @@ And when calculating the final earned reward amount `(rewardGrowthInsideDelta * 
 
 In both cases, the intermediate multiplication could exceed the uint256 maximum value, causing a revert.
 It leads to users will be unable to claim their rewards.
+
 
 ```solidity
     function earned(uint256 nfpTokenId) public view returns (uint) {
@@ -2125,6 +2181,8 @@ Reference:
 https://github.com/velodrome-finance/slipstream/blob/main/contracts/gauge/CLGauge.sol#L123.
 https://github.com/velodrome-finance/slipstream/blob/main/contracts/gauge/CLGauge.sol#L132.
 
+
+
 # [L-12] Initializer pattern in `ClFactory` lacks upgrade, risks frontrunning
 
 The `CLFactory` contract uses an `initialize` function with the `initializer` modifier but does not implement any upgrade pattern (such as UUPSUpgradeable).
@@ -2134,11 +2192,13 @@ Recommendation to eliminate the risk of front-run initialization:
 - If the contract is not intended to be upgradeable, replace the initialize function with a constructor.
 - If upgradeability is desired, implement a proper upgrade pattern (e.g., UUPSUpgradeable) like the other contracts in the codebase.
 
+
+
 # [L-13] Users can create NFTs with 0 locked amount through split function
 
-VotingEscrow doesn't allow users to create NFTs with zero locked amount.
+VotingEscrow doesn't allow users to create NFTs with zero locked amount. 
 
-The `split` function also doesn't allow split to 0. However, it fails to check that both resulting NFTs have non-zero amounts. When a user sets `_amount` equal to the full locked balance of the source NFT (`value`), it results in the first NFT having a zero locked amount:
+The `split` function also doesn't allow split to 0. However, it fails to check that both resulting NFTs have non-zero amounts. When a user sets `_amount` equal to the full locked balance of the source NFT (`value`), it results in the first NFT having a zero locked amount: 
 
 ```solidity
     function split(
@@ -2173,6 +2233,8 @@ It's recommended to add a check in the `split` function to ensure both resulting
         _tokenId1 = _createSplitNFT(msgSender, _locked);
 ```
 
+
+
 # [L-14] Gauge may receive rewards for period it was dead when revived
 
 When a gauge is revived using the `reviveGauge` function, its `supplyIndex` is not updated to the current index. This creates a vulnerability where a revived gauge can calculate and receive rewards for the period it was dead.
@@ -2198,7 +2260,9 @@ function reviveGauge(address _gauge) external {
 }
 ```
 
-# [L-15] Rewards lost until `Gauge` or `Bribe` deposits are nonzero
+
+
+# [L-15]  Rewards lost until `Gauge` or `Bribe` deposits are nonzero
 
 Because the rewards are emitted over DURATION, if no deposit has happened and notifyRewardAmount()is called
 with a non-zero value, all rewards will be forfeited until totalSupply is non-zero as nobody will be able to claim
@@ -2206,14 +2270,18 @@ them.
 
 Recommendation: Document this risk to end users and tell them to deposit before voting on a gauge.
 
+
+
 # [L-16] Dust losses in `notifyRewardAmount`
 
 This should cause dust losses which are marginal but are never queued back. See private link to
 code-423n4/2022-10-3xcalibur-findings#410.
 Vs SNX implementation which does queue the dust back.
-Users may be diluted by distributing the \_leftover amount of another epoch period of length DURATION if the
+Users may be diluted by distributing the _leftover amount of another epoch period of length DURATION if the
 total supply deposited in the gauge continues to increase over this same period. On the flip side, they may also
 benefit if users withdraw funds from the gauge during the same epoch.
+
+
 
 # [L-17] Lack of `_disableInitializers` in upgradeable contracts
 
@@ -2225,6 +2293,7 @@ It's [best practice](https://docs.openzeppelin.com/upgrades-plugins/writing-upgr
 - FactoryRegistry.
 - CLGauge.
 
+
 Consider adding a constructor with the OpenZeppelin `_disableInitializers` in all the upgradeable contracts:
 
 ```solidity
@@ -2232,6 +2301,8 @@ constructor() {
     _disableInitializers();
 }
 ```
+
+
 
 # [L-18] Potential out of gas risk in reward distribution checkpoint traversal
 
@@ -2296,12 +2367,13 @@ This could potentially cause the transaction to run out of gas, resulting in a f
 Recommendations:
 Allow users to claim rewards for special checkpoints.
 
+
+
 # [L-19] Inaccuracy in `Voter` contract reward distribution mechanism
 
 The reward distribution mechanism in the `voter` contract may become inaccurate and out of sync due to its reliance on dynamic weights derived from the `IVotingEscrow(_ve).balanceOfNFT(_tokenId)`. This can lead to discrepancies in reward calculations, especially in scenarios with a high number of users.
 
 In the `Voter` contract, the reward distribution ratio is calculated based on the total weight of votes:
-
 ```solidity
 uint256 _ratio = (amount * 1e18) / totalWeight; // 1e18 adjustment is removed during claim
 ```
@@ -2354,11 +2426,13 @@ This is an unfixed issue from the forked repo(https://github.com/spearbit/portfo
 Recommendations:
 Follow the fix recommendation from the original finding. Re-designing the Voter and Bribe contracts may be worthwhile to decay user deposits automatically.
 
+
+
 # [L-20] Calling `notifyRewardAmount` for unsupported tokens can grief `gauge`
 
 An attacker exploits the system by repeatedly calling `notifyRewardAmount` for a new `gauge`, potentially reaching the `MAX_REWARD_TOKENS` limit. This could prevent legitimate tokens from being added as rewards.
 
-Once a token is whitelisted, it cannot be removed unless the `swapOutRewardToken` is called. This means that if the `voter` has over `MAX_REWARD_TOKENS` tokens whitelisted, an attacker could perform a griefing attack on the newly created gauge to achieve a temporary DOS.
+Once a token is whitelisted, it cannot be removed unless the `swapOutRewardToken` is called. This means that if the `voter` has  over `MAX_REWARD_TOKENS` tokens whitelisted, an attacker could perform a griefing attack on the newly created gauge to achieve a temporary DOS.
 
 ```solidity
     function notifyRewardAmount(address token, uint amount) external lock {
@@ -2412,8 +2486,11 @@ The attacker could provide `minimum` tokens and call `notifyRewardAmount` with a
 
 This could lead to the `rewards` array exceeding `MAX_REWARD_TOKENS`, preventing legitimate(real-intended) rewards tokens from being added as rewards in the future. Unless the `swapOutRewardToken` is called, a temporary DOS can't be resolved.
 
+
 Recommendations:
 Restrict the call only to the `voter`.
+
+
 
 # [L-21] Incorrect logic and documentation in balance retrieval
 
@@ -2438,7 +2515,7 @@ The relevant documentation and code snippets are as follows:
    }
 ```
 
-When the condition `checkpoints[account][0].timestamp > timestamp `is true, the function returns `0`(the index is `0`). This is misleading because returning 0 here implies that the account should have a zero balance, but it actually refers to the index of the first checkpoint.
+When the condition `checkpoints[account][0].timestamp > timestamp `is true, the function returns `0`(the index is `0`). This is misleading because returning 0 here implies that the account should have a zero balance, but it actually refers to the index of the first checkpoint. 
 
 For other cases, you could directly use `checkpoints[account][index]` to get the balance at the point, but for the case we discussed above, it might incorrectly return `checkpoints[account][0]` instead of `0`.
 
@@ -2478,7 +2555,6 @@ Additionally, things could also go wrong for `VotingEscrow::getPastVotes`.
         return votes;
     }
 ```
-
 if the `timestamp` is smaller than `checkpoints[account][0].timestamp`, the incorrect voting is being calculated.
 
 ```solidity
@@ -2516,9 +2592,10 @@ if the `timestamp` is smaller than `checkpoints[account][0].timestamp`, the inco
 **Recommendations**
 
 To address these issues, it is recommended to:
-
 - Update Documentation: Revise the comments to accurately reflect that the function returns an index based on block.timestamp and clarify how to retrieve the corresponding balance.
 - Set all `checkpoints` at index `0` to the empty state to accurately reflect the `0`.
+
+
 
 # [L-22] Voting restriction possible after resetting in `reset()`
 
@@ -2540,7 +2617,10 @@ If the intention is to allow users to `abstain` from voting in the current epoch
 
 Otherwise, just remove the `lastVoted` assignment.
 
+
+
 # [L-23] `VotingEscrow.totalSupplyAtT` is not working properly
+
 
 Inside `VotingEscrow.totalSupplyAtT`, it can be observed that it will always provide latest last epoch's `point_history` to the `_supply_at`.
 
@@ -2586,7 +2666,7 @@ This means that if the provided `t` is in the past, the function will not use th
     }
 ```
 
-PoC :
+PoC : 
 
 ```solidity
     function testSupplyInconsistent() public {
@@ -2629,6 +2709,8 @@ PoC :
 **Recommendations**
 
 Use the same search logic as in `totalSupplyAt`, first determine the correct target epoch, then calculate `dt`, and pass those values to `_supply_at`.
+
+
 
 # [L-24] Inconsistent restriction on `increase_amount` and `deposit_for`
 
@@ -2679,6 +2761,8 @@ Use the same search logic as in `totalSupplyAt`, first determine the correct tar
 Recommendations:
 Either remove the restriction on `increase_amount`, or add a restriction to `deposit_for`.
 
+
+
 # [L-25] Lack of a `_poolVote` length check inside `Voter.vote` could cause issues
 
 User can `vote` an arbitrary amount of pools as long as it is registered inside the `Voter`.
@@ -2701,12 +2785,13 @@ This could cause issues. The lack of a maximum pools length check could result i
 Recommendations:
 Consider adding a maximum pool length check inside the `vote` operation.
 
+
+
 # [L-26] Users lose rewards if they call `getReward` exactly at epoch end
 
 In the `ExternalBribe.earned` function, users can permanently lose rewards for an epoch if they call `getReward` exactly at the epoch's end time.
 
 Consider a scenario when a user has one checkpoint and calls `getReward` when `block.timestamp` is exactly equal to `_lastEpochEnd`:
-
 - The condition `block.timestamp > _lastEpochEnd` evaluates to `false`.
 - The reward calculation is skipped, returning 0.
 - The `getReward` function updates `lastEarn[token][tokenId]` to `block.timestamp` (which is `_lastEpochEnd`).
@@ -2748,6 +2833,8 @@ This creates a timing vulnerability where users lose their rewards.
 
 Revert when users call `getReward` at epoch end to avoid losing rewards.
 
+
+
 # [L-27] Users can deposit NFTs into killed CL gauges
 
 The Kittenswap protocol uses a gauge system to distribute rewards. For safety purposes, the protocol can "kill" gauges through the `killGauge` function in the Voter contract, which sets `isAlive[_gauge] = false` and zeroes out claimable rewards.
@@ -2766,7 +2853,7 @@ The Kittenswap protocol uses a gauge system to distribute rewards. For safety pu
         } else {
             tokenId = tokenIds[msg.sender];
         }
-
+        
         emit Deposit(msg.sender, nfpTokenId, tokenId, _liquidity);
     }
 ```
@@ -2787,6 +2874,8 @@ Callback to voter contract to check status of the gauge:
     }
 ```
 
+
+
 # [L-28] Inaccurate reward calculation in `ExternalBribe` contract
 
 The reward calculation in the `ExternalBribe` contract uses the supply at the end of the previous epoch while relying on the last recorded user balance from that epoch. This discrepancy can lead to inaccurate reward distributions, allowing users to exploit the system by depositing large amounts just before the epoch ends.
@@ -2802,6 +2891,8 @@ This design flaw allows users to deposit a significant amount of tokens just bef
 
 Recommendations:
 To mitigate this issue, consider implementing a more robust reward calculation mechanism that accurately reflects user contributions throughout the entire epoch.
+
+
 
 # [L-29] `CLGauge.earned` could revert due to reward growth underflow
 
@@ -2856,6 +2947,8 @@ Detailed information about the root cause: https://github.com/Uniswap/v3-core/is
 Recommendations:
 Wrap the `rewardGrowthInsideDelta` inside `unchecked` block to allow underflow.
 
+
+
 # [L-30] Inconsistent `DOMAIN_TYPEHASH`
 
 In the `VotingEscrow::delegateBySig` function, the `domainSeparator` is computed as follows:
@@ -2879,3 +2972,5 @@ Update the `DOMAIN_TYPEHASH` definition to include the `version` field, as shown
 ```solidity
 bytes32 public constant DOMAIN_TYPEHASH = keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)');
 ```
+
+
