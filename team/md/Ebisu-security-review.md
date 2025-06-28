@@ -1,17 +1,21 @@
 # About
- **Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **ebisu-vault** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **ebisu-vault** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About ebisu-vault
- The protocol is an ERC4626 points vault for wETH. The time each depositor spent in the vault will be calculated off-chain and used to decide the points accrued to each separate depositor.
+
+The protocol is an ERC4626 points vault for wETH. The time each depositor spent in the vault will be calculated off-chain and used to decide the points accrued to each separate depositor.
 
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -19,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -27,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -35,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -45,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [39db13fe1e74602693c63a4d716da581e2597319](https://github.com/ebisufinance/ebisu-vault/tree/39db13fe1e74602693c63a4d716da581e2597319)**
+
+**_review commit hash_ - [39db13fe1e74602693c63a4d716da581e2597319](https://github.com/ebisufinance/ebisu-vault/tree/39db13fe1e74602693c63a4d716da581e2597319)**
 
 **_fixes review commit hash_ - [55ed087b07ec1bef0ce6236c0a6f89b348330b51](https://github.com/ebisufinance/ebisu-vault/tree/55ed087b07ec1bef0ce6236c0a6f89b348330b51)**
 
@@ -59,7 +64,8 @@ The following smart contracts were in scope of the audit:
 - `interfaces/**`
 
 # Findings
- # [M-01] `maxTotalDeposits` is not checked properly inside `_beforeDeposit`.
+
+# [M-01] `maxTotalDeposits` is not checked properly inside `_beforeDeposit`.
 
 ## Severity
 
@@ -106,8 +112,6 @@ Consider `assets` that will be deposited by users when checking against `maxTota
     }
 ```
 
-
-
 # [M-02] `setTVLLimits` incorrectly assigns `_newMaxTotalDeposits` to `maxPerDeposit` instead of `maxTotalDeposits`.
 
 ## Severity
@@ -148,8 +152,6 @@ Assign `_newMaxTotalDeposits` to `maxTotalDeposits` instead of `maxPerDeposit`.
         emit MaxTotalDepositsUpdated(maxTotalDeposits, _newMaxTotalDeposits);
     }
 ```
-
-
 
 # [M-03] Initial griefing attack possible
 
@@ -218,8 +220,6 @@ Even though this is not profitable for the attacker it will leave the vault in a
 
 Consider mitigating this with an initial deposit of a small amount. This is the most common and easy way to make sure this is not possible, as long as it is an substantial amount it will make this attack too costly.
 
-
-
 # [L-01] `getTVLLimits` will return the wrong value due to variable shadowing.
 
 The `getTVLLimits` function's local state variables (`maxPerDeposit` and `maxTotalDeposits`) are using the same names as the global state variables. This variable shadowing will cause the returned value to be 0, instead of the expected global state values for `maxPerDeposit` and `maxTotalDeposits`. Update the function and remove the local state variable declarations so that the function will return the expected value.
@@ -230,8 +230,6 @@ The `getTVLLimits` function's local state variables (`maxPerDeposit` and `maxTot
         return (maxPerDeposit, maxTotalDeposits);
     }
 ```
-
-
 
 # [L-02] `maxMint` should return shares corresponding to `maxPerDeposit`.
 
@@ -244,10 +242,6 @@ The `getTVLLimits` function's local state variables (`maxPerDeposit` and `maxTot
     }
 ```
 
-
-
 # [L-03] lack of slippage protection for `deposit`/`mint` and `withdraw`/`redeem`
 
 `deposit`/`withdraw`'s calculated shares and `mint`/`redeem`'s calculated assets for users highly depend on the current total assets and total supply inside the Ebisu vault, which can change in value, impacting the result of shares/assets calculation. Consider creating a router/helper contract or functions that wrap these functions, providing slippage checks.
-
-

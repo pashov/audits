@@ -548,19 +548,15 @@ it("maxUnstakeRequests is not used when user have already unstakeRequests", asyn
   //
   // 3. Account1 request unstake 1 wTAO
   console.log("\nRequest unstake 1 wTAO...");
-  await rsTAO
-    .connect(account1)
-    .requestUnstake(ethers.parseUnits("1", 9), {
-      value: ethers.parseEther("0.003"),
-    });
+  await rsTAO.connect(account1).requestUnstake(ethers.parseUnits("1", 9), {
+    value: ethers.parseEther("0.003"),
+  });
   //
   // 4. Account1 request unstake 2 wTAO
   console.log("\nRequest unstake 2 wTAO...");
-  await rsTAO
-    .connect(account1)
-    .requestUnstake(ethers.parseUnits("2", 9), {
-      value: ethers.parseEther("0.003"),
-    });
+  await rsTAO.connect(account1).requestUnstake(ethers.parseUnits("2", 9), {
+    value: ethers.parseEther("0.003"),
+  });
   //
   // 5. Account1 unstake both `requestUnstakes`
   console.log("\nOwner approves all the `Account1` requestUnstake");
@@ -585,17 +581,13 @@ it("maxUnstakeRequests is not used when user have already unstakeRequests", asyn
   // 6. Owner set max unstakeRequest to 1 but the account1 can still use 2 request unstakes
   await rsTAO.setMaxUnstakeRequest(1);
   console.log("\nRequest unstake 3 wTAO...");
-  await rsTAO
-    .connect(account1)
-    .requestUnstake(ethers.parseUnits("1", 9), {
-      value: ethers.parseEther("0.003"),
-    });
+  await rsTAO.connect(account1).requestUnstake(ethers.parseUnits("1", 9), {
+    value: ethers.parseEther("0.003"),
+  });
   console.log("\nRequest unstake 4 wTAO...");
-  await rsTAO
-    .connect(account1)
-    .requestUnstake(ethers.parseUnits("2", 9), {
-      value: ethers.parseEther("0.003"),
-    });
+  await rsTAO.connect(account1).requestUnstake(ethers.parseUnits("2", 9), {
+    value: ethers.parseEther("0.003"),
+  });
   let getUserRequests = await rsTAO.getUnstakeRequestByUser(account1.address);
   console.log(getUserRequests.length);
 });
