@@ -285,11 +285,11 @@ When calculating the price impact for closing trades, the function `_getTradePri
 ## Recommendations
 
 - When closing trades, the tradeOpenInterestUsd should be subtracted from the startOpenInterestUsd.
-        priceImpactP = ((_open ? _startOpenInterestUsd + _tradeOpenInterestUsd / 2
-                : _startOpenInterestUsd - _tradeOpenInterestUsd / 2) * _protectionCloseFactor) /
-                _onePercentDepthUsd /
-                1e18 /
-                2;
+  priceImpactP = ((\_open ? \_startOpenInterestUsd + \_tradeOpenInterestUsd / 2
+  : \_startOpenInterestUsd - \_tradeOpenInterestUsd / 2) \* \_protectionCloseFactor) /
+  \_onePercentDepthUsd /
+  1e18 /
+  2;
 
 # [M-04] Traders can avoid the new liquidation configuration
 

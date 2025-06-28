@@ -1,17 +1,21 @@
 # About
- **Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **desci-ecosystem** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **desci-ecosystem** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Catalyst
- The protocol allows users to create a "project" by launching a new ERC1155 token. Different "projects" can be purchased and sold on a price bonding curve, which is uniquely configurable per each project. Each curve trade incurs trading fees.
+
+The protocol allows users to create a "project" by launching a new ERC1155 token. Different "projects" can be purchased and sold on a price bonding curve, which is uniquely configurable per each project. Each curve trade incurs trading fees.
 
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -19,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -27,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -35,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -45,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [e7980268004251020b47ba450c3c684dc0f38247](https://github.com/moleculeprotocol/desci-ecosystem/tree/e7980268004251020b47ba450c3c684dc0f38247)**
+
+**_review commit hash_ - [e7980268004251020b47ba450c3c684dc0f38247](https://github.com/moleculeprotocol/desci-ecosystem/tree/e7980268004251020b47ba450c3c684dc0f38247)**
 
 **_fixes review commit hash_ - [0dc2ee33e1e60ba812aa9e3a6da874728c374e4b](https://github.com/moleculeprotocol/desci-ecosystem/tree/0dc2ee33e1e60ba812aa9e3a6da874728c374e4b)**
 
@@ -57,7 +62,8 @@ The following smart contracts were in scope of the audit:
 - `curves/AlgebraicSigmoidCurve`
 
 # Findings
- # [C-01] Attacker can drain all ETH from IPSeed due to re-configuring `tokenId`
+
+# [C-01] Attacker can drain all ETH from IPSeed due to re-configuring `tokenId`
 
 ## Severity
 
@@ -108,8 +114,6 @@ Here is link to PoC: https://gist.github.com/T1MOH593/4c28ede6cdc6d183927bb7e143
 ## Recommendations
 
 Disallow re-configuring of `tokenId`, for example require to pass non-empty `string projectId`
-
-
 
 # [C-02] Attacker can drain all ETH from IPSeed due to malicious `IIPSeedCurve` implementation
 
@@ -177,8 +181,6 @@ Malicious Curve implementation can incorrectly price tokens and therefore drain 
 
 Allow using only whitelisted implementation of `IIPSeedCurve`
 
-
-
 # [M-01] `burn()` function doesn't have slippage control
 
 ## Severity
@@ -219,8 +221,6 @@ Introduce argument like `minOutputAmount`:
   }
 ```
 
-
-
 # [L-01] User can accidentally burn his tokens instead of selling
 
 `IPSeed.sol` inherits `ERC1155BurnableUpgradeable.sol`. `burn()` is overriden to execute sell, however `burnBatch()` is not - it still burns tokens:
@@ -235,22 +235,16 @@ Introduce argument like `minOutputAmount`:
     }
 ```
 
-
-
 # [L-02] Malicious user can submit json injection in `uri()`
 
 Function `uri()` currently builds JSON from tokenId Metadata. However Attacker can submit malicious Metadata with JSON injection on your website where you render Metadata.
 
 Consider implementing preventative measures on your Frontend.
 
-
-
 # [L-03] Add sanity checks when set storage variables
 
 1. Validate that fee is in accepted range in functions `setProtocolFeeBps()` and `setSourcerFeeBps()`
 2. Add validation of Metadata parameters in `spawn()`
-
-
 
 # [L-04] SQRT Overflow
 
@@ -295,8 +289,6 @@ Running 1 test for test/Curves.t.sol:CurveTest
 It could be that for some projects, the curve is expected to have "constant" steepness, and the upper limit as high as possible. So the "b" parameter would be set as high as possible here.
 
 To resolve this, add checks for a, b, c for reasonable value range.
-
-
 
 # [L-05] MINIMUM_TRADE_SIZE value leak
 
@@ -346,5 +338,3 @@ File: packages\desci-contracts\src\curves\AlgebraicSigmoidCurve.sol
 76:     return endPrice - startPrice;
 77:   }
 ```
-
-

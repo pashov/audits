@@ -1,17 +1,21 @@
 # About
- **Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **subsquid-network-contracts** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **subsquid-network-contracts** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Subsquid Network
- Subsquid is a protocol for managing nodes participating in the distributed query and data lake network, and distributing rewards between them.
+
+Subsquid is a protocol for managing nodes participating in the distributed query and data lake network, and distributing rewards between them.
 
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -19,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -27,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -35,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -45,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [3545236f5b34076820fe747eb607a16d8b664a08](https://github.com/subsquid/subsquid-network-contracts/tree/3545236f5b34076820fe747eb607a16d8b664a08)**
+
+**_review commit hash_ - [3545236f5b34076820fe747eb607a16d8b664a08](https://github.com/subsquid/subsquid-network-contracts/tree/3545236f5b34076820fe747eb607a16d8b664a08)**
 
 **_fixes review commit hash_ - [4bcd8ee2f8de17d0877bba876574309fcaf227e1](https://github.com/subsquid/subsquid-network-contracts/tree/4bcd8ee2f8de17d0877bba876574309fcaf227e1)**
 
@@ -73,7 +78,8 @@ The following smart contracts were in scope of the audit:
 - `interfaces/**`
 
 # Findings
- # [C-01] Gateway creator can steal all tokens from the GatewayRegistry
+
+# [C-01] Gateway creator can steal all tokens from the GatewayRegistry
 
 ## Severity
 
@@ -167,8 +173,6 @@ Here is the coded POC for `GatewayRegistry.unstake.t.sol `
 ## Recommendations
 
 Delete `stakes` mapping when gateway is being unregistered.
-
-
 
 # [H-01] Missing check on `toBlock` allows distributors to change past rewards
 
@@ -265,8 +269,6 @@ require(toBlock > fromBlock, "Invalid block span");
 
 Either in the `commit` function or in the `distribute` function.
 
-
-
 # [H-02] `computationUnitsAvailable` can overestimate number of available units if staking duration is too small
 
 ## Severity
@@ -334,8 +336,6 @@ Thus malicious users can repeatedly stake small amounts and pump up the amount o
 ## Recommendations
 
 Set a minimum staking duration of 1 epoch.
-
-
 
 # [H-03] Workers could withdraw without deregister and waiting for the lock period
 
@@ -409,8 +409,6 @@ Consider to add extra check when `withdraw` is performed :
   }
 ```
 
-
-
 # [H-04] Lack of access control on tSQD's `registerTokenOnL2`
 
 ## Severity
@@ -456,8 +454,6 @@ An attacker can front-run the `registerTokenOnL2` and put an incorrect address f
 ## Recommendations
 
 Use the Ownable functionality inside tSQD and restrict `registerTokenOnL2` so that it can only be called by the owner/admin, as suggested by the Arbitrum bridge token design.
-
-
 
 # [M-01] `setGatewayAddress` incorrectly updates address of the gateway
 
@@ -531,8 +527,6 @@ Update `ownAddress` variable as well
     }
 ```
 
-
-
 # [M-02] `activeWorkerIds` have no size limit, can grow unbounded and gas-grief / cause OOG errors
 
 ## Severity
@@ -583,8 +577,6 @@ An unlikely scenario is when the inflated array is too large to traverse in a si
 ## Recommendations
 
 Use a whitelist of `peerIds`, and limit the size of the `activeWorkerIds` array to a reasonable amount.
-
-
 
 # [M-03] User can lock tokens from the TemporaryHolding for an "infinite" amount of time
 
@@ -643,8 +635,6 @@ One of the whitelisted targets is the `GatewayRegistry`. A savvy beneficiary can
 
 The easiest solution would be to disallow using gateway registry through `TemporaryHolding.sol`. If it's necessary for us to keep it as a valid target, consider decoding the payload in the`execute` function, and if it is the `stake` or `extend` functions, validate the duration.
 
-
-
 # [M-04] Protocol uses manipulatable randomness
 
 ## Severity
@@ -688,8 +678,6 @@ Since the randomness of the system is broken in these two ways, this is an issue
 Firstly, `blockhash` should never be called on the current block, which is what happens in scenario 2 above. So using the bloackhash of `slotStart-1` will give the same effect without the 0th index being able to manipulate the randomness.
 
 Secondly, in the future the blockhash on arbitrum might be more manipulatable. considering using chainlink VRF to generate randomness in a more robust manner.
-
-
 
 # [M-05] Vesting contract can lead to frequent reverts
 
@@ -758,8 +746,6 @@ Since users lose access to part of the funds they deserve, this is a medium seve
 
 Consider adding a `depositForVesting(unit amount)` function, and tracking the amount with a storage variable `baseAmount` updated in this function. This way, the vesting rewards will calculate rewards based on this and not the `erc20.balanceOf` value. The result is that we need not decrease the `baseAmount` when tokens are sent out for staking, and then the vested amounts will be correctly calculated based on the value of the contract, instead of just the balances. This will prevent scenarios where claiming can revert even if funds are available.
 
-
-
 # [L-01] `PUSH0` not supported on Arbitrum
 
 The contracts use solidity version `0.8.20`, which introduces the `PUSH0` opcode. This opcode is not present on Arbitrum. The `foundry.toml` file doe not specify any `evm_version`, so the contracts are compiled with the default `paris` version, which does not generate `PUSH0` opcodes, so the contracts are fine in the current state.
@@ -768,13 +754,9 @@ However if the `evm_version` is changed to `shanghai` or later, contracts will f
 
 It is recommended to either roll back the compiler version to `0.8.19` or earlier, or to specify the `evm_version=paris` in the `foundry.toml` file, to prevent any mistakes with the evm_version in the future.
 
-
-
 # [L-02] If the bond amount ever increased, there is no direct way to update workers bond
 
 Currently, the `returnExcessiveBond` function is available inside the `WorkerRegistration`. In the event that the bond is ever reduced from the system, the excess amount can be claimed and returned to the creator. However, if the bond ever increases, there is no direct way for workers to update the bond, it has to go through the whole deregister and register process, which requires waiting for a lock period. This will add a time delay for the actual bond inside the system to match the TVL calculation. Consider to add function to update bond in case of the bond ever increased, similar to `returnExcessiveBond`.
-
-
 
 # [L-03] Worker is removed from the active workers list too early
 
@@ -809,13 +791,9 @@ and according to the `isWorkerActive`,
 
 worker is considered active if `deregisteredAt >= block.number`
 
-
-
 # [L-04] `deposit` function in Staking does not check whether the worker is still active
 
 The staker will not receive any reward and must wait until the next epoch delay to withdraw the staked tokens if the provided worker is not currently active when calling the `deposit` function in the Staking contract. It is advisable to check if the provided worker is active in the `WorkerRegistration` contract when making a `deposit` call.
-
-
 
 # [L-05] Unsuccessful / overwritten commits cannot be approved again
 
@@ -848,5 +826,3 @@ Now consider the following scenario:
 This can deny votes in case of resubmissions, and also breaks the invariant that the `approves` should contain the same number as the number of unique addresses whose `alreadyApproved` mapping is true.
 
 Since we are resetting the `approves` count to 1, we should use a fresh `alreadyApproved` mapping. Consider adding a `commitmentId` variable which increases on every commit. The approvals mapping should then implement an extra key and use `alreadyApproved[commitment][commitmentId][msg.sender]` instead, which will reset the already given approvals for the resubmitted commitment.
-
-

@@ -1,17 +1,21 @@
 # About
- **Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+**Pashov Audit Group** consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 
 # Introduction
- A time-boxed security review of the **strats** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **strats** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 
 # About Astrolab
- Astrolab DAO aims to redefine yield aggregation by providing superior yields at scale. The way to do so is through cross-chain diversification and maximized capital efficiency, leveraging top-tier liquidity aggregators on-chain and algorithmic execution.
+
+Astrolab DAO aims to redefine yield aggregation by providing superior yields at scale. The way to do so is through cross-chain diversification and maximized capital efficiency, leveraging top-tier liquidity aggregators on-chain and algorithmic execution.
 
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -19,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -27,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -35,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -45,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- **_review commit hash_ - [afe24b344f9e25104cbdd240d5d4448f01b06e07](https://github.com/AstrolabDAO/strats/tree/afe24b344f9e25104cbdd240d5d4448f01b06e07)**
+
+**_review commit hash_ - [afe24b344f9e25104cbdd240d5d4448f01b06e07](https://github.com/AstrolabDAO/strats/tree/afe24b344f9e25104cbdd240d5d4448f01b06e07)**
 
 **_fixes review commit hash_ - [f34c311f3c5fe6adac4522a9f2a9ead75b8d639a](https://github.com/AstrolabDAO/strats/tree/f34c311f3c5fe6adac4522a9f2a9ead75b8d639a)**
 
@@ -66,7 +71,8 @@ The following smart contracts were in scope of the audit:
 - `libs/AsAccounting`
 
 # Findings
- # [C-01] Inflating redemption request and DoS in the vault
+
+# [C-01] Inflating redemption request and DoS in the vault
 
 ## Severity
 
@@ -119,8 +125,6 @@ The sharePrice function reverts because the `totalAccountedAssets` calculation r
 ## Recommendations
 
 To validate the `operator` in the `requestRedeem` function and ensure that an owner can only request redemption once, using their own shares.
-
-
 
 # [C-02] Wrong usage of mapping target in `cancelRedeemRequest``
 
@@ -178,8 +182,6 @@ There is similar bug in the `requestRedeem()` and `_withdraw()` that require att
 In `cancelRedeemRequest()` use `req.byOperator[owner]` and also make sure operator have allowance over owner tokens.
 In `requestRedeem()` code should save information in `req.byOperator[owner]` and also confirms that operator have allowance over owner funds.
 Use `req.byOperator[_owner]` in \_withdraw().
-
-
 
 # [H-01] Accounts not properly removed from roles upon revoking
 
@@ -255,8 +257,6 @@ The `remove` function in `AsSequentialSet.sol` should be modified to reset the `
     }
 ```
 
-
-
 # [H-02] Flash loan wrong balance check
 
 ## Severity
@@ -312,8 +312,6 @@ File: src\abstract\As4626.sol
 718:     }
 
 ```
-
-
 
 # [H-03] Flash loan not working due to transferFrom Issue
 
@@ -416,8 +414,6 @@ Replacing the `safeTransferFrom` function with `safeTransfer`:
         }
 ```
 
-
-
 # [H-04] `withdraw()` worst price will distort `sharePrice()`
 
 ## Severity
@@ -516,8 +512,6 @@ I believe in normal situations, if the last.sharePrice and request.sharePrice ar
 
 One possible mitigation is to update the `last.sharePrice` after `deposit()/withdraw()`.
 
-
-
 # [H-05] Fee calculation mismatch in `mint`, `deposit`, `redeem` and `withdraw`
 
 ## Severity
@@ -555,8 +549,6 @@ So as you can see `redeem()` overcharges users. The reason is that code calculat
 
 Calculate the fee for `deposit()` with `convertToShare(amount) * base / (base +fee)`.
 Calculate the fee for `previewRedeem()` with `convertToAssets(shares) * base / (base + fee)`
-
-
 
 # [H-06] Fee target mismatch in `deposit`, `mint`, `withdraw`, `redeem` and `preview***` methods
 
@@ -626,8 +618,6 @@ This can be exploited in other scenarios too. In general this inconsistency woul
 Calculate the fee based on `msg.sender` in the `_deposit()` function.
 In `_withdraw()` function calculate fee based on `msg.sender` and finally fix the `preview` functions.
 
-
-
 # [H-07] Accounting issues after underlying asset change
 
 ## Severity
@@ -656,8 +646,6 @@ Another place that is asset amount is cached is `claimableAssetFees`. `updateAss
 ## Recommendations
 
 Reset the cached prices after the asset change.
-
-
 
 # [M-01] Redeem function active when vault is paused
 
@@ -741,8 +729,6 @@ Adding the whenNotPaused modifier to both the redeem and safeRedeem functions.
     }
 ```
 
-
-
 # [M-02] Wrong rounding direction in previewWithdraw()
 
 ## Severity
@@ -775,8 +761,6 @@ Function `withdraw()` uses `previewWithdraw()` to calculate shares and calls `_w
 
 Change `previewWithdraw` so that it rounds up when calculating shares.
 
-
-
 # [M-03] Wrong rounding direction in previewMint()
 
 ## Severity
@@ -807,8 +791,6 @@ in function `mint()` code uses `previewMint()` and calls `_deposit()`, as `previ
 ## Recommendations
 
 Change `previewMint` so that it rounds up when calculating shares.
-
-
 
 # [M-04] Wrong usage of revBp() in deposit() in fee calculation
 
@@ -849,8 +831,6 @@ Fee calculation should be:
              claimableAssetFees  += _amount * fees.entry / (BP_BASIS  + fees.entry)
 ```
 
-
-
 # [M-05] Using deprecated function in Chainlink
 
 ## Severity
@@ -890,8 +870,6 @@ Example implementation:
 When deploying on Arbitrum, include a check to verify the status of the Arbitrum Sequencer, as this can impact the reliability of the price feeds.
 
 Example: https://docs.chain.link/data-feeds/l2-sequencer-feeds#example-code
-
-
 
 # [M-06] Fee on Transfer Token Will Break accounting
 
@@ -939,8 +917,6 @@ USDT potentially could turn on fee on transfer feature, but not yet.
 
 Use before and after balance to accurately reflect the true amount received, and update share price accordingly.
 
-
-
 # [M-07] Using stale price in Pyth Network
 
 ## Severity
@@ -982,8 +958,6 @@ The `assetExchangeRate` function doesn't verify `Price.publishTime`, potentially
 Using `pyth.updatePriceFeeds` for updating prices, followed by `pyth.getPrice` for retrieval.
 Following the example in: https://github.com/pyth-network/pyth-sdk-solidity/blob/main/README.md#example-usage
 
-
-
 # [M-08] `ERC20::approve` will revert for some non-standard tokens like USDT
 
 ## Severity
@@ -1016,8 +990,6 @@ Code uses the `approve` method to set allowance for ERC20 tokens in `setSwapperA
 
 Use `SafeERC20`'s `forceApprove` method instead to support all the ERC20 tokens.
 
-
-
 # [L-01] Inconsistency in access control for setInputs
 
 In both `StrategyV5Chainlink` and `StrategyV5Pyth`, the `setInputs` function is restricted to the `admin` role:
@@ -1043,8 +1015,6 @@ If an account holds only the admin or manager role, they cannot execute the `set
 
 To resolve this, make sure to be consistent in the access control of the `setInputs` method.
 
-
-
 # [L-02] Storage slot collision due to adding rescueRequests in StrategyV5Agent
 
 The storage layout of a strategy is defined by `StrategyV5Abstract` and `As4626Abstract`. The strategy contract inherents these two contracts for its storage variable definition.
@@ -1061,5 +1031,3 @@ Inspecting the storage layout of `StrategyV5Chainlink`, at slot 55 it stores the
 However, in the implementation contract `StrategyV5Agent`. It adds one storage slot `mapping(address => RescueRequest) private rescueRequests`. It also uses the slot `55` and collides with `inputPriceFeeds` in `StrategyV5Chainlink`.
 
 In this case, due to the `rescueRequests` is a mapping, the real data of the mapping is stored in `slot = keccak256([key, mappingSlot])`, so no data is corrupted. However, it may introduce some unpredictability if other data type is added to the `StrategyV5Agent` in latter version and should be avoid. It's crucial to maintain a clear and collision-free storage layout to ensure contract stability and predictability.
-
-

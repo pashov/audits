@@ -1,13 +1,21 @@
 # About
- Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
+Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+
 # Disclaimer
- A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
 # Introduction
- A time-boxed security review of the **adapter-fi/AdapterVault** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
+A time-boxed security review of the **adapter-fi/AdapterVault** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+
 # About Adapter Finance
- Adapter Finance allows creation of flexible ERC4626 vaults that use registered adapters to integrate with protocols, automating and optimizing liquidity provision for yields. Strategies dictate token distribution via registered adapters using a vault-specific funds-allocator smart contract.
+
+Adapter Finance allows creation of flexible ERC4626 vaults that use registered adapters to integrate with protocols, automating and optimizing liquidity provision for yields. Strategies dictate token distribution via registered adapters using a vault-specific funds-allocator smart contract.
+
 # Risk Classification
- 
+
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -15,7 +23,7 @@
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
- 
+
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -23,7 +31,7 @@
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
- 
+
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -31,7 +39,7 @@
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
- 
+
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -41,7 +49,8 @@
 - Low - Could fix
 
 # Security Assessment Summary
- _review commit hash_ - [c410c4d7eccb614de864e19faaa271ef0886ae36](https://github.com/adapter-fi/AdapterVault/tree/c410c4d7eccb614de864e19faaa271ef0886ae36)
+
+_review commit hash_ - [c410c4d7eccb614de864e19faaa271ef0886ae36](https://github.com/adapter-fi/AdapterVault/tree/c410c4d7eccb614de864e19faaa271ef0886ae36)
 
 _fixes review commit hash_ - [0e826db27b9a99b1903a4a5490323a9e12648d69](https://github.com/adapter-fi/AdapterVault/tree/0e826db27b9a99b1903a4a5490323a9e12648d69)
 
@@ -49,14 +58,15 @@ _fixes review commit hash_ - [0e826db27b9a99b1903a4a5490323a9e12648d69](https://
 
 The following smart contracts were in scope of the audit:
 
-- `AdapterVault` 
-- `FundsAllocator` 
-- `Governance` 
-- `PendleAdapter` 
-- `IAdapter` 
+- `AdapterVault`
+- `FundsAllocator`
+- `Governance`
+- `PendleAdapter`
+- `IAdapter`
 
 # Findings
- # [M-01] Multiple strategies sharing the same asset
+
+# [M-01] Multiple strategies sharing the same asset
 
 ## Severity
 
@@ -66,12 +76,13 @@ The following smart contracts were in scope of the audit:
 
 ## Description
 
-AdapterVault design assumes that each strategy has a unique asset (e.g. PT token). Otherwise, key accounting functions would return overinflated values. 
+AdapterVault design assumes that each strategy has a unique asset (e.g. PT token). Otherwise, key accounting functions would return overinflated values.
 
-E.g. _totalAssetsNoCache() which goes through each strategy and calls `balanceOf()` for their related underlying and sums them up. 
+E.g. \_totalAssetsNoCache() which goes through each strategy and calls `balanceOf()` for their related underlying and sums them up.
+
 ```python
 @internal
-@view 
+@view
 def _totalAssetsNoCache() -> uint256:
     assetqty : uint256 = ERC20(asset).balanceOf(self)
     for adapter in self.adapters:
@@ -79,6 +90,7 @@ def _totalAssetsNoCache() -> uint256:
 
     return assetqty
 ```
+
 `IAdapter(adapter).totalAssets()` checks the balance of the related underlying on `AdapterVault` and multiply by its oracle price (according to `PendleAdapter`).
 
 But if two strategies share the same underlying, it will double count the same token twice, because `AdapterVault` cannot identify how this balance is split between two strategies.
@@ -87,9 +99,7 @@ As a result, it leads to overinflated `totalAssets()` and broken calculations be
 
 ## Recommendations
 
-_addAdapter() should check that `adapter.asset` is not used in current strategies.
-
-
+\_addAdapter() should check that `adapter.asset` is not used in current strategies.
 
 # [M-02] `submitStrategy()` DOS
 
@@ -113,8 +123,6 @@ It can also be frontrun transactions before submissions to block them.
 Consider allowing multiple pending strategies so that the attacker's submissions could be just ignored.
 Or allow submitting only for trusted addresses.
 
-
-
 # [M-03] replaceGovernanceContract is not reset
 
 ## Severity
@@ -133,7 +141,7 @@ def replaceGovernance(NewGovernance: address, vault: address):
     ...
     #Add Vote to VoteCount
     for guard_addr in self.LGov:
-        if self.VotesGCByVault[vault][guard_addr] == NewGovernance: 
+        if self.VotesGCByVault[vault][guard_addr] == NewGovernance:
             VoteCount += 1
 
     if len(self.LGov) == VoteCount:
@@ -143,7 +151,6 @@ def replaceGovernance(NewGovernance: address, vault: address):
 ## Recommendations
 
 Reset `VotesGCByVault` to 0.
-
 
 # [M-04] Send 0 fees to the previous proposer when the proposer is changed
 
@@ -155,7 +162,7 @@ Reset `VotesGCByVault` to 0.
 
 ## Description
 
-When `set_strategy` is called and `current_proposer` is not the same as the provided `_proposer`, it will try to send fees to the previous proposer by calling _claim_fees.
+When `set_strategy` is called and `current_proposer` is not the same as the provided `_proposer`, it will try to send fees to the previous proposer by calling \_claim_fees.
 
 ```python
 @internal
@@ -174,7 +181,7 @@ def _set_strategy(_proposer: address, _strategies : AdapterStrategy[MAX_ADAPTERS
         yield_fees, strat_fees = self._claimable_fees_available(current_assets)
         # @audit - should be equal
         if strat_fees > self.min_proposer_payout:
-                
+
             # Pay prior proposer his earned fees.
 >>>         self._claim_fees(FeeType.PROPOSER, 0, pregen_info, current_assets)
 
@@ -218,8 +225,8 @@ def _claim_fees(_yield : FeeType, _asset_amount: uint256, pregen_info: DynArray[
 >>>     fees_to_claim = min(_asset_amount, current_vault_assets)
     # Adjust fees proportionally to account for slippage.
     if strat_fees > 0 and yield_fees > 0:
-        strat_fees = convert((convert(strat_fees, decimal)/convert(strat_fees+yield_fees, decimal))*convert(fees_to_claim, decimal), uint256)     
-        yield_fees = fees_to_claim - strat_fees   
+        strat_fees = convert((convert(strat_fees, decimal)/convert(strat_fees+yield_fees, decimal))*convert(fees_to_claim, decimal), uint256)
+        yield_fees = fees_to_claim - strat_fees
     elif strat_fees > 0:
         strat_fees = fees_to_claim
     else:
@@ -231,7 +238,6 @@ def _claim_fees(_yield : FeeType, _asset_amount: uint256, pregen_info: DynArray[
 ```
 
 This will cause the previous proposer to not receive the deserved fees.
-
 
 ## Recommendations
 
@@ -250,8 +256,6 @@ Instead of checking min value using `_asset_amount`, use `fees_to_claim` instead
 +        fees_to_claim = min(fees_to_claim, current_vault_assets)
 # .....
 ```
-
-
 
 # [M-05] `set_strategy` will incorrectly remove `last_asset_value`
 
@@ -280,7 +284,7 @@ def _set_strategy(_proposer: address, _strategies : AdapterStrategy[MAX_ADAPTERS
         strat_fees : uint256 = 0
         yield_fees, strat_fees = self._claimable_fees_available(current_assets)
         if strat_fees > self.min_proposer_payout:
-                
+
             # Pay prior proposer his earned fees.
             self._claim_fees(FeeType.PROPOSER, 0, pregen_info, current_assets)
 
@@ -309,8 +313,6 @@ def _set_strategy(_proposer: address, _strategies : AdapterStrategy[MAX_ADAPTERS
 
 Set `last_asset_value` to the previous value if it previously exists.
 
-
-
 # [M-06] `min_transfer_balance` is checked against the wrong value
 
 ## Severity
@@ -332,7 +334,7 @@ def _withdraw(_asset_amount: uint256, _receiver: address, _owner: address, prege
     # ...
 
     # Make sure we have enough assets to send to _receiver. Do a withdraw only balance.
-    self._balanceAdapters(_asset_amount, pregen_info, True ) 
+    self._balanceAdapters(_asset_amount, pregen_info, True )
 
     # Now account for possible slippage.
     current_balance : uint256 = ERC20(asset).balanceOf(self)
@@ -376,8 +378,6 @@ Check `min_transfer_balance` against `current_balance` instead.
         transfer_balance = current_balance
         log SlippageWithdraw(msg.sender, _receiver, _owner, _asset_amount, shares, transfer_balance)
 ```
-
-
 
 # [M-07] `PendleAdapter` provides zero slippage
 
@@ -454,8 +454,6 @@ It can be observed that the minimum out return value from all operations is set 
 
 Consider adding a minimum accepted return value inside `_balanceAdapters` and `_adapter_deposit` inside the vault.
 
-
-
 # [M-08] Race condition based on `TDelay` condition
 
 ## Severity
@@ -485,9 +483,9 @@ However, a strategy can also be replaced by a new one after the `TDelay` period.
 def submitStrategy(strategy: ProposedStrategy, vault: address) -> uint256:
     ...
             # First is it the same as the current one?
-            # Otherwise has it been withdrawn? 
-            # Otherwise, has it been short circuited down voted? 
-            # Has the period of protection from being replaced expired already?         
+            # Otherwise has it been withdrawn?
+            # Otherwise, has it been short circuited down voted?
+            # Has the period of protection from being replaced expired already?
     assert  (self.CurrentStrategyByVault[vault].Nonce == pending_strat.Nonce) or \
             (pending_strat.Withdrawn == True) or \
             len(pending_strat.VotesReject) > 0 and \
@@ -495,10 +493,10 @@ def submitStrategy(strategy: ProposedStrategy, vault: address) -> uint256:
             (convert(block.timestamp, decimal) > (convert(pending_strat.TSubmitted, decimal)+(convert(self.TDelay, decimal)))), "Invalid proposed strategy!" # @audit strategy can be replaced after TDelay
     ...
 ```
+
 ## Recommendations
 
 Ensure that the activation and replacement times do not overlap. A strategy should only be replaceable after a period longer than the `TDelay` period. Consider introducing an additional delay period (replacement delay) specifically for replacement to prevent front-running and race conditions.
-
 
 # [M-09] Race condition based on number of guards
 
@@ -513,6 +511,7 @@ Ensure that the activation and replacement times do not overlap. A strategy shou
 A submitted strategy can be replaced by a new one if it has been short-circuited by downvotes. However, because the number of downvotes required to short-circuit is `no_guards / 2` and rounding down, the number of downvotes required can be less than half of `no_guards`. This can lead to a situation where a strategy is replaced even though it has not been properly short-circuited by downvotes.
 
 Consider the scenario when `no_guards` equals 3:
+
 - 2 guards `endorseStrategy` the strategy. This should be sufficient to activate the strategy (2/3 endorsements).
 - Later, 1 guard `rejectStrategy` the strategy and can replace the current pending strategy with a new one (because `no_guards` / 2 is rounded down to 1).
 
@@ -523,9 +522,9 @@ def submitStrategy(strategy: ProposedStrategy, vault: address) -> uint256:
     # Confirm there's no currently pending strategy for this vault so we can replace the old one.
 
             # First is it the same as the current one?
-            # Otherwise has it been withdrawn? 
-            # Otherwise, has it been short circuited down voted? 
-            # Has the period of protection from being replaced expired already?         
+            # Otherwise has it been withdrawn?
+            # Otherwise, has it been short circuited down voted?
+            # Has the period of protection from being replaced expired already?
     assert  (self.CurrentStrategyByVault[vault].Nonce == pending_strat.Nonce) or \
             (pending_strat.Withdrawn == True) or \
             len(pending_strat.VotesReject) > 0 and \
@@ -545,9 +544,9 @@ def submitStrategy(strategy: ProposedStrategy, vault: address) -> uint256:
     # Confirm there's no currently pending strategy for this vault so we can replace the old one.
 
             # First is it the same as the current one?
-            # Otherwise has it been withdrawn? 
-            # Otherwise, has it been short circuited down voted? 
-            # Has the period of protection from being replaced expired already?         
+            # Otherwise has it been withdrawn?
+            # Otherwise, has it been short circuited down voted?
+            # Has the period of protection from being replaced expired already?
     assert  (self.CurrentStrategyByVault[vault].Nonce == pending_strat.Nonce) or \
             (pending_strat.Withdrawn == True) or \
             len(pending_strat.VotesReject) > 0 and \
@@ -557,10 +556,10 @@ def submitStrategy(strategy: ProposedStrategy, vault: address) -> uint256:
     ...
 ```
 
-
 # [L-01] Changing guards during a pending voting
 
 There are two functions that make it possible to remove a guard:
+
 - `swapGuard()`
 - `removeGuard()`
 
@@ -574,8 +573,6 @@ Consider removing a deleted guard address from `PendingStrategyByVault[vault].Vo
 
 One of the options could be avoiding `len(pending_strat.VotesEndorse)` and `len(pending_strat.VotesReject)` and instead using a separate calculation that loops through only existing `LGov` addresses and sums them up, so as to ignore addresses that are no longer in `LGov`.
 
-
-
 # [L-02] `_getTargetBalancesWithdrawOnly` incorrect calculation
 
 In `_getTargetBalancesWithdrawOnly`, it will iterate through the adapters and withdraw from them if necessary to fulfill the target withdrawal balance. However, it will incorrectly add `adapter_assets_allocated` with `adapter.delta * -1` when `adapter.delta` is not 0.
@@ -587,7 +584,7 @@ def _getTargetBalancesWithdrawOnly(_vault_balance: uint256, _d4626_asset_target:
     # self._getTargetBalancesWithdrawOnly(_vault_balance, _d4626_asset_target, _total_assets, _total_ratios, _adapter_balances)
     # ....
 
-        if adapter.delta != 0:            
+        if adapter.delta != 0:
 >>>         adapter_assets_allocated += convert(adapter.delta * -1, uint256)    # TODO : eliminate adapter_assets_allocated if never used.
             d4626_delta += adapter.delta * -1
             adapters[tx_count] = adapter
@@ -605,8 +602,6 @@ def _getTargetBalancesWithdrawOnly(_vault_balance: uint256, _d4626_asset_target:
 
 It can be observed that adapter `_assets_allocated` should be updated with the adapter's balance, which is added correctly at the end of the function. Consider to remove the unnecessary `adapter_assets_allocated += convert(adapter.delta * -1, uint256)` operation.
 
-
-
 # [L-03] `target_withdraw_balance` is not reduced
 
 When calculating the target balances for withdrawing only, if the adapter ratio is 0, all the assets in the adapter will be withdrawn back to the vault. However, the withdrawn amount does not reduce the `target_withdraw_balance`. This can lead to over-withdrawal of assets when assets from other adapters also have to be withdrawn, incurring slippage and additional rebalancing costs.
@@ -621,5 +616,3 @@ def _getTargetBalancesWithdrawOnly(_vault_balance: uint256, _d4626_asset_target:
 ```
 
 Reduce the `target_withdraw_balance` when withdrawing from an adapter with ratio 0 and a current balance greater than 0. This will ensure accurate calculations of withdrawal targets and prevent over-withdrawal from other adapters.
-
-
