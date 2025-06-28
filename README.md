@@ -87,7 +87,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | -------------------------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------------|
 | Pump              | `2025-04-28`, `2025-03-18` <br>  `2024-10-11`, `2024-05-21` <br>  `2024-03-03`                                                                     | <img height="20" src="https://img.shields.io/badge/-   Rust       -b7410e?style=flat" />   |
 | DeFi App              | [2025-01-08](team/pdf/DefiApp-security-review_2025-01-08.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Desci                 | [2025-02-07](team/pdf/DesciLaunchpad-security-review_2025-02-07.pdf)          | c   |
+| Desci                 | [2025-02-07](team/pdf/DesciLaunchpad-security-review_2025-02-07.pdf)          | <img height="20" src="https://img.shields.io/badge/-   Rust       -b7410e?style=flat" />   |
 | Pump Science          | [2024-12-24](team/pdf/PumpScience-security-review_2024-12-24.pdf)             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Stardusts             | [2024-12-19](team/pdf/Stardusts-security-review_2024-12-19.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | g8keep                | [2024-12-12](team/pdf/g8keep-security-review_2024-12-12.pdf), [2024-07-10](team/pdf/g8keep-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
