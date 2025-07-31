@@ -5,8 +5,113 @@
 Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
 
 
-## All Pashov Audit Group team audits
+## 🌟 Highlighted Projects
+<div align="left">
 
+<table style="table-layout: fixed; width: 100%;">
+<tr>
+<td width="33%" valign="top">
+  <h2><b>LayerZero</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" />
+  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
+  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos</sub><br>
+  <div style="margin-top: 8px;">
+    <br><br>
+    <a href="https://layerzero.network" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+
+<td width="33%" valign="top">
+  <h2><b>Pump</b></h2>
+  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
+  <sub>Year-long collaboration with 10 audits of critical Rust contracts. Helped the project scale safely through multiple major upgrades</sub><br>
+  <div style="margin-top: 8px;">
+    <br>
+    <a href="https://pump.fun/board" target="_blank">🌐 Website</a>
+  </div>
+</td>
+
+<td width="33%" valign="top">
+  <h2><b>Bunni</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Two deep audits for Bunni v2, an advanced AMM enabling seamless liquidity shape shifts, fee compounding, Uniswap X execution, and staking.</sub><br>
+  <div style="margin-top: 8px;">
+    <br>
+    <a href="https://bunni.xyz" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/Bunni-security-review-October.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+</tr>
+
+<tr>
+<td width="33%" valign="top">
+  <h2><b>Aave</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Security review of Aave v3.2 — the most long-standing lending protocol in DeFi </sub><br>
+  <div style="margin-top: 8px;">
+    <br>
+    <a href="https://aave.com" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+
+<td width="33%" valign="top">
+  <h2><b>Uniswap</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Audited Periphery contracts for V4</sub><br>
+  <div style="margin-top: 8px;">
+    <br><br>
+    <a href="https://app.uniswap.org" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+
+<td width="33%" valign="top">
+  <h2><b>Sushi</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Two audits of cross-chain swap logic and Tron deployment</sub><br>
+  <div style="margin-top: 8px;">
+    <br>
+    <a href="https://www.sushi.com/ethereum/swap" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/Sushi-security-review.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+</tr>
+
+<tr>
+<td width="33%" valign="top">
+  <h2><b>Initia</b></h2>
+  <img src="https://img.shields.io/badge/-Typescript-11698d?style=flat" /><br>
+  <sub>Security review of backend APIs and frontend widgets. Covered edge cases in auth, data integrity, and Web2/Web3 integration.</sub><br>
+  <div style="margin-top: 8px;">
+    <br>
+    <a href="https://initia.xyz" target="_blank">🌐 Website</a> | 
+    <a href="team/pdf/Initia-security-review_2025-06-17.pdf" target="_blank">📄 Report</a>
+  </div>
+</td>
+
+<td colspan="2" valign="top">
+  <h2><b> Hyperliquid Ecosystem</b></h2>
+  <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+  <sub>Audits for leading Hyperliquid ecosystem projects:<br>
+    🔗 <a href="team/pdf/KittenSwap-security-review_2025-06-12.pdf" target="_blank">KittenSwap</a>, 
+    <a href="team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">Kinetiq</a>, 
+    <a href="team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">Hyperlend</a>, 
+    <a href="team/pdf/Hyperstable-security-review_2025-03-19.pdf" target="_blank">Hyperstable</a>,
+    <a href="team/pdf/Blueberry-security-review_2025-05-16.pdf" target="_blank">Blueberry</a>, 
+    <a href="team/pdf/Nucleus-security-review_2024-12-14.pdf" target="_blank">Nucleus</a>, 
+    <a href="team/pdf/Hyperbloom-security-review_2025-06-24.pdf" target="_blank">Hyperbloom</a>
+  </sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+## All Pashov Audit Group team audits
 
 ### DEX
 
