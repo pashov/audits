@@ -4,96 +4,96 @@
 
 Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
 
-
 ## 🌟 Highlighted Projects
+
+
 <div align="left">
 
 <table style="table-layout: fixed; width: 100%;">
+
 <tr>
 <td width="33%" valign="top">
   <h2><b>LayerZero</b></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" />
   <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos</sub><br>
+  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos - with continued collaboration through 2024</sub><br><br>
   <div style="margin-top: 8px;">
-    <br><br>
-    <a href="https://layerzero.network" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://layerzero.network" target="_blank">🌐 Website</a> • <a href="team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 
 <td width="33%" valign="top">
-  <h2><b>Pump</b></h2>
-  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Year-long collaboration with 10 audits of critical Rust contracts. Helped the project scale safely through multiple major upgrades</sub><br>
+  <h2><b>Aave</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Two audits for Aave: the core v3.2 upgrade, and cross-chain functionality for the GHO stablecoin.</sub><br><br><br>
   <div style="margin-top: 8px;">
-    <br>
-    <a href="https://pump.fun/board" target="_blank">🌐 Website</a>
+    <sub><a href="https://aave.com" target="_blank">🌐 Website</a> • <a href="team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 
 <td width="33%" valign="top">
   <h2><b>Bunni</b></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Two deep audits for Bunni v2, an advanced AMM enabling seamless liquidity shape shifts, fee compounding, Uniswap X execution, and staking.</sub><br>
+  <sub>Two deep audits for Bunni v2, an advanced AMM enabling seamless liquidity shape shifts, fee compounding, Uniswap X execution, and staking. Found 20 critical and high-severity issues.</sub><br>
   <div style="margin-top: 8px;">
-    <br>
-    <a href="https://bunni.xyz" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/Bunni-security-review-October.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://bunni.xyz" target="_blank">🌐 Website</a> • <a href="team/pdf/Bunni-security-review-October.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 </tr>
 
 <tr>
+
 <td width="33%" valign="top">
-  <h2><b>Aave</b></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Security review of Aave v3.2 — the most long-standing lending protocol in DeFi </sub><br>
+  <h2><b>Pump</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" />
+  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
+  <sub>Year-long collaboration with 10 audits of critical contracts. Helped the project scale safely through multiple major upgrades. Found 4 high and critical-severity issues</sub><br>
   <div style="margin-top: 8px;">
-    <br>
-    <a href="https://aave.com" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://pump.fun/board" target="_blank">🌐 Website</a></sub>
   </div>
 </td>
 
 <td width="33%" valign="top">
   <h2><b>Uniswap</b></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Audited Periphery contracts for V4</sub><br>
+  <sub>Audited Periphery contracts for V4. <br>Delivered deep findings across boundaries of Web2/Web3 interactions.</sub><br><br>
   <div style="margin-top: 8px;">
-    <br><br>
-    <a href="https://app.uniswap.org" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://app.uniswap.org" target="_blank">🌐 Website</a> • <a href="team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 
 <td width="33%" valign="top">
   <h2><b>Sushi</b></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Two audits of cross-chain swap logic and Tron deployment</sub><br>
+  <sub>Two comprehensive audits: <br>RouteProcessor V6, a key component of Sushi's cross-chain architecture, and addressed the deployment of core contracts on Tron</sub><br>
   <div style="margin-top: 8px;">
-    <br>
-    <a href="https://www.sushi.com/ethereum/swap" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/Sushi-security-review.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://www.sushi.com/ethereum/swap" target="_blank">🌐 Website</a> • <a href="team/pdf/Sushi-security-review.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 </tr>
 
 <tr>
 <td width="33%" valign="top">
-  <h2><b>Initia</b></h2>
-  <img src="https://img.shields.io/badge/-Typescript-11698d?style=flat" /><br>
-  <sub>Security review of backend APIs and frontend widgets. Covered edge cases in auth, data integrity, and Web2/Web3 integration.</sub><br>
+  <h2><b>Ethena</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Long-standing partnership since 2023. <br>Completed 5 audits covering multiple feature sets. </sub><br><br>
   <div style="margin-top: 8px;">
-    <br>
-    <a href="https://initia.xyz" target="_blank">🌐 Website</a> | 
-    <a href="team/pdf/Initia-security-review_2025-06-17.pdf" target="_blank">📄 Report</a>
+    <sub><a href="https://www.ethena.fi/" target="_blank">🌐 Website</a> • <a href="team/pdf/Ethena-security-review-October.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 
-<td colspan="2" valign="top">
+<td width="33%" valign="top">
+  <h2><b>Resolv</b></h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Eight audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br>
+  <div style="margin-top: 8px;">
+    <sub><a href="https://resolv.finance" target="_blank">🌐 Website</a> • <a href="team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
+  </div>
+</td>
+
+<td valign="top">
   <h2><b> Hyperliquid Ecosystem</b></h2>
-  <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Audits for leading Hyperliquid ecosystem projects:<br>
     🔗 <a href="team/pdf/KittenSwap-security-review_2025-06-12.pdf" target="_blank">KittenSwap</a>, 
     <a href="team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">Kinetiq</a>, 
@@ -102,6 +102,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="team/pdf/Blueberry-security-review_2025-05-16.pdf" target="_blank">Blueberry</a>, 
     <a href="team/pdf/Nucleus-security-review_2024-12-14.pdf" target="_blank">Nucleus</a>, 
     <a href="team/pdf/Hyperbloom-security-review_2025-06-24.pdf" target="_blank">Hyperbloom</a>
+    <br>Found more than 40 Critical and High vulnerabilities
   </sub>
 </td>
 </tr>
@@ -112,6 +113,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 ## All Pashov Audit Group team audits
+
 
 ### DEX
 
