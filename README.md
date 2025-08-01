@@ -13,7 +13,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <tr>
 <td width="33%" valign="top">
-  <h2><b>LayerZero</b>  <img src="https://img.shields.io/badge/-$50B+ value transferred-5924e1?style=flat" /></h2>
+  <h2><b>LayerZero</b>  <img src="https://img.shields.io/badge/-$50B+ transferred-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" />
   <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
   <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos - with continued collaboration through 2024</sub><br><br>
