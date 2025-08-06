@@ -85,7 +85,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top">
   <h2><b>Resolv</b> <img src="https://img.shields.io/badge/-$500M+ TVL-5924e1?style=flat" /> </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Eight audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br>
+  <sub>Nine audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br>
   <div style="margin-top: 8px;">
     <sub><a href="https://resolv.finance" target="_blank">🌐 Website</a> • <a href="team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
   </div>
@@ -156,7 +156,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 | Project     | Report                                                               | Labels                                                                                      |
 | ----------- | -----------------------------------------------------------------------  | ------------------------------------------------------------------------------------------- |
-| Resolv      | [2025-05-14](team/pdf/Resolv-security-review_2025-05-14.pdf), [2025-04-15](team/pdf/Resolv-security-review_2025-04-15.pdf) <br> [2024-12-09](team/pdf/Resolv-security-review_2024-12-09.pdf), [2024-10-10](team/pdf/Resolv-security-review-October.pdf) <br> [2024-08-26](team/pdf/Resolv-security-review-August.pdf), [2024-07-27](team/pdf/Resolv-security-review.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Resolv      | [2025-07-25](team/pdf/Resolv-security-review_2025-07-25.pdf), [2025-05-14](team/pdf/Resolv-security-review_2025-05-14.pdf) <br> [2025-04-15](team/pdf/Resolv-security-review_2025-04-15.pdf), [2024-12-09](team/pdf/Resolv-security-review_2024-12-09.pdf) <br>  [2024-10-10](team/pdf/Resolv-security-review-October.pdf), [2024-08-26](team/pdf/Resolv-security-review-August.pdf) <br> [2024-07-27](team/pdf/Resolv-security-review.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Ethena      | [2024-10-17](team/pdf/Ethena-security-review-October.pdf),  [2024-08-31](team/pdf/Ethena-security-review-August.pdf) <br> [2024-05-20](team/pdf/Ethena-security-review-May.pdf), [2024-02-20](team/pdf/Ethena-security-review-february.pdf) <br> [2023-12-19](team/pdf/Ethena-security-review.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Hyperstable | [2025-03-19](team/pdf/Hyperstable-security-review_2025-03-19.pdf), [2025-02-26](team/pdf/Hyperstable-security-review_2025-02-26.pdf)             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | USDV        | [2025-03-06](team/pdf/USDV-security-review_2025-03-06.pdf)                    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
