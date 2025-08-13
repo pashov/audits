@@ -172,6 +172,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 | Project     | Report                                                                         | Labels                                                                                     |
 | ----------- | -----------------------------------------------------------------------        | ------------------------------------------------------------------------------------------ |
+| YieldBasis  | [2025-03-26](team/pdf/YieldBasis-security-review_2025-03-26.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Vyper   -7062e9?style=flat" />   |
 | Reserve     | [2025-06-02](team/pdf/Reserve-security-review_2025-06-02.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Omo         | [2025-01-25](team/pdf/Omo-security-review_2025-01-25.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Cove        | [2025-04-16](team/pdf/Cove-security-review_2025-04-16.pdf), [2024-12-30](team/pdf/Cove-security-review_2024-12-30.pdf)    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
