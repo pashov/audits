@@ -67,7 +67,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Two comprehensive audits: <br>RouteProcessor V6, a key component of Sushi's cross-chain architecture, and addressed the deployment of core contracts on Tron</sub><br>
   <div style="margin-top: 8px;">
-    <sub><a href="https://www.sushi.com/ethereum/swap" target="_blank">🌐 Website</a> • <a href="team/pdf/Sushi-security-review.pdf" target="_blank">📄 Report</a></sub>
+    <sub><a href="https://www.sushi.com/ethereum/swap" target="_blank">🌐 Website</a> • <a href="team/pdf/SushiSwap-security-review.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 </tr>
