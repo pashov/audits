@@ -17,7 +17,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-<p>A time-boxed security review of the <strong>resolv-im/resolv-contracts</strong> repository was done by Pashov Audit Group, during which Pashov Audit Group engaged to review <strong>Resolv</strong>. A total of <strong>5</strong> issues were uncovered.</p>
+<p>A time-boxed security review of the <strong>resolv-im/resolv-contracts</strong> repository was done by Pashov Audit Group, during which <strong>T1MOH, MrPotatoMagic, ast3ros</strong> engaged to review <strong>Resolv</strong>. A total of <strong>5</strong> issues were uncovered.</p>
 
 # About Resolv
 
@@ -34,10 +34,11 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Scope
 
-- `RlpPriceStorage.solTheCounter.sol`
+- `RlpPriceStorage.sol`
+- `TheCounter.sol`
 - `ExternalRequestsManager.sol`
 - `UsrRedemptionExtension.sol`
-- `ChainlinkOracle`
+- `ChainlinkOracle.sol`
 
 # Findings
 
