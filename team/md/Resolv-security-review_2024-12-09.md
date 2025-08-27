@@ -1,71 +1,53 @@
-# About
 
-Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+# About Pashov Audit Group
+
+
+Pashov Audit Group consists of 40+ freelance security researchers, who are well proven in the space - most have earned over $100k in public contest rewards, are multi-time champions or have truly excelled in audits with us. We only work with proven and motivated talent.
+
+With over 300 security audits completed — uncovering and helping patch thousands of vulnerabilities — the group strives to create the absolute very best audit journey possible. While 100% security is never possible to guarantee, we do guarantee you our team's best efforts for your project. 
+
+Check out our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
+    
 
 # Disclaimer
 
+
 A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
+
 
 # Introduction
 
-A time-boxed security review of the **resolv-im/resolv-contracts** repository was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
+<p>A time-boxed security review of the <strong>resolv-im/resolv-contracts</strong> repository was done by Pashov Audit Group, during which <strong>T1MOH, MrPotatoMagic, ast3ros</strong> engaged to review <strong>Resolv</strong>. A total of <strong>5</strong> issues were uncovered.</p>
 
 # About Resolv
 
-Resolv is a protocol that issues a stablecoin, USR, backed by ETH and keeps its value stable against the US Dollar by hedging ETH price risks with short futures positions. It also maintains an insurance pool, RLP, to ensure USR remains overcollateralized and allows users to mint and redeem these tokens with deposited collateral. This scope adds new swap and exdends redemption mechanism.
-
-# Risk Classification
-
-| Severity               | Impact: High | Impact: Medium | Impact: Low |
-| ---------------------- | ------------ | -------------- | ----------- |
-| **Likelihood: High**   | Critical     | High           | Medium      |
-| **Likelihood: Medium** | High         | Medium         | Low         |
-| **Likelihood: Low**    | Medium       | Low            | Low         |
-
-## Impact
-
-- High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
-
-- Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
-
-- Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
-
-## Likelihood
-
-- High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
-
-- Medium - only a conditionally incentivized attack vector, but still relatively likely.
-
-- Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
-
-## Action required for severity levels
-
-- Critical - Must fix as soon as possible (if already deployed)
-
-- High - Must fix (before deployment if not already deployed)
-
-- Medium - Should fix
-
-- Low - Could fix
+<p>Resolv is a protocol that issues a stablecoin, USR, backed by ETH and keeps its value stable against the US Dollar by hedging ETH price risks with short futures positions. It also maintains an insurance pool, RLP, to ensure USR remains overcollateralized and allows users to mint and redeem these tokens with deposited collateral. This scope adds new swap and exdends redemption mechanism.</p>
 
 # Security Assessment Summary
 
-_review commit hash_ - [a66183cfa825338cc2c6fef954bfc03a932a1544](https://github.com/resolv-im/resolv-contracts/tree/a66183cfa825338cc2c6fef954bfc03a932a1544)
+**Review commit hash:**<br>• [a66183cfa825338cc2c6fef954bfc03a932a1544](https://github.com/resolv-im/resolv-contracts/tree/a66183cfa825338cc2c6fef954bfc03a932a1544)<br>&nbsp;&nbsp;(resolv-im/resolv-contracts)
 
-_fixes review commit hash_ - [d44104b36b6b94db811e2e66442524983e761931](https://github.com/resolv-im/resolv-contracts/tree/d44104b36b6b94db811e2e66442524983e761931)
+**Fixes review commit hash:**<br>• [d44104b36b6b94db811e2e66442524983e761931](https://github.com/resolv-im/resolv-contracts/tree/d44104b36b6b94db811e2e66442524983e761931)<br>&nbsp;&nbsp;(resolv-im/resolv-contracts)
 
-### Scope
 
-The following smart contracts were in scope of the audit:
 
-- `TheCounter`
-- `RlpPriceStorage`
-- `ExternalRequestsManager`
-- `UsrRedemptionExtension`
+
+# Scope
+
+- `RlpPriceStorage.sol`
+- `TheCounter.sol`
+- `ExternalRequestsManager.sol`
+- `UsrRedemptionExtension.sol`
+- `ChainlinkOracle.sol`
 
 # Findings
 
+
+
 # [H-01] `transferFee()` uses an incorrect transfer method
+
+_Resolved_
+
 
 ## Severity
 
@@ -99,18 +81,27 @@ As a result, the admin is unable to collect protocol fees.
 
 ```
 
+
+
 # [L-01] Missing upper limit validation
 
-The `setUpperBoundPercentage` and `setLowerBoundPercentage` functions in `RlpPriceStorage` contract lack validation to ensure bound percentages don't exceed the `BOUND_PERCENTAGE_DENOMINATOR` (1e18).
+_Resolved_
+
+
+The `setUpperBoundPercentage` and `setLowerBoundPercentage` functions in `RlpPriceStorage` contract lack validation to ensure bound percentages don't exceed the `BOUND_PERCENTAGE_DENOMINATOR` (1e18). 
 
 Especially if `lowerBoundPercentage` > `BOUND_PERCENTAGE_DENOMINATOR`, the `setPrice` function will always revert because: `currentPrice` < `(currentPrice * lowerBoundPercentage / BOUND_PERCENTAGE_DENOMINATOR)`.
 
 It's recommended to add validation to ensure bound percentages don't exceed `BOUND_PERCENTAGE_DENOMINATOR`. Otherwise, setPrice() will revert due to underflow in the lower bound percentage calculation. This would prevent the SERVICE_ROLE from updating the prices in a timely manner, leading to possible stale prices.
 
+
+
 # [L-02] Missing slippage protection in redeem function
 
-The `redeem` function in `UsrExternalRequestsManager` lacks a minimum expected amount parameter to protect users from price changes between transaction submission and execution. The redemption rate is determined by the Aave oracle price at execution time. If network congestion causes transaction delays or if there is high price volatility:
+_Resolved_
 
+
+The `redeem` function in `UsrExternalRequestsManager` lacks a minimum expected amount parameter to protect users from price changes between transaction submission and execution. The redemption rate is determined by the Aave oracle price at execution time. If network congestion causes transaction delays or if there is high price volatility:
 - User submits redemption expecting X tokens based on the current price
 - Transaction remains pending while price moves unfavorably
 - When executed, user receives significantly less than X tokens
@@ -131,7 +122,12 @@ The `redeem` function in `UsrExternalRequestsManager` lacks a minimum expected a
 
 It's recommended to add a `_minExpectedAmount` parameter to the redeem function.
 
+
+
 # [L-03] Aave V3 price source can be inaccurate
+
+_Resolved_
+
 
 The `UsrRedemptionExtension` contract relies on Aave V3's oracle system to determine withdrawal token amounts during redemption. However, the implementation has potential price accuracy issues due to how it interacts with `Chainlink` oracles.
 
@@ -175,7 +171,6 @@ Let's inspect Aave V3's price source of USDT: `0xC26D4a1c46d884cfF6dE9800B6aE7A8
 - Artificially capped prices may not reflect true market conditions
 
 `PriceCapAdapterStable` contract:
-
 ```solidity
   function latestAnswer() external view override returns (int256) {
     int256 basePrice = ASSET_TO_USD_AGGREGATOR.latestAnswer(); // @audit call latestAnswer instead of latestRoundData
@@ -194,7 +189,12 @@ As a result, users could receive incorrect amounts during token redemptions.
 
 It's recommended to implement direct Chainlink oracle price fetching and validate price freshness.
 
+
+
 # [L-04] Redemption limit bypass
+
+_Acknowledged_
+
 
 The `redeem` function in `UsrRedemptionExtension` implements a daily redemption limit that resets every 24 hours. However, the current implementation is vulnerable to a limit bypass attack due to how the reset window is handled.
 
@@ -227,7 +227,8 @@ Consider the scenario:
 - After the reset triggers (can be in the next block), they immediately execute another redemption for the maximum amount
 - This allows redeeming up to 2x the intended limit (e.g., 200,000 USR) within a very short timeframe
 
-According to the redemption extension documentation, the cap is a critical safety parameter:
+According to the redemption extension documentation, the cap is a critical safety parameter: 
 `Redemption Cap per 24hr = USR 100,000`.
 
 It's recommended to implement redemption limit mechanism with rolling windows of 24 hours.
+
