@@ -17,9 +17,9 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-<p>A time-boxed security review of the <strong>euler-xyz/euler-earn</strong> repository was done by Pashov Audit Group, during which Pashov Audit Group engaged to review <strong>Euler</strong>. A total of <strong>14</strong> issues were uncovered.</p>
+<p>A time-boxed security review of the <strong>euler-xyz/euler-earn</strong> repository was done by Pashov Audit Group, during which Pashov Audit Group engaged to review <strong>Euler Earn</strong>. A total of <strong>14</strong> issues were uncovered.</p>
 
-# About Euler
+# About Euler Earn
 
 <p>Euler Earn is a fork of MetaMorpho that allocates deposits across up to 30 accepted ERC-4626 strategies, with changes such as zero-share protection, internal balance tracking to prevent share inflation, and removal of skim, ERC-2612 permit, and multicall functions. Users of EulerEarn are liquidity providers who want to earn from borrowing interest without having to actively manage the risk of their position. Deposits and withdrawals follow allocator-defined queues, with an option to keep funds in non-borrowable vaults for immediate availability.</p>
 

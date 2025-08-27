@@ -143,7 +143,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Project    | Report                                                            | Labels                                                                                      |
 | ---------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Aave       | [2024-09-05](team/pdf/Aave-security-review.pdf)                              | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Euler       | [2025-07-25](team/pdf/Euler-security-review_2025-07-25.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Hyperlend  | [2025-01-11](team/pdf/Hyperlend-security-review_2025-01-11.pdf)              | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | Blueberry  | [2025-05-16](team/pdf/Blueberry-security-review_2025-05-16.pdf), [2025-04-30](team/pdf/Blueberry-security-review_2025-04-30.pdf) <br> [2025-03-26](team/pdf/Blueberry-security-review_2025-03-26.pdf) [2025-03-12](team/pdf/Blueberry-security-review_2025-03-12.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | HypurrFi   | [2025-02-12](team/pdf/HypurrFi-security-review_2025-02-12.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />   |
@@ -173,6 +172,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 | Project     | Report                                                                         | Labels                                                                                     |
 | ----------- | -----------------------------------------------------------------------        | ------------------------------------------------------------------------------------------ |
+| Euler Earn  | [2025-07-25](team/pdf/EulerEarn-security-review_2025-07-25.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | YieldBasis  | [2025-03-26](team/pdf/YieldBasis-security-review_2025-03-26.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Vyper   -7062e9?style=flat" />   |
 | Reserve     | [2025-06-02](team/pdf/Reserve-security-review_2025-06-02.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Omo         | [2025-01-25](team/pdf/Omo-security-review_2025-01-25.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
