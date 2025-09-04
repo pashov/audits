@@ -225,7 +225,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Primodium       | [2024-10-02](team/pdf/Primodium-security-review_2024-10-02.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Curio           | [2024-07-23](team/pdf/Curio-security-review-July.pdf), [2024-04-15](team/pdf/Curio-security-review.pdf)                           | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | HoneyJar        | [2024-06-05](team/pdf/HoneyJar-security-review.pdf)                             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Azuro           | [2024-02-20](team/pdf/Azuro_security_review.pdf)                                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+
 
 
 ### Others
@@ -244,6 +244,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Spectra - interest rate derivatives    | [2025-01-17](team/pdf/Spectra-security-review_2025-01-17.pdf), [2024-02-24](team/pdf/Spectra-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Veil – privacy service                 | [2025-02-12](team/pdf/VeilCash-security-review_2025-02-12.pdf)      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Beam Nodes – cross-chain NFT minting   | [2025-01-28](team/pdf/BeamNodes-security-review_2025-01-28.pdf)     | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Azuro - prediction markets             | [2024-02-20](team/pdf/Azuro_security_review.pdf)                                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Memecoin Prediction Markets            | [2025-08-07](team/pdf/MCP-security-review_2025-08-07.pdf)           | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Clave - Account Abstraction            | [2024-12-23](team/pdf/Clave-security-review_2024-12-23.pdf), [2024-11-02](team/pdf/Clave-security-review_2024-11-02.pdf)                    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Rivus – liquid staking                | [2024-10-28](team/pdf/Rivus-security-review-October.pdf), [2025-05-13](team/pdf/Rivus-security-review.pdf)             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | apDAO – DAO                           | [2024-10-03](team/pdf/apDAO-security-review_2024-10-03.pdf)          | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
