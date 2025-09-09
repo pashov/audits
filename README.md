@@ -253,5 +253,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | ZROClaim – token claim                | [2024-06-05](team/pdf/LayerZeroZROClaim-security-review.pdf)         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Klaster - Account Abstraction   | [2024-06-13](team/pdf/Klaster-security-review.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | StationX – community ownership        | [2024-06-05](team/pdf/StationX-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Noodles – Bonding curve for X accounts | [2025-03-11](team/pdf/Noodles-security-review_2025-03-11.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> |
 | Mass - Account Abstraction            | [2024-03-18](team/pdf/Mass-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Subsquid - distributed query engine   | [2024-01-29](team/pdf/Subsquid-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
