@@ -219,6 +219,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Project         | Report                                                                          | Labels                                                                                     |
 | --------------- | -----------------------------------------------------------------------         | ------------------------------------------------------------------------------------------ |
 | Coinflip        | [2025-02-19](team/pdf/Coinflip-security-review_2025-02-19.pdf), [2025-02-05](team/pdf/Coinflip-security-review_2025-02-05.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Rip It        | [2025-05-10](team/pdf/RipIt-security-review_2025-05-10.pdf), [2025-04-25](team/pdf/RipIt-security-review_2025-04-25.pdf)  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Gacha           | [2025-01-27](team/pdf/Gacha-security-review_2025-01-27.pdf)                     | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Cardex          | [2025-01-21](team/pdf/Cardex-security-review_2025-01-21.pdf)                    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Gigaverse       | [2025-01-18](team/pdf/Gigaverse-security-review_2025-01-18.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
