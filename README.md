@@ -167,6 +167,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Ouroboros   | [2024-12-06](team/pdf/Ouroboros-security-review_2024-12-06.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | DYAD        | [2024-09-14](team/pdf/Dyad-security-review.pdf)                               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Open Dollar | [2024-04-17](team/pdf/OpenDollar-security-review.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| YuzuUSD     | [2025-08-28](team/pdf/YuzuUSD-security-review_2025-08-28.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
 
 ### Asset Management
