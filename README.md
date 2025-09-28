@@ -161,12 +161,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Ethena      | [2024-10-17](team/pdf/Ethena-security-review-October.pdf),  [2024-08-31](team/pdf/Ethena-security-review-August.pdf) <br> [2024-05-20](team/pdf/Ethena-security-review-May.pdf), [2024-02-20](team/pdf/Ethena-security-review-february.pdf) <br> [2023-12-19](team/pdf/Ethena-security-review.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Hyperstable | [2025-03-19](team/pdf/Hyperstable-security-review_2025-03-19.pdf), [2025-02-26](team/pdf/Hyperstable-security-review_2025-02-26.pdf)             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | USDV        | [2025-03-06](team/pdf/USDV-security-review_2025-03-06.pdf)                    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| YuzuUSD     | [2025-08-28](team/pdf/YuzuUSD-security-review_2025-08-28.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Falcon      | [2025-02-17](team/pdf/Falcon-security-review_2025-02-17.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Roots       | [2025-02-09](team/pdf/Roots-security-review_2025-02-09.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Dinari      | [2024-12-07](team/pdf/Dinari-security-review_2024-12-07.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Ouroboros   | [2024-12-06](team/pdf/Ouroboros-security-review_2024-12-06.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | DYAD        | [2024-09-14](team/pdf/Dyad-security-review.pdf)                               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Open Dollar | [2024-04-17](team/pdf/OpenDollar-security-review.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+
 
 
 ### Asset Management
