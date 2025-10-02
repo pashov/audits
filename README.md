@@ -149,7 +149,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | HypurrFi   | [2025-02-12](team/pdf/HypurrFi-security-review_2025-02-12.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />   |
 | Nucleus        | [2024-12-14](team/pdf/Nucleus-security-review_2024-12-14.pdf)    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />  <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | Ion        | [2024-07-10](team/pdf/IonProtocol-security-review-July.pdf), [2024-04-29](team/pdf/IonProtocol-security-review.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Covenant        | [2025-08-18](team/pdf/Covenant-security-review_2025-08-18.pdf)      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
 
 
@@ -261,3 +260,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Noodles – Bonding curve for X accounts | [2025-03-11](team/pdf/Noodles-security-review_2025-03-11.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> |
 | Mass - Account Abstraction            | [2024-03-18](team/pdf/Mass-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Subsquid - distributed query engine   | [2024-01-29](team/pdf/Subsquid-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Covenant - Interest Rate Derivatives     | [2025-08-18](team/pdf/Covenant-security-review_2025-08-18.pdf)    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+
