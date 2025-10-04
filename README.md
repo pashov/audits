@@ -1,6 +1,6 @@
 # Pashov Audit Group Smart Contract Security Audits
 
-[www.pashov.net](https://www.pashov.net/)
+[www.pashov.com](https://www.pashov.com/)
 
 Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
 
