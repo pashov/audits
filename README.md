@@ -20,7 +20,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Aave</b> <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Market-leading lending protocol with extensive audits and continuous security collaboration.</sub><br><br>
+  <sub>Two audits for Aave: the core v3.2 upgrade, and cross-chain functionality for the GHO stablecoin.</sub><br><br>
   <div>
     <sub><a href="https://aave.com" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub>
@@ -58,7 +58,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Uniswap</b> <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>The largest decentralized exchange powering billions in daily volume.</sub><br><br>
+  <sub>Audited Periphery contracts for V4. Delivered deep findings across boundaries of Web2/Web3 interactions.</sub><br><br>
   <div>
     <sub><a href="https://app.uniswap.org" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a></sub>
@@ -75,7 +75,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Sushi</b> <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Cross-chain AMM and DeFi hub, innovating with new liquidity models.</sub><br><br>
+  <sub>Two comprehensive audits: RouteProcessor V6, a key component of Sushi's cross-chain architecture, and addressed the deployment of core contracts on Tron.</sub><br><br>
   <div>
     <sub><a href="https://sushi.com" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">📄 Report</a></sub>
@@ -93,7 +93,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Ethena</b> <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Next-gen stablecoin protocol offering scalable yield-bearing dollars.</sub><br><br>
+  <sub>Long-standing partnership since 2023. Completed 5 audits covering multiple feature sets.</sub><br><br>
   <div>
     <sub><a href="https://ethena.fi" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ethena-security-review-October.pdf" target="_blank">📄 Report</a></sub>
@@ -113,7 +113,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Resolv</b> <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Multi-chain stablecoin platform with ongoing security coverage.</sub><br><br>
+  <sub>Nine audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br><br>
   <div>
     <sub><a href="https://resolv.xyz/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
@@ -204,7 +204,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>LayerZero</b> <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Cross-chain messaging infrastructure enabling secure omnichain applications.</sub><br><br>
+  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos – with continued collaboration through 2024</sub><br><br>
   <div>
     <sub><a href="https://layerzero.network" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a></sub>
@@ -214,7 +214,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Pump</b> <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" /></h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Rapidly scaling DeFi platform with high community engagement.</sub><br><br>
+  <sub>Year-long collaboration with 10 audits of critical contracts. Helped the project scale safely through multiple major upgrades. Found 4 high and critical-severity issues.</sub><br><br>
   <div><sub><a href="https://pump.fun" target="_blank">🌐 Website</a></sub></div>
 </td>
 
@@ -231,6 +231,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 </table>
 </div>
+
 
 
 
