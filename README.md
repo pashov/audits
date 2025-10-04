@@ -65,7 +65,10 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Uniswap</b> <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2">
+    <img class="proj-logo" src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap" height="28" />
+    <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Audited Periphery contracts for V4. Delivered deep findings across boundaries of Web2/Web3 interactions.</sub><br><br>
   <div>
