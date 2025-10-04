@@ -18,7 +18,10 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Aave</b> <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2">
+    <img class="proj-logo" src="https://raw.githubusercontent.com/Daneided/web3-logos/main/AAVE.png" alt="Aave" height="28" />
+    <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Two audits for Aave: the core v3.2 upgrade, and cross-chain functionality for the GHO stablecoin.</sub><br><br>
   <div>
@@ -26,6 +29,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>HyperLend</b> <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" /></h2>
