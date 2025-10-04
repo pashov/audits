@@ -32,7 +32,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Hyperliquid ecosystem lending protocol with advanced risk management.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://hyperlend.finance/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -42,7 +42,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Novel lending and borrowing platform built for long-term growth.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://app.hypurr.fi/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -105,7 +105,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Stablecoin system focused on capital efficiency and resilience.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://falcon.finance/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -115,7 +115,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Multi-chain stablecoin platform with ongoing security coverage.</sub><br><br>
   <div>
-    <sub><a href="https://resolv.finance" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://resolv.xyz/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -133,7 +133,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Yield platform built on top of Euler with structured vault strategies.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://docs.euler.finance/user-guide/euler-earn/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -143,7 +143,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Composable yield pods designed for flexible DeFi exposure.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://peapods.finance/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Peapods-security-review_2024-11-16.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -153,7 +153,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Vyper-7062e9?style=flat" /><br>
   <sub>Early-stage structured yield product with growing adoption.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://yieldbasis.com/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -171,7 +171,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>On-chain RWA protocol bridging institutional-grade assets.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://www.ostium.com/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ostium-security-review_2025-01-21.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -188,7 +188,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Tokenized RWAs enabling fractionalized equity and assets.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://dinari.com/defi" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Dinari-security-review_2024-12-07.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -223,7 +223,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Advanced DeFi infrastructure project integrated with Hyperliquid ecosystem.</sub><br><br>
   <div>
-    <sub><a href="#" target="_blank">🌐 Website</a> • 
+    <sub><a href="https://kinetiq.xyz/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
@@ -231,6 +231,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 </table>
 </div>
+
 
 
 
