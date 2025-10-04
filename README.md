@@ -8,229 +8,214 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <div style="text-align: left;">
 
-<table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<table style="table-layout: fixed; width: 100%; text-align: left;">
 
 <!-- Lending -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Lending</h2>
-  </td>
+<td colspan="3"><h2>📌 Lending</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Aave</b> <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Market-leading lending protocol with extensive audits and continuous security collaboration.</sub><br><br>
-  <div>
-    <sub><a href="https://aave.com" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>Aave  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" />
+  </h2>
+  <sub>Two audits for Aave: the core v3.2 upgrade, and cross-chain functionality for the GHO stablecoin.</sub><br><br>
+  <div><sub><a href="https://aave.com" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>HyperLend</b> <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>HyperLend  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Hyperliquid ecosystem lending protocol with advanced risk management.</sub><br><br>
-  <div>
-    <sub><a href="https://hyperlend.finance/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://hyperlend.finance/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>HypurrFi</b> <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>HypurrFi  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Novel lending and borrowing platform built for long-term growth.</sub><br><br>
-  <div>
-    <sub><a href="https://app.hypurr.fi/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://app.hypurr.fi/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
-<!-- DEXs -->
+<!-- DEX -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 DEXs</h2>
-  </td>
+<td colspan="3"><h2>📌 DEXs</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Uniswap</b> <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>The largest decentralized exchange powering billions in daily volume.</sub><br><br>
-  <div>
-    <sub><a href="https://app.uniswap.org" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>Uniswap  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" />
+  </h2>
+  <sub>Audited Periphery contracts for V4.<br>Delivered deep findings across boundaries of Web2/Web3 interactions.</sub><br><br>
+  <div><sub><a href="https://app.uniswap.org" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>PancakeSwap</b> <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>PancakeSwap  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat" />
+  </h2>
   <sub>Leading DEX on BNB Chain with strong ecosystem adoption.</sub><br><br>
   <div><sub><a href="https://pancakeswap.finance" target="_blank">🌐 Website</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Sushi</b> <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Cross-chain AMM and DeFi hub, innovating with new liquidity models.</sub><br><br>
-  <div>
-    <sub><a href="https://sushi.com" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>Sushi  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" />
+  </h2>
+  <sub>Two comprehensive audits:<br>RouteProcessor V6, a key component of Sushi's cross-chain architecture, and addressed the deployment of core contracts on Tron</sub><br><br>
+  <div><sub><a href="https://sushi.com" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
 <!-- Stablecoins -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Stablecoins</h2>
-  </td>
+<td colspan="3"><h2>📌 Stablecoins</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Ethena</b> <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Next-gen stablecoin protocol offering scalable yield-bearing dollars.</sub><br><br>
-  <div>
-    <sub><a href="https://ethena.fi" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ethena-security-review-October.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>Ethena  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" />
+  </h2>
+  <sub>Long-standing partnership since 2023.<br>Completed 5 audits covering multiple feature sets.</sub><br><br>
+  <div><sub><a href="https://ethena.fi" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ethena-security-review-October.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Falcon</b> <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Falcon  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Stablecoin system focused on capital efficiency and resilience.</sub><br><br>
-  <div>
-    <sub><a href="https://falcon.finance/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://falcon.finance/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Resolv</b> <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Multi-chain stablecoin platform with ongoing security coverage.</sub><br><br>
-  <div>
-    <sub><a href="https://resolv.xyz/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>Resolv  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" />
+  </h2>
+  <sub>Nine audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br><br>
+  <div><sub><a href="https://resolv.xyz/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
 <!-- Yield -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Yield</h2>
-  </td>
+<td colspan="3"><h2>📌 Yield</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Euler Earn</b> <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Euler Earn  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Yield platform built on top of Euler with structured vault strategies.</sub><br><br>
-  <div>
-    <sub><a href="https://docs.euler.finance/user-guide/euler-earn/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://docs.euler.finance/user-guide/euler-earn/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Peapods</b> <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Peapods  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Composable yield pods designed for flexible DeFi exposure.</sub><br><br>
-  <div>
-    <sub><a href="https://peapods.finance/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Peapods-security-review_2024-11-16.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://peapods.finance/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Peapods-security-review_2024-11-16.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>YieldBasis</b> <img src="https://img.shields.io/badge/-$3M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Vyper-7062e9?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>YieldBasis  
+    <img src="https://img.shields.io/badge/-Vyper-7062e9?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$3M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Early-stage structured yield product with growing adoption.</sub><br><br>
-  <div>
-    <sub><a href="https://yieldbasis.com/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://yieldbasis.com/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
 <!-- RWAs -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Real World Assets (RWA)</h2>
-  </td>
+<td colspan="3"><h2>📌 RWAs</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Ostium</b> <img src="https://img.shields.io/badge/-$40M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Ostium  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$40M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>On-chain RWA protocol bridging institutional-grade assets.</sub><br><br>
-  <div>
-    <sub><a href="https://www.ostium.com/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ostium-security-review_2025-01-21.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://www.ostium.com/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ostium-security-review_2025-01-21.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>RAAC</b> <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>RAAC  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" />
+  </h2>
   <sub>Innovative real-world credit system focused on sustainable lending.</sub><br><br>
   <div><sub><a href="https://raac.io" target="_blank">🌐 Website</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Dinari</b> <img src="https://img.shields.io/badge/-$45M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Dinari  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$45M+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Tokenized RWAs enabling fractionalized equity and assets.</sub><br><br>
-  <div>
-    <sub><a href="https://dinari.com/defi" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Dinari-security-review_2024-12-07.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://dinari.com/defi" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Dinari-security-review_2024-12-07.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
 <!-- Others -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Others</h2>
-  </td>
+<td colspan="3"><h2>📌 Others</h2></td>
 </tr>
 <tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>LayerZero</b> <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Cross-chain messaging infrastructure enabling secure omnichain applications.</sub><br><br>
-  <div>
-    <sub><a href="https://layerzero.network" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+<td width="33%" valign="top">
+  <h2>LayerZero  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /> 
+    <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" />
+  </h2>
+  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos - with continued collaboration through 2024</sub><br><br>
+  <div><sub><a href="https://layerzero.network" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Pump</b> <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Rapidly scaling DeFi platform with high community engagement.</sub><br><br>
+<td width="33%" valign="top">
+  <h2>Pump  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" />
+  </h2>
+  <sub>Year-long collaboration with 10 audits of critical contracts. Helped the project scale safely through multiple major upgrades. Found 4 high and critical-severity issues</sub><br><br>
   <div><sub><a href="https://pump.fun" target="_blank">🌐 Website</a></sub></div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Kinetiq</b> <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+<td width="33%" valign="top">
+  <h2>Kinetiq  
+    <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+    <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /> 
+    <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat" />
+  </h2>
   <sub>Advanced DeFi infrastructure project integrated with Hyperliquid ecosystem.</sub><br><br>
-  <div>
-    <sub><a href="https://kinetiq.xyz/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">📄 Report</a></sub>
-  </div>
+  <div><sub><a href="https://kinetiq.xyz/" target="_blank">🌐 Website</a> • <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">📄 Report</a></sub></div>
 </td>
 </tr>
 
 </table>
 </div>
+
 
 
 
