@@ -154,7 +154,15 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Ethena</b> <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/ETHENA.png"
+         alt="Ethena Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Long-standing partnership since 2023. Completed 5 audits covering multiple feature sets.</sub><br><br>
   <div>
@@ -163,8 +171,17 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
+
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Falcon</b> <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/FALCON.png"
+         alt="Falcon Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Stablecoin system focused on capital efficiency and resilience.</sub><br><br>
   <div>
@@ -173,15 +190,25 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
+
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Resolv</b> <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/FALCON.png"
+         alt="Falcon Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Nine audits across one year, covering core logic and multiple add-ons. Discovered 1 critical and 1 high-severity vulnerability.</sub><br><br>
+  <sub>Stablecoin system focused on capital efficiency and resilience.</sub><br><br>
   <div>
-    <sub><a href="https://resolv.xyz/" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">📄 Report</a></sub>
+    <sub><a href="https://falcon.finance/" target="_blank">🌐 Website</a> • 
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 <!-- Yield -->
