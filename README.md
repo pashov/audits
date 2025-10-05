@@ -159,7 +159,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
   <td width="29%" valign="top" style="padding:10px;">
     <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC.png" alt="RAAC Logo" height="28" />
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC1.png" alt="RAAC Logo" height="28" />
       <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" alt="$235M+ deposits" />
     </div>
   </td>
