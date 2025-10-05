@@ -349,31 +349,63 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>LayerZero</b> <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos – with continued collaboration through 2024</sub><br><br>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO.png"
+         alt="LayerZero Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
+  <sub>Six comprehensive audits covering core protocol components across EVM, Solana, and Cosmos - with continued collaboration through 2024.</sub><br><br>
   <div>
     <sub><a href="https://layerzero.network" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Pump</b> <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
-  <sub>Year-long collaboration with 10 audits of critical contracts. Helped the project scale safely through multiple major upgrades. Found 4 high and critical-severity issues.</sub><br><br>
-  <div><sub><a href="https://pump.fun" target="_blank">🌐 Website</a></sub></div>
-</td>
 
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Kinetiq</b> <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP.png"
+         alt="Pump Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+  <img src="https://img.shields.io/badge/-Rust-b7410e?style=flat" /><br>
+  <sub>Year-long collaboration with 10 audits of critical contracts. Helped the project scale safely through multiple major upgrades. Found 4 high and critical-severity issues.</sub><br><br>
+  <div>
+    <sub><a href="https://pump.fun" target="_blank">🌐 Website</a></sub>
+  </div>
+</td>
+
+
+<td width="33%" valign="top" style="text-align:left;">
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/KINETIQ.png"
+         alt="Kinetiq Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+  <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Advanced DeFi infrastructure project integrated with Hyperliquid ecosystem.</sub><br><br>
   <div>
     <sub><a href="https://kinetiq.xyz/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 </table>
