@@ -128,14 +128,24 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Sushi</b> <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png"
+         alt="Sushi Logo"
+         height="26"
+         style="vertical-align: middle;" />
+    <span style="font-weight: 700;">Sushi</span>
+    <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Two comprehensive audits: RouteProcessor V6, a key component of Sushi's cross-chain architecture, and addressed the deployment of core contracts on Tron.</sub><br><br>
+  <sub>Two comprehensive audits: RouteProcessor V6, a key component of Sushi’s cross-chain architecture, and addressed the deployment of core contracts on Tron.</sub><br><br>
   <div>
     <sub><a href="https://sushi.com" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 <!-- Stablecoins -->
