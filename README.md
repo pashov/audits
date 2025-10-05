@@ -8,13 +8,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
 
-<colgroup>
-  <col style="width: 12%;">  <!-- Category column -->
-  <col style="width: 29%;">  <!-- First project -->
-  <col style="width: 31%;">  <!-- Second project (wider for badges) -->
-  <col style="width: 28%;">  <!-- Third project -->
-</colgroup>
-
 
 <!-- Lending -->
 <tr>
@@ -197,7 +190,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO1.png" alt="LayerZero Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-$50B%2B_Bridge_Volume-5924e1?style=flat" alt="$50B+ Bridge Volume" />
+    <img src="https://img.shields.io/badge/-$50B%2B_Volume-5924e1?style=flat" alt="$50B+ Volume" />
   </div>
 </td>
 
