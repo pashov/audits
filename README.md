@@ -26,7 +26,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
   <td width="29%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HYPERLEND.png" alt="HyperLend Logo" height="28" />
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HyperLend.png" alt="HyperLend Logo" height="28" />
     </a>
     <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" />
   </td>
