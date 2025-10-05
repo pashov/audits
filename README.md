@@ -101,7 +101,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
   <td width="29%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN.png" alt="Euler Earn Logo" height="28" />
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN2.png" alt="Euler Earn Logo" height="28" />
     </a>
     <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" />
   </td>
@@ -161,7 +161,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
-    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP.png" alt="Pump Logo" height="28" />
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP2.png" alt="Pump Logo" height="28" />
     <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" />
   </td>
 
