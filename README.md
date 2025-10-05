@@ -37,7 +37,16 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </td>
 
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>HyperLend</b> <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HyperLend.png"
+         alt="HyperLend Logo"
+         height="26"
+         style="vertical-align: middle;" />
+    <span style="font-weight: 700;">HyperLend</span>
+    <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Hyperliquid ecosystem lending protocol with advanced risk management.</sub><br><br>
   <div>
@@ -45,6 +54,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>HypurrFi</b> <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" /></h2>
