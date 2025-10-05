@@ -220,7 +220,15 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Euler Earn</b> <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN.png"
+         alt="Euler Earn Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Yield platform built on top of Euler with structured vault strategies.</sub><br><br>
   <div>
@@ -229,8 +237,17 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
+
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Peapods</b> <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PEAPODS.png"
+         alt="Peapods Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Composable yield pods designed for flexible DeFi exposure.</sub><br><br>
   <div>
@@ -239,8 +256,17 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
+
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>YieldBasis</b> <img src="https://img.shields.io/badge/-$3M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/YIELDBASIS.png"
+         alt="YieldBasis Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$3M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Vyper-7062e9?style=flat" /><br>
   <sub>Early-stage structured yield product with growing adoption.</sub><br><br>
   <div>
@@ -248,6 +274,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 <!-- RWAs -->
