@@ -285,7 +285,15 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 <tr>
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Ostium</b> <img src="https://img.shields.io/badge/-$40M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/OSTIUM.png"
+         alt="Ostium Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$40M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>On-chain RWA protocol bridging institutional-grade assets.</sub><br><br>
   <div>
@@ -294,15 +302,35 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>RAAC</b> <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
-  <sub>Innovative real-world credit system focused on sustainable lending.</sub><br><br>
-  <div><sub><a href="https://raac.io" target="_blank">🌐 Website</a></sub></div>
-</td>
 
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Dinari</b> <img src="https://img.shields.io/badge/-$45M+_TVL-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC.png"
+         alt="RAAC Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
+  <sub>Innovative real-world credit system focused on sustainable lending.</sub><br><br>
+  <div>
+    <sub><a href="https://raac.io" target="_blank">🌐 Website</a></sub>
+  </div>
+</td>
+
+
+<td width="33%" valign="top" style="text-align:left;">
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/DINARI.png"
+         alt="Dinari Logo"
+         height="28"
+         style="vertical-align: middle;" />
+    <img src="https://img.shields.io/badge/-$45M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Tokenized RWAs enabling fractionalized equity and assets.</sub><br><br>
   <div>
@@ -310,6 +338,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Dinari-security-review_2024-12-07.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 <!-- Others -->
