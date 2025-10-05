@@ -81,13 +81,17 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <!-- DEXs -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 DEXs</h2>
-  </td>
-</tr>
-<tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2><b>Uniswap</b> <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" /></h2>
+  <td width="33%" valign="top" style="text-align:left;">
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png"
+         alt="Uniswap Logo"
+         height="26"
+         style="vertical-align: middle;" />
+    <span style="font-weight: 700;">Uniswap</span>
+    <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Audited Periphery contracts for V4. Delivered deep findings across boundaries of Web2/Web3 interactions.</sub><br><br>
   <div>
@@ -96,12 +100,25 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </div>
 </td>
 
+
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>PancakeSwap</b> <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat" /></h2>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png"
+         alt="PancakeSwap Logo"
+         height="26"
+         style="vertical-align: middle;" />
+    <span style="font-weight: 700;">PancakeSwap</span>
+    <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Leading DEX on BNB Chain with strong ecosystem adoption.</sub><br><br>
-  <div><sub><a href="https://pancakeswap.finance" target="_blank">🌐 Website</a></sub></div>
+  <div>
+    <sub><a href="https://pancakeswap.finance" target="_blank">🌐 Website</a></sub>
+  </div>
 </td>
+
 
 <td width="33%" valign="top" style="text-align:left;">
   <h2><b>Sushi</b> <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" /></h2>
