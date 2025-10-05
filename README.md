@@ -59,7 +59,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <td width="33%" valign="top" style="text-align:left;">
   <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
     <img class="proj-logo"
-         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HypurrFI.png"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HYPURRFI.png"
          alt="HypurrFi Logo"
          height="26"
          style="vertical-align: middle;" />
@@ -75,6 +75,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 
 </tr>
 
