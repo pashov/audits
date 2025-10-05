@@ -125,7 +125,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
       </a>
       <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" alt="$200M+ TVL" />
     </div>
-@@ -194,28 +194,28 @@
+@@ -194,49 +194,49 @@
 
   <td width="29%" valign="top" style="padding:10px;">
     <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
@@ -146,7 +146,6 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 </tr>
 
 </table>
-
 
 
 
