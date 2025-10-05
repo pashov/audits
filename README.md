@@ -4,6 +4,9 @@
 
 Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
 
+
+<div style="text-align: left;">
+
 ## 🌟 Highlighted Projects
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
@@ -11,141 +14,169 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Lending -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Lending</h3>
+    <h3 style="margin:0;">📌 Lending</h3>
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/AAVE.png" alt="Aave Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" alt="$72B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/AAVE.png" alt="Aave Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HyperLend.png" alt="HyperLend Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" alt="$800M+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Hyperlend-security-review_2025-01-11.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HyperLend.png" alt="HyperLend Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$800M+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="30%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HYPURRFI.png" alt="HypurrFi Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" alt="$260M+ TVL" />
-    </div>
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HYPURRFI.png" alt="HypurrFi Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" />
   </td>
 </tr>
 
 <!-- DEXs -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> DEXs</h3>
+    <h3 style="margin:0;">📌 DEXs</h3>
   </td>
 
- <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$6.8B%2B_TVL-5924e1?style=flat" alt="$6.8B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" />
   </td>
 
-  <!-- PancakeSwap -->
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
-      <img src="https://img.shields.io/badge/-$2.6B%2B_TVL-5924e1?style=flat" alt="$2.6B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
+    <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat" />
   </td>
 
-  <!-- SushiSwap -->
-  <td width="30%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$350M%2B_TVL-5924e1?style=flat" alt="$350M+ TVL" />
-    </div>
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" />
   </td>
-
 </tr>
 
 <!-- Stablecoins -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Stablecoins</h3>
+    <h3 style="margin:0;">📌 Stablecoins</h3>
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ethena-security-review-October.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/ETHENA.png" alt="Ethena Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" alt="$14B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ethena-security-review-October.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/ETHENA.png" alt="Ethena Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$14B+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/FALCON.png" alt="Falcon Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" alt="$1.6B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/FALCON.png" alt="Falcon Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="30%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RESOLV.png" alt="Resolv Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" alt="$380M+ TVL" />
-    </div>
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Resolv-security-review_2025-05-14.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RESOLV.png" alt="Resolv Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$380M+_TVL-5924e1?style=flat" />
   </td>
 </tr>
 
 <!-- Yield -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Yield</h3>
+    <h3 style="margin:0;">📌 Yield</h3>
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN1.png" alt="Euler Earn Logo" height="28" />
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN2.png" alt="Euler Earn Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" alt="$200M+ TVL" />
-    </div>
-@@ -194,49 +194,49 @@
-
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP1.png" alt="Pump Logo" height="28" />
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP2.png" alt="Pump Logo" height="28" />
-      <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" alt="$290M+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/EulerEarn-security-review_2025-07-25.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/EULEREARN.png" alt="Euler Earn Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="30%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/KINETIQ.png" alt="Kinetiq Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat" alt="$1.7B+ TVL" />
-    </div>
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Peapods-security-review_2024-11-16.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PEAPODS.png" alt="Peapods Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat" />
+  </td>
+
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/YIELDBASIS.png" alt="YieldBasis Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$3M+_TVL-5924e1?style=flat" />
+  </td>
+</tr>
+
+<!-- RWAs -->
+<tr>
+  <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
+    <h3 style="margin:0;">📌 Real World Assets</h3>
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Ostium-security-review_2025-01-21.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/OSTIUM.png" alt="Ostium Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$40M+_TVL-5924e1?style=flat" />
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC.png" alt="RAAC Logo" height="28" />
+    <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" />
+  </td>
+
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Dinari-security-review_2024-12-07.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/DINARI.png" alt="Dinari Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$45M+_TVL-5924e1?style=flat" />
+  </td>
+</tr>
+
+<!-- Others -->
+<tr>
+  <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
+    <h3 style="margin:0;">📌 Others</h3>
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO.png" alt="LayerZero Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" />
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP.png" alt="Pump Logo" height="28" />
+    <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" />
+  </td>
+
+  <td width="30%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Kinetiq-security-review_2025-02-26.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/KINETIQ.png" alt="Kinetiq Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$1.7B+_TVL-5924e1?style=flat" />
   </td>
 </tr>
 
 </table>
+
+</div>
+
 
 
 
