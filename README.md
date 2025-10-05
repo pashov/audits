@@ -15,6 +15,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
     <h2 style="margin:0;">📌 Lending</h2>
   </td>
+</tr>
+<tr>
   <td width="33%" valign="top" style="text-align:left;">
   <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
     <img class="proj-logo"
@@ -84,6 +86,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
     <h2 style="margin:0;">📌 DEXs</h2>
   </td>
+</tr>
+<tr>
   <td width="33%" valign="top" style="text-align:left;">
   <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
     <img class="proj-logo"
