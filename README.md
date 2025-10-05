@@ -48,30 +48,31 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <h3 style="margin:0;"> DEXs</h3>
   </td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$2.3T+_All-Time_Vol-5924e1?style=flat" alt="$2.3T+ All-Time Vol" />
-    </div>
-  </td>
+ <td width="29%" valign="top" style="padding:10px;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/$2.3T%2B%20All--Time%20Vol-5924e1?style=flat" alt="$2.3T+ All-Time Vol" />
+  </div>
+</td>
 
-  <td width="29%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
-      <img src="https://img.shields.io/badge/-$1.4T+_All-Time_Vol-5924e1?style=flat" alt="$1.4T+ All-Time Vol" />
-    </div>
-  </td>
+<td width="29%" valign="top" style="padding:10px;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
+    <img src="https://img.shields.io/badge/$1.4T%2B%20All--Time%20Vol-5924e1?style=flat" alt="$1.4T+ All-Time Vol" />
+  </div>
+</td>
 
-  <td width="30%" valign="top" style="padding:10px;">
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
-      <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
-        <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
-      </a>
-      <img src="https://img.shields.io/badge/-$250B+_All-Time_Vol-5924e1?style=flat" alt="$250B+ All-Time Vol" />
-    </div>
-  </td>
+<td width="30%" valign="top" style="padding:10px;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/$250B%2B%20All--Time%20Vol-5924e1?style=flat" alt="$250B+ All-Time Vol" />
+  </div>
+</td>
+
 </tr>
 
 <!-- Stablecoins -->
