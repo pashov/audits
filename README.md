@@ -49,19 +49,19 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-6.8B+_TVL-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-3.2T%2B_Total_Volume-5924e1?style=flat" alt="3.2T+ Total Volume" />
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
     <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
-    <img src="https://img.shields.io/badge/-2.6B+_TVL-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-1.7T%2B_Total_Volume-5924e1?style=flat" alt="1.7T+ Total Volume" />
   </td>
 
   <td width="30%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-350M+_TVL-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-260B%2B_Total_Volume-5924e1?style=flat" alt="260B+ Total Volume" />
   </td>
 </tr>
 
