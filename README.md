@@ -14,7 +14,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Lending -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Lending</h3>
+    <h3 style="margin:0;"> Lending</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -42,33 +42,33 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- DEXs -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 DEXs</h3>
+    <h3 style="margin:0;"> DEXs</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Uniswap-security-review-October.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/UNISWAP.png" alt="Uniswap Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-3.2T+_CDV-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-6.8B+_TVL-5924e1?style=flat" />
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
     <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PANCAKESWAP.png" alt="PancakeSwap Logo" height="28" />
-    <img src="https://img.shields.io/badge/-1.7T+_CDV-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-2.6B+_TVL-5924e1?style=flat" />
   </td>
 
   <td width="30%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/SushiSwap-security-review.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/SUSHISWAP.png" alt="Sushi Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-260B+_CDV-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-350M+_TVL-5924e1?style=flat" />
   </td>
 </tr>
 
 <!-- Stablecoins -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Stablecoins</h3>
+    <h3 style="margin:0;"> Stablecoins</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -96,7 +96,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Yield -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Yield</h3>
+    <h3 style="margin:0;"> Yield</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -124,7 +124,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- RWAs -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Real World Assets</h3>
+    <h3 style="margin:0;"> RWAs</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -135,7 +135,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
-    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC.png" alt="RAAC Logo" height="28" />
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/RAAC1.png" alt="RAAC Logo" height="28" />
     <img src="https://img.shields.io/badge/-$235M+_deposits-5924e1?style=flat" />
   </td>
 
@@ -150,14 +150,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Others -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Others</h3>
+    <h3 style="margin:0;"> Others</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO.png" alt="LayerZero Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-50B+_CBV-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-50B+_VOL-5924e1?style=flat" />
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
