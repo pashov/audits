@@ -8,6 +8,14 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
 
+<colgroup>
+  <col style="width: 12%;">  <!-- Category column -->
+  <col style="width: 29%;">  <!-- First project -->
+  <col style="width: 31%;">  <!-- Second project (wider for badges) -->
+  <col style="width: 28%;">  <!-- Third project -->
+</colgroup>
+
+
 <!-- Lending -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
