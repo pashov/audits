@@ -154,11 +154,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO.png" alt="LayerZero Logo" height="28" />
-    </a>
-    <img src="https://img.shields.io/badge/-50B+_VOL-5924e1?style=flat" />
-  </td>
+  <a href="https://github.com/pashov/audits/blob/master/team/pdf/LayerZero-security-review-September.pdf" target="_blank">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/LAYERZERO.png" alt="LayerZero Logo" height="28" />
+  </a>
+  <img src="https://img.shields.io/badge/-55B%2B_Total_Bridge_Volume-5924e1?style=flat" alt="55B+ Total Bridge Volume" />
+</td>
+
 
   <td width="29%" valign="top" style="text-align:left;">
     <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP2.png" alt="Pump Logo" height="28" />
