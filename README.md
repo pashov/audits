@@ -57,14 +57,25 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 <td width="33%" valign="top" style="text-align:left;">
-  <h2><b>HypurrFi</b> <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat" /></h2>
-  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
+  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
+    <img class="proj-logo"
+         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/HypurrFI.png"
+         alt="HypurrFi Logo"
+         height="26"
+         style="vertical-align: middle;" />
+    <span style="font-weight: 700;">HypurrFi</span>
+    <img src="https://img.shields.io/badge/-$260M+_TVL-5924e1?style=flat"
+         style="margin-left: 6px;" />
+  </h2>
+  <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /> 
+  <img src="https://img.shields.io/badge/-Hyperliquid-234942?style=flat" /><br>
   <sub>Novel lending and borrowing platform built for long-term growth.</sub><br><br>
   <div>
     <sub><a href="https://app.hypurr.fi/" target="_blank">🌐 Website</a> • 
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/HypurrFi-security-review_2025-02-12.pdf" target="_blank">📄 Report</a></sub>
   </div>
 </td>
+
 </tr>
 
 <!-- DEXs -->
