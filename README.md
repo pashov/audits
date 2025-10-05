@@ -145,7 +145,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Real World Assets -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;">📌 Real World Assets</h3>
+    <h3 style="margin:0;">📌 RWAs </h3>
   </td>
 
   <td width="29%" valign="top" style="padding:10px;">
