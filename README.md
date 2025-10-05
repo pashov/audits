@@ -7,7 +7,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <div style="text-align: left;">
 
-## 🌟 Highlighted Projects
+
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
 
