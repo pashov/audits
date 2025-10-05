@@ -12,29 +12,32 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 <!-- Lending -->
 <tr>
-  <td colspan="3" style="text-align:left; padding:10px; background:#f5f5f5;">
-    <h2 style="margin:0;">📌 Lending</h2>
-  </td>
-</tr>
-<tr>
-<td width="33%" valign="top" style="text-align:left;">
-  <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
-    <img class="proj-logo"
-         src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/AAVE.png"
+  <td width="33%" valign="top" style="text-align:left; padding: 14px 10px; border: 1px solid #e0e0e0; border-radius: 8px;">
+  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/AAVE.png"
          alt="Aave Logo"
-         height="26"
+         height="28"
          style="vertical-align: middle;" />
-    <span style="font-weight: 700;">Aave</span>
-    <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat"
-         style="margin-left: 6px;" />
-  </h2>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #ddd; margin: 8px 0;">
+
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+    <span style="font-weight: 700; font-size: 1.05em;">Aave</span>
+    <img src="https://img.shields.io/badge/-$72B+_TVL-5924e1?style=flat" />
+  </div>
+
   <img src="https://img.shields.io/badge/-Solidity-63698d?style=flat" /><br>
   <sub>Two audits for Aave: the core v3.2 upgrade, and cross-chain functionality for the GHO stablecoin.</sub><br><br>
+
   <div>
-    <sub><a href="https://aave.com" target="_blank">🌐 Website</a> • 
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a></sub>
+    <sub>
+      <a href="https://aave.com" target="_blank">🌐 Website</a> • 
+      <a href="https://github.com/pashov/audits/blob/master/team/pdf/Aave-security-review.pdf" target="_blank">📄 Report</a>
+    </sub>
   </div>
 </td>
+
 
 <td width="33%" valign="top" style="text-align:left;">
   <h2 class="proj-h2" style="display: flex; align-items: center; gap: 8px;">
