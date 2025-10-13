@@ -337,4 +337,5 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Mass - Account Abstraction            | [2024-03-18](team/pdf/Mass-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Subsquid - distributed query engine   | [2024-01-29](team/pdf/Subsquid-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Covenant - Risk Tranching Protocol    | [2025-08-18](team/pdf/Covenant-security-review_2025-08-18.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Saffron - Fixed Income    | [2025-07-31](team/pdf/Saffron-security-review_2025-07-31.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
