@@ -82,7 +82,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/Falcon-security-review_2025-02-17.pdf" target="_blank">
       <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/FALCON.png" alt="Falcon Logo" height="28" />
     </a>
-    <img src="https://img.shields.io/badge/-$1.6B+_TVL-5924e1?style=flat" />
+    <img src="https://img.shields.io/badge/-$2.1B+_TVL-5924e1?style=flat" />
   </td>
 
   <td width="30%" valign="top" style="text-align:left;">
