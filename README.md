@@ -340,6 +340,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | BiconomyNexus - Account Abstraction    | [2025-03-21](team/pdf/BiconomyNexus-security-review_2025-03-21.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | BiconomyComposability - Transaction Builder    | [2025-03-22](team/pdf/BiconomyComposability-security-review_2025-03-22.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | stHype - Liquid Staking   | [2025-10-13](team/pdf/stHYPE-security-review_2025-10-13.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Tanssi - Interaction toolkit and Bridge   | [2025-04-30](team/pdf/Tanssi-security-review_2025-04-30.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
 
 
