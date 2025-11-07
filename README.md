@@ -243,7 +243,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Falcon      | [2025-02-17](team/pdf/Falcon-security-review_2025-02-17.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Roots       | [2025-02-09](team/pdf/Roots-security-review_2025-02-09.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Dinari      | [2024-12-07](team/pdf/Dinari-security-review_2024-12-07.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Ouroboros   | [2024-12-06](team/pdf/Ouroboros-security-review_2024-12-06.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Ouroboros   | [2024-12-06](team/pdf/Ouroboros-security-review_2024-12-06.pdf), [2025-06-30](team/pdf/Ouroboros-security-review_2025-06-30.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | DYAD        | [2024-09-14](team/pdf/Dyad-security-review.pdf)                               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Open Dollar | [2024-04-17](team/pdf/OpenDollar-security-review.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
