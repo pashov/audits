@@ -227,6 +227,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | HypurrFi   | [2025-02-12](team/pdf/HypurrFi-security-review_2025-02-12.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />   |
 | Nucleus        | [2024-12-14](team/pdf/Nucleus-security-review_2024-12-14.pdf)    | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />  <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
 | Ion        | [2024-07-10](team/pdf/IonProtocol-security-review-July.pdf), [2024-04-29](team/pdf/IonProtocol-security-review.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Hydration   | [2025-10-25](team/pdf/Enclave-security-review_2025-10-25.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Rust       -b7410e?style=flat" />   |
 
 
 
