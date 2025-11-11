@@ -345,6 +345,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | stHype - Liquid Staking   | [2025-10-13](team/pdf/stHYPE-security-review_2025-10-13.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Tanssi - Interaction toolkit and Bridge   | [2025-04-30](team/pdf/Tanssi-security-review_2025-04-30.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Regnum Aurum - RWA Tokenization  | [2025-04-30](team/pdf/RegnumAurum-security-review_2025-08-12.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Elytra - Liquid Restaking  | [2025-07-27](team/pdf/Elytra-security-review_2025-07-27.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
 
 
