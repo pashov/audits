@@ -106,12 +106,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
     <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" />
   </td>
 
-  <td width="29%" valign="top" style="text-align:left;">
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Peapods-security-review_2024-11-16.pdf" target="_blank">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PEAPODS.png" alt="Peapods Logo" height="28" />
-    </a>
-    <img src="https://img.shields.io/badge/-$98M+_TVL-5924e1?style=flat" />
-  </td>
+ <td width="29%" valign="top" style="text-align:left;">
+  <a href="https://github.com/pashov/audits/blob/master/team/pdf/StakeDAO-security-review_2025-07-21.pdf" target="_blank">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/StakeDAO.png" alt="StakeDAO Logo" height="28" />
+  </a>
+  <img src="https://img.shields.io/badge/-$200M+_TVL-5924e1?style=flat" />
+</td>
 
   <td width="30%" valign="top" style="text-align:left;">
     <a href="https://github.com/pashov/audits/blob/master/team/pdf/YieldBasis-security-review_2025-03-26.pdf" target="_blank">
