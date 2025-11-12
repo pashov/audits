@@ -256,6 +256,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | ----------- | -----------------------------------------------------------------------        | ------------------------------------------------------------------------------------------ |
 | Euler Earn  | [2025-07-25](team/pdf/EulerEarn-security-review_2025-07-25.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | YieldBasis  | [2025-03-26](team/pdf/YieldBasis-security-review_2025-03-26.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Vyper   -7062e9?style=flat" />   |
+| Stake DAO  | [2025-07-21](team/pdf/StakeDAO-security-review_2025-07-21.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Elixir      | [2025-08-17](team/pdf/Elixir-security-review_2025-08-17.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Move   -039ad1?style=flat" />   |
 | Reserve     | [2025-06-02](team/pdf/Reserve-security-review_2025-06-02.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Omo         | [2025-01-25](team/pdf/Omo-security-review_2025-01-25.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
