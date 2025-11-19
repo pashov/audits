@@ -341,6 +341,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | StationX – community ownership        | [2024-06-05](team/pdf/StationX-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Noodles – Bonding curve for X accounts | [2025-03-11](team/pdf/Noodles-security-review_2025-03-11.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> |
 | Mass - Account Abstraction            | [2024-03-18](team/pdf/Mass-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| SXT - Token distribution and staking            | [2024-03-31](team/pdf/SXT-security-review_2025-03-31.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Subsquid - distributed query engine   | [2024-01-29](team/pdf/Subsquid-security-review.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Covenant - Risk Tranching Protocol    | [2025-08-18](team/pdf/Covenant-security-review_2025-08-18.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | BiconomyNexus - Account Abstraction    | [2025-03-21](team/pdf/BiconomyNexus-security-review_2025-03-21.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
