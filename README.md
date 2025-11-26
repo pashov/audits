@@ -213,6 +213,10 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Lucidly           | [2024-06-24](team/pdf/Lucidly-security-review-June.pdf), [2024-04-25](team/pdf/Lucidly-security-review.pdf)                        | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Increment         | [2024-02-12](team/pdf/Increment-security-review.pdf)                           | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Sharwa Finance    | [2024-06-17](team/pdf/SharwaFinance-security-review.pdf)                       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Agora    | [2025-06-05](team/pdf/AgoraStableSwap-security-review_2025-06-05.pdf)                       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+
+
+
 
 
 
