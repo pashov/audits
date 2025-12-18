@@ -252,7 +252,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | DYAD        | [2024-09-14](team/pdf/Dyad-security-review.pdf)                               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Open Dollar | [2024-04-17](team/pdf/OpenDollar-security-review.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Level | [2025-04-19](team/pdf/Level-security-review_2025-04-09.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-| Tangent | [2025-10-30](team/pdf/Tangent-security-review_2025-10-30.pdf)                         | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
+| Tangent | [2025-10-30](team/pdf/Tangent-security-review_2025-10-30.pdf), [2025-12-08](team/pdf/Tangent-security-review_2025-12-08.pdf)                          | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
 
 
