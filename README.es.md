@@ -2,6 +2,8 @@
 
 [www.pashov.com](https://www.pashov.com/)
 
+> **En la misión de asegurar $1,000,000,000,000 en criptoactivos.**
+
 Para solicitar una auditoría de seguridad de smart contracts de Pashov Audit Group, contáctame en [Telegram @pashovkrum](https://t.me/pashovkrum)
 
 
