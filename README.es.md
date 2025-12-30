@@ -1,8 +1,8 @@
-# Pashov Audit Group Smart Contract Security Audits
+# Auditorías de Seguridad de Smart Contracts de Pashov Audit Group
 
-[www.pashov.com](https://www.pashov.com/) | [🇪🇸 Leer en Español](README.es.md)
+[www.pashov.com](https://www.pashov.com/)
 
-Reach out for a Pashov Audit Group smart contract security audit to me on [Telegram @pashovkrum](https://t.me/pashovkrum)
+Para solicitar una auditoría de seguridad de smart contracts de Pashov Audit Group, contáctame en [Telegram @pashovkrum](https://t.me/pashovkrum)
 
 
 <div style="text-align: left;">
@@ -14,7 +14,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Lending -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Lending</h3>
+    <h3 style="margin:0;"> Préstamos (Lending)</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -68,7 +68,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Stablecoins -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Stablecoins</h3>
+    <h3 style="margin:0;"> Monedas Estables (Stablecoins)</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -96,7 +96,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Yield -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Yield</h3>
+    <h3 style="margin:0;"> Rendimiento (Yield)</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -124,7 +124,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- RWAs -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> RWAs</h3>
+    <h3 style="margin:0;"> Activos del Mundo Real (RWAs)</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -150,7 +150,7 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 <!-- Others -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
-    <h3 style="margin:0;"> Others</h3>
+    <h3 style="margin:0;"> Otros</h3>
   </td>
 
   <td width="29%" valign="top" style="text-align:left;">
@@ -190,12 +190,12 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 
-## All Pashov Audit Group team audits
+## Todas las auditorías del equipo Pashov Audit Group
 
 
 ### DEX
 
-| Project           | Report                                                               | Labels                                                                                      |
+| Proyecto           | Reporte                                                               | Etiquetas                                                                                      |
 | ----------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Uniswap           | [2024-10-11](team/pdf/Uniswap-security-review-October.pdf)                     | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Sushi             | `2025-01-21`, [2024-08-15](team/pdf/SushiSwap-security-review.pdf)             | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
@@ -221,9 +221,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 
-### Lending
+### Préstamos (Lending)
 
-| Project    | Report                                                            | Labels                                                                                      |
+| Proyecto    | Reporte                                                            | Etiquetas                                                                                      |
 | ---------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Aave       | [2024-09-05](team/pdf/Aave-security-review.pdf), [2025-11-29](team/pdf/Aave-security-review_2025-11-29.pdf)                               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Hyperlend  | [2025-01-11](team/pdf/Hyperlend-security-review_2025-01-11.pdf), [2025-11-21](team/pdf/Hyperlend-security-review_2025-11-21.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Hyperliquid   -234942?style=flat" />  |
@@ -236,9 +236,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 
-### Stablecoin
+### Monedas Estables (Stablecoin)
 
-| Project     | Report                                                               | Labels                                                                                      |
+| Proyecto     | Reporte                                                               | Etiquetas                                                                                      |
 | ----------- | -----------------------------------------------------------------------  | ------------------------------------------------------------------------------------------- |
 | Resolv      | [2025-07-25](team/pdf/Resolv-security-review_2025-07-25.pdf), [2025-05-14](team/pdf/Resolv-security-review_2025-05-14.pdf) <br> [2025-04-15](team/pdf/Resolv-security-review_2025-04-15.pdf), [2024-12-09](team/pdf/Resolv-security-review_2024-12-09.pdf) <br>  [2024-10-10](team/pdf/Resolv-security-review-October.pdf), [2024-08-26](team/pdf/Resolv-security-review-August.pdf) <br> [2024-07-27](team/pdf/Resolv-security-review.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Ethena      | [2024-10-17](team/pdf/Ethena-security-review-October.pdf),  [2024-08-31](team/pdf/Ethena-security-review-August.pdf) <br> [2024-05-20](team/pdf/Ethena-security-review-May.pdf), [2024-02-20](team/pdf/Ethena-security-review-february.pdf) <br> [2023-12-19](team/pdf/Ethena-security-review.pdf)                   | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
@@ -257,9 +257,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 
-### Asset Management
+### Gestión de Activos (Asset Management)
 
-| Project     | Report                                                                         | Labels                                                                                     |
+| Proyecto     | Reporte                                                                         | Etiquetas                                                                                     |
 | ----------- | -----------------------------------------------------------------------        | ------------------------------------------------------------------------------------------ |
 | Euler Earn  | [2025-07-25](team/pdf/EulerEarn-security-review_2025-07-25.pdf)                | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | YieldBasis  | [2025-03-26](team/pdf/YieldBasis-security-review_2025-03-26.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Vyper   -7062e9?style=flat" />   |
@@ -286,9 +286,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | TapiocaDAO  | [2024-02-12](team/pdf/TapiocaDAO-security-review-february.pdf), [2023-11-27](team/pdf/TapiocaDAO-security-review.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Saffron     | [2024-01-22](team/pdf/Saffron-security-review.pdf), [2025-07-31](team/pdf/Saffron-security-review_2025-07-31.pdf)                              | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
-### Fundraising & Tokensales
+### Recaudación de Fondos y Venta de Tokens (Fundraising & Tokensales)
 
-| Project                                | Report                                                                 | Labels                                                                             |
+| Proyecto                                | Reporte                                                                 | Etiquetas                                                                             |
 | -------------------------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------------|
 | Pump              | `2025-04-28`, `2025-03-18` <br>  `2024-10-11`, `2024-05-21` <br>  `2024-03-03` ,  [2025-10-08](team/pdf/Pump-security-review_2025-10-08.pdf) <br> [2025-06-26](team/pdf/Pump-security-review_2025-06-26.pdf) , [2025-04-28](team/pdf/Pump-security-review_2025-04-28.pdf) <br>  [2025-03-18](team/pdf/Pump-security-review_2025-03-18.pdf)                                                                   | <img height="20" src="https://img.shields.io/badge/-   Rust       -b7410e?style=flat" />   |
 | DeFi App              | [2025-01-08](team/pdf/DefiApp-security-review_2025-01-08.pdf)                 | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
@@ -305,9 +305,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Catalyst              | [2024-04-08](team/pdf/Catalyst-security-review-april.pdf), [2023-12-18](team/pdf/Catalyst-security-review.pdf)                      | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Pupniks               | [2024-02-16](team/pdf/Pupniks-security-review.pdf)                            | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 
-### Game
+### Juegos (GameFi)
 
-| Project         | Report                                                                          | Labels                                                                                     |
+| Proyecto         | Reporte                                                                          | Etiquetas                                                                                     |
 | --------------- | -----------------------------------------------------------------------         | ------------------------------------------------------------------------------------------ |
 | Coinflip        | [2025-02-19](team/pdf/Coinflip-security-review_2025-02-19.pdf), [2025-02-05](team/pdf/Coinflip-security-review_2025-02-05.pdf)                  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Rip It        | [2025-05-10](team/pdf/RipIt-security-review_2025-05-10.pdf), [2025-04-25](team/pdf/RipIt-security-review_2025-04-25.pdf)  | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
@@ -320,9 +320,9 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
 
-### Others
+### Otros
 
-| Project                                | Report                                                             | Labels                                                                                      |
+| Proyecto                                | Reporte                                                             | Etiquetas                                                                                      |
 | -------------------------------------- | ----------------------------------------------------------------------------  | ------------------------------------------------------------------------------------------- |
 | Layer Zero – crosschain messaging     | [2024-09-18](team/pdf/LZOrbit-security-review.pdf), [2024-09-18²](team/pdf/LZRateLimiter-security-review.pdf) <br> [2024-09-12](team/pdf/LayerZero-security-review-September.pdf), [2024-05-15](team/pdf/LayerZero-security-review.pdf)               | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" /> <img height="20" src="https://img.shields.io/badge/-   Rust       -b7410e?style=flat" />   |
 | Starknet - staking                    | [2024-07-31](team/pdf/Starknet-security-review_2025-07-31.pdf)              | <img height="20" src="https://img.shields.io/badge/-   Cairo   -df0000?style=flat" />   |
@@ -359,6 +359,3 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 | Tanssi - Interaction toolkit and Bridge   | [2025-04-30](team/pdf/Tanssi-security-review_2025-04-30.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Regnum Aurum - RWA Tokenization  | [2025-04-30](team/pdf/RegnumAurum-security-review_2025-08-12.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
 | Elytra - Liquid Restaking  | [2025-07-10](team/pdf/Elytra-security-review_2025-07-10.pdf), [2025-07-27](team/pdf/Elytra-security-review_2025-07-27.pdf)       | <img height="20" src="https://img.shields.io/badge/-   Solidity   -63698d?style=flat" />   |
-
-
-
