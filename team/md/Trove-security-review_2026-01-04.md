@@ -17,11 +17,11 @@ A smart contract security review can never verify the complete absence of vulner
 
 # Introduction
 
-<p>A time-boxed security review of the <strong>P123D456/sale-a</strong> repository was done by Pashov Audit Group, during which <strong>Shaka, DemoreXTess, Ch_301</strong> engaged to review <strong>Trove</strong>. A total of <strong>3</strong> issues were uncovered.</p>
+<p>A time-boxed security review of the <strong>P123D456/sale-a</strong> repository was done by Pashov Audit Group, during which <strong>Shaka, DemoreXTess, Ch_301</strong> engaged to review <strong>Trove Tokensale</strong>. A total of <strong>3</strong> issues were uncovered.</p>
 
-# About Trove
+# About Trove Tokensale
 
-<p>Trove is an token sale smart contract that allows users to participate using whitelisted ERC-20 tokens or native currency, while tracking individual and total contributions. It supports controlled refunds after the sale ends, and owner-managed fund withdrawal with strict lifecycle enforcement.</p>
+<p>Trove is an exchange for Collectibles, RWAs and Equities. The scope of the audit is a token sale smart contract that allows users to participate using whitelisted ERC-20 tokens or native currency, while tracking individual and total contributions. It supports controlled refunds after the sale ends, and owner-managed fund withdrawal with strict lifecycle enforcement.</p>
 
 # Security Assessment Summary
 
