@@ -1,21 +1,15 @@
 # About
-
-Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
-
+ Pashov Audit Group consists of multiple teams of some of the best smart contract security researchers in the space. Having a combined reported security vulnerabilities count of over 1000, the group strives to create the absolute very best audit journey possible - although 100% security can never be guaranteed, we do guarantee the best efforts of our experienced researchers for your blockchain protocol. Check our previous work [here](https://github.com/pashov/audits) or reach out on Twitter [@pashovkrum](https://twitter.com/pashovkrum).
 # Disclaimer
-
-A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
-
+ A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where we try to find as many vulnerabilities as possible. We can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts. Subsequent security reviews, bug bounty programs and on-chain monitoring are strongly recommended.
 # Introduction
-
-A time-boxed security review of the **hyperlendx/hyperlend-core, hyperlendx/hyperlend-isolated, hyperlendx/core-config-engine, hyperlendx/looping-contracts, hyperlendx/cross-chain-lending-deposits** repositories was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
-
+ A time-boxed security review of the **hyperlendx/hyperlend-core, hyperlendx/hyperlend-isolated, hyperlendx/core-config-engine, hyperlendx/looping-contracts, hyperlendx/cross-chain-lending-deposits** repositories was done by **Pashov Audit Group**, with a focus on the security aspects of the application's smart contracts implementation.
 # About Hyperlend
-
+ 
 HyperLend is a lending platform built on Hyperliquid's EVM blockchain, allowing users to supply assets to liquidity pools and borrow against their deposits. It utilizes algorithmic interest rate models based on supply and demand, ensuring efficient capital utilization. The platform supports flashloans, peer-to-peer lending, isolated and core pools.
 
 # Risk Classification
-
+ 
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
 | ---------------------- | ------------ | -------------- | ----------- |
 | **Likelihood: High**   | Critical     | High           | Medium      |
@@ -23,7 +17,7 @@ HyperLend is a lending platform built on Hyperliquid's EVM blockchain, allowing 
 | **Likelihood: Low**    | Medium       | Low            | Low         |
 
 ## Impact
-
+ 
 - High - leads to a significant material loss of assets in the protocol or significantly harms a group of users.
 
 - Medium - leads to a moderate material loss of assets in the protocol or moderately harms a group of users.
@@ -31,7 +25,7 @@ HyperLend is a lending platform built on Hyperliquid's EVM blockchain, allowing 
 - Low - leads to a minor material loss of assets in the protocol or harms a small group of users.
 
 ## Likelihood
-
+ 
 - High - attack path is possible with reasonable assumptions that mimic on-chain conditions, and the cost of the attack is relatively low compared to the amount of funds that can be stolen or lost.
 
 - Medium - only a conditionally incentivized attack vector, but still relatively likely.
@@ -39,7 +33,7 @@ HyperLend is a lending platform built on Hyperliquid's EVM blockchain, allowing 
 - Low - has too many or too unlikely assumptions or requires a significant stake by the attacker with little or no incentive.
 
 ## Action required for severity levels
-
+ 
 - Critical - Must fix as soon as possible (if already deployed)
 
 - High - Must fix (before deployment if not already deployed)
@@ -49,9 +43,7 @@ HyperLend is a lending platform built on Hyperliquid's EVM blockchain, allowing 
 - Low - Could fix
 
 # Security Assessment Summary
-
-_review commit hashes:_
-
+ _review commit hashes:_ 
 - [4256249f94b8762a5ce41caa2283c0d989efc593](https://github.com/hyperlendx/hyperlend-core/tree/4256249f94b8762a5ce41caa2283c0d989efc593)
 - [37c678450f37a923517e7a203f8353599e143b7e](https://github.com/hyperlendx/hyperlend-isolated/tree/37c678450f37a923517e7a203f8353599e143b7e)
 - [0339f192bb98b55c856d1cc6f76a04bd6fe687ee](https://github.com/hyperlendx/core-config-engine/tree/0339f192bb98b55c856d1cc6f76a04bd6fe687ee)
@@ -59,7 +51,6 @@ _review commit hashes:_
 - [2576caa13409d49bd886965d3c4b3fe61e40397e](https://github.com/hyperlendx/cross-chain-lending-deposits/tree/2576caa13409d49bd886965d3c4b3fe61e40397e)
 
 _fixes review commit hashes:_
-
 - [c8ea750400e62ef089ed95ea2851afe7027646e5](https://github.com/hyperlendx/looping-contracts/tree/c8ea750400e62ef089ed95ea2851afe7027646e5)
 - [a496d810a66df9b889306b7e6807ba354785d59e](https://github.com/hyperlendx/cross-chain-lending-deposits/tree/a496d810a66df9b889306b7e6807ba354785d59e)
 
@@ -67,39 +58,37 @@ _fixes review commit hashes:_
 
 The following smart contracts were in scope of the audit:
 
-- `HyperlendPair`
-- `HyperlendPairAccessControl`
-- `HyperlendPairAccessControlErrors`
-- `HyperlendPairDeployer`
-- `HyperlendPairRegistry`
-- `HyperlendWhitelist`
-- `ReservesSetupHelper`
+- `HyperlendPair` 
+- `HyperlendPairAccessControl` 
+- `HyperlendPairAccessControlErrors` 
+- `HyperlendPairDeployer` 
+- `HyperlendPairRegistry` 
+- `HyperlendWhitelist` 
+- `ReservesSetupHelper` 
 - `SeedAmountsHolder`
-- `Oracle`
-- `ProtocolDataProvider`
-- `PriceOracleSentinel`
-- `FlashLoanLogic`
-- `DataTypes`
-- `Pool`
-- `AToken`
-- `StableDebtToken`
-- `ACLConfigEngine`
+- `Oracle` 
+- `ProtocolDataProvider` 
+- `PriceOracleSentinel` 
+- `FlashLoanLogic` 
+- `DataTypes` 
+- `Pool` 
+- `AToken` 
+- `StableDebtToken` 
+- `ACLConfigEngine` 
 - `CapsConfigEngine`
-- `ConfiguratorInputTypes`
-- `DataTypes`
-- `Context`
-- `Ownable`
-- `ListingConfigEngine`
-- `ListingsConfigEngineFactory`
-- `UiDataProvider`
-- `Looping`
-- `StrategyManager`
-- `StrategyManagerFactory`
-- `UniswapV3Swapper`
-
+- `ConfiguratorInputTypes` 
+- `DataTypes` 
+- `Context` 
+- `Ownable` 
+- `ListingConfigEngine` 
+- `ListingsConfigEngineFactory` 
+- `UiDataProvider` 
+- `Looping` 
+- `StrategyManager` 
+- `StrategyManagerFactory` 
+- `UniswapV3Swapper` 
 # Findings
-
-# [M-01] StrategyManager functions are not `payable`
+ # [M-01] StrategyManager functions are not `payable`
 
 ## Severity
 
@@ -110,7 +99,6 @@ The following smart contracts were in scope of the audit:
 ## Description
 
 Users can use StrategyManager to perform their strategies in one transaction and the code allows sending ETH for the transactions:
-
 ```solidity
     function executeCall(address target, uint256 value, bytes memory data, bool allowRevert) public onlyOwner() returns (bytes memory) {
         (bool success, bytes memory returnData) = target.call{value: value}(data);
@@ -118,12 +106,12 @@ Users can use StrategyManager to perform their strategies in one transaction and
         return returnData;
     }
 ```
-
 The issue is that none of the functions of the StrategyManager are payable and there's no payable `fallback()` or `receive()` function so there's no way to transfer ETH to StrategyManager address and perform transactions that require sending ETH.
 
 ## Recommendations
-
 Mark StrategyManager functions as `payable`.
+
+
 
 # [M-02] `Looping.openPosition()` insufficient division factor
 
@@ -198,6 +186,8 @@ function openPosition(
     }
 ```
 
+
+
 # [M-03] `openPosition()` DoS when `_initialAmount` is `_yieldAsset`
 
 ## Severity
@@ -270,6 +260,7 @@ Where in this case:
 
 - This will result in calculating `minAmountOut` > `_initialAmount` when swapping, which will result in reverting the transaction.
 
+
 ## Recommendations
 
 Update the `Looping.OpenPosition()` function to accept this minimum amount as an argument:
@@ -312,6 +303,8 @@ function openPosition(
     }
 ```
 
+
+
 # [M-04] Unrevoked approvals causing swap failures in `UniswapV3Swapper.swap()`
 
 ## Severity
@@ -347,9 +340,13 @@ Update the `UniswapV3Swapper.swap()` function to revoke the tokens approval from
     }
 ```
 
+
+
 # [L-01] Code does not verify the path Looping
 
 Whenever users call `openPosition()` or `closePosition()` they pass the `path` variable which is used to perform swaps. The issue is that the code doesn't verify the value of `path` to make sure that the first and last addresses in the path list are equal to the tokens that are going to be swapped. In some cases if the user specifies a wrong value for the last address in the path then the code would receive the wrong tokens and those tokens would stay in the contract address and the user would lose funds. It's better to verify the `path` parameter's value to avoid such edge cases.
+
+
 
 # [L-02] Incorrect check to close the user's position
 
@@ -440,6 +437,8 @@ Update the check to use `withdrawAmount` instead of `repaymentAmount`, as it can
     }
 ```
 
+
+
 # [L-03] Swap fee is hardcoded in `UniswapV3Swapper.swap()`
 
 In `UniswapV3Swapper.swap()` function: a fixed swap fee of 0.3% (3000) is hardcoded when constructing the `ExactInputSingleParams`, however, Uniswap V3 typically offers several pools for a given token pair, each with different fee rates.
@@ -477,10 +476,11 @@ If the optimal pool is unavailable, the swap may fail:
 
 Recommendation: update the `UniswapV3Swapper.swap()` function to pass the fee as a parameter, allowing for dynamic selection of the optimal pool for each swap.
 
+
+
 # [L-04] Code does not allow users to specify a deadline for swaps
 
 Users can open or close leveraged positions by using the Looping contract. Code performs swaps during the operation.
-
 ```solidity
         ISwapper(swapper).swapExactTokensForTokensSupportingFeeOnTransferTokens(
             amountToSwap,
@@ -491,12 +491,13 @@ Users can open or close leveraged positions by using the Looping contract. Code 
             block.timestamp
         );
 ```
-
 The issue is that the code swaps the user's tokens and it uses `block.timestamp` for the swap's deadline and it doesn't allow the user to specify the deadline for swaps. As swap results may change if time passes, so it's a common practice to allow users to specify a deadline for their swaps to have more control over on-chain swap executions to avoid losses.
 
 Allow users to specify the deadline and use it when calling swap.
 
-# [L-05] `StrategyManager.executeCall()` incorrect handling of `allowRevert`
+
+
+# [L-05] `StrategyManager.executeCall()` incorrect handling of  `allowRevert`
 
 The `StrategyManager.executeCall()` function is intended to be called by the owner to execute external calls, where it's primarily designed to allow users to manage their HyperLend positions:
 
@@ -535,3 +536,5 @@ As a result, if the owner executes a call and sets `allowRevert = true` (meaning
         return returnData;
     }
 ```
+
+
