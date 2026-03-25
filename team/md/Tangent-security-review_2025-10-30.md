@@ -29,8 +29,7 @@ A smart contract security review can never verify the complete absence of vulner
 
 **Fixes review commit hash:**<br>• [fc8a8f822d67a7a99ab6e2f6764b643fbd4e1c70](https://github.com/Tangent-labs/tangent-contracts/tree/fc8a8f822d67a7a99ab6e2f6764b643fbd4e1c70)<br>&nbsp;&nbsp;(Tangent-labs/tangent-contracts)
 
-
-
+<br>Additionally, changes made in commit <code>ccaf937d5376fd8fee7e16cf74dd7bddf335e0ac</code> were reviewed after the audit. This commit adds a ternary guard to the RewardNotified event emission in RewardAccumulator to prevent an underflow when rewardAmountStreamed is less than dusts.<br><br>All other commits up to this point were not reviewed as part of this audit.
 
 # Scope
 
@@ -339,6 +338,7 @@ The `Collateral` base contract enforces an upper bound on `liquidationFee`, but 
 As a result, governance cannot configure `liquidationFee` to exactly 15% and will encounter a revert when attempting to do so, despite this being within the documented limit.
 
 Recommendation:
+
 - Change the validation to:
 
 ```solidity
@@ -470,6 +470,7 @@ if (collatAmountToLiquidate >= liquidateInput._collateralBalance) {
 If the user’s collateral has already been reduced by a previous liquidation, collatAmountToLiquidate is capped to a smaller amount, while the caller’s maxUSGToBurn remains based on stale state (the pre-liquidation ratio).
 
 As a result:
+
 - maxUSGToBurn may no longer accurately bound the actual repayment amount per unit of collateral, failing to protect the liquidator from overpaying.
 
 - minUSGOut may fail since less collateral is liquidated than expected, leading to smaller output amounts.
