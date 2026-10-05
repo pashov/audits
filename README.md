@@ -147,6 +147,30 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
   </td>
 </tr>
 
+<!-- Launchpads -->
+<tr>
+  <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
+    <h3 style="margin:0;"> Launchpads</h3>
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Pump-security-review_2025-10-08.pdf" target="_blank">
+      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP2.png" alt="Pump Logo" height="28" />
+    </a>
+    <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" />
+  </td>
+
+  <td width="29%" valign="top" style="text-align:left;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PONS.png" alt="Pons Logo" height="28" />
+    <img src="https://img.shields.io/badge/-2.7B%2B_Total_Volume-5924e1?style=flat" alt="2.7B+ Total Volume" />
+  </td>
+
+  <td width="30%" valign="top" style="text-align:left;">
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/Pumpcade.png" alt="Pumpcade Logo" height="28" />
+    <img src="https://img.shields.io/badge/-$6M_Raised-5924e1?style=flat" alt="$6M Raised" />
+  </td>
+</tr>
+
 <!-- Others -->
 <tr>
   <td width="12%" valign="middle" style="background:#f5f5f5; text-align:left; padding:10px;">
@@ -162,10 +186,8 @@ Reach out for a Pashov Audit Group smart contract security audit to me on [Teleg
 
 
   <td width="29%" valign="top" style="text-align:left;">
-    <a href="https://github.com/pashov/audits/blob/master/team/pdf/Pump-security-review_2025-10-08.pdf" target="_blank">
-      <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/PUMP2.png" alt="Pump Logo" height="28" />
-    </a>
-    <img src="https://img.shields.io/badge/-$290M+_TVL-5924e1?style=flat" />
+    <img src="https://raw.githubusercontent.com/Daneided/web3-logos/main/logos/Polymarket.png" alt="Polymarket Logo" height="28" />
+    <img src="https://img.shields.io/badge/-56B%2B_Total_Volume-5924e1?style=flat" alt="56B+ Total Volume" />
   </td>
 
   <td width="30%" valign="top" style="text-align:left;">
